@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibodo</title>
+    <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+    <!-- Bootstrap , fonts & icons  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+    <link rel="stylesheet" href="fonts/typography-font/typo.css">
+    <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+    <!-- Plugin'stylesheets  -->
+    <link rel="stylesheet" href="plugins/aos/aos.min.css">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+    <link rel="stylesheet" href="plugins/slick/slick.min.css">
+    <link rel="stylesheet" href="plugins/date-picker/css/gijgo.min.css" type="text/css" />
+    <!-- Vendor stylesheets  -->
+    <link rel="stylesheet" href="./plugins/theme-mode-switcher/switcher-panel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/theme-mode-custom.css">
+    <!-- Custom stylesheet -->
+</head>
+
+<body data-theme="light">
+    <div class="site-wrapper overflow-hidden">
+        <!-- Header Area -->
+        <header class="site-header site-header--menu-center site-header--absolute">
+            <div class="container-fluid pr-lg-9 pl-lg-9">
+              <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+                <!-- Brand Logo-->
+                <div class="brand-logo"><a href="index.html">
+                        <!-- light version logo (logo must be black)-->
+                        <img src="image/logo-main-black.png" alt="" class="light-version-logo ">
+                        <!-- Dark version logo (logo must be White)-->
+                        <img src="image/logo-main-white.png" alt="" class="dark-version-logo">
+                    </a></div>
+                <div class="collapse navbar-collapse" id="mobile-menu">
+                    <div class="navbar-nav-wrapper">
+                        <ul class="navbar-nav main-menu">
+                          <div class="header-btn mob-rev ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block">
+                            <a class="btn btn-primary gr-text-9" target="_blank" href="pricing-1.html">
+                                Back to Plans
+                            </a>
+                        </div>
+            
+                            <!-- ////////////////////////////////////////////////////////////////////// Sectors ////////////////////////////////////////////////////////////////////// -->
+            
+            
+                            
+            
+                        </ul>
+                    </div>
+                    <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse"
+                        data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                        <i class="gr-cross-icon"></i>
+                    </button>
+                </div>
+                <div class="header-btn mob-rev ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block">
+                    <a class="btn btn-primary gr-text-9" target="_blank" href="sign-up.html">
+                        Get started
+                    </a>
+                </div>
+                <div class="header-btn mob-rev ml-auto ml-lg-5 mr-6 mr-lg-0 d-none d-xs-block">
+                    <a class="btn  btn-white gr-hover-y" target="_blank" href="sign-in.html">
+                        Login
+                    </a>
+                </div>
+                <!-- Mobile Menu Hamburger-->
+                <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse"
+                    data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+                    <span class="hamburger hamburger--squeeze js-hamburger">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </span>
+                </button>
+                <!--/.Mobile Menu Hamburger Ends-->
+            </nav>
+
+            </div>
+
+        </header>
+        <!-- navbar-light -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////// Header End ////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////// -->
+        <section></section>
+
+      <div class="container">
+        <div class="row justify-content-center py-25">
+          <div class="col-lg-4 ">
+            <div class="form-title text-center">
+              <h2 class="title gr-text-2 mb-9">Your Plan</h2>
+              <!-- <p class="gr-text-8 mb-13">To get started, you need to sign up here.</p> -->
+            </div>
+            <div class="text-center" id="pricing-dynamic-deck" data-pricing-dynamic data-value-active="yearly">
+              <div class="mb-13 d-inline-flex position-relative" id="pricing-dynamic-deck--head">
+                <span class="period month gr-text-8 gr-text-color ">Monthly</span>
+                <a href="javascript:" class="btn-toggle active mx-3 price-deck-trigger" data-pricing-trigger data-target="#pricing-dynamic-deck"><span class="round"></span></a>
+                <span class="period year gr-text-8 gr-text-color">Yearly</span>
+                <span class="badge gr-badge text-primary gr-text-12 gr-bg-blue-opacity-1 rounded-pill ml-5 text-uppercase">Save 25%</span>
+              </div>
+            
+            <div class="pricing-card bg-default-8 gr-hover-shadow-1 border text-left pt-9 pb-9 pr-9 pr-xl-13  pl-9 pl-xl-13 bg-white rounded-10">
+            <div class="price-content">
+              <span class="small-title gr-text-12 text-primary font-weight-bold text-uppercase">Essentials</span>
+              <div class="d-flex align-items-end mt-11 ">
+                <span class="currency mr-2 gr-text-6 font-weight-bold line-spacing-none text-blackish-blue">£</span>
+                <h2 class="price-value gr-text-2 font-weight-bold line-spacing-none mb-0 dynamic-value text-blackish-blue" data-active="10" data-monthly="19" data-yearly="10">
+                  <span class="d-none">.</span>
+                </h2>
+                <span class="per gr-text-9 text-blackish-blue">/month</span>
+              </div>
+              <span class="price-bottom-text dynamic-value gr-text-11 mt-5 text-blackish-blue gr-opacity-7 d-inline-flex" data-active="billed yearly" data-monthly="billed monthly" data-yearly="billed yearly"></span>
+              <ul class="card-list list-style-check pl-0 mt-7 mt-lg-11">
+                <li class="gr-text-9"><i class="icon icon-check-simple"></i>Bookings</li>
+                <li class="gr-text-9"><i class="icon icon-check-simple"></i>Payments</li>
+                <li class="gr-text-9"><i class="icon icon-check-simple"></i>Marketplaces</li>
+                <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Apps</li>
+                <li class="disabled gr-text-9"><i class="icon icon-simple-remove"></i>Multiple Users</li>
+              </ul>
+            </div>
+            <a href="" class="btn btn-primary with-icon gr-hover-y px-xl-8 px-lg-4 px-sm-8 px-4">Get Started<i class="icon icon-tail-right font-weight-bold"></i></a>
+            <!-- <span class="btn-bottom-text d-block gr-text-11 text-blackish-blue gr-opacity-7 mt-5">No credit card required</span> -->
+          </div>
+            </div>
+          <!-- /.pricing carde Ends--></div>
+          <div class="col-lg-8">
+            <div class="main-block">
+              <div class="form-title text-center">
+                <h2 class="title gr-text-2 mb-9">Sign Up</h2>
+                <p class="gr-text-8 mb-13">To get started, you need to sign up here.</p>
+              </div>
+              <div class="bg-white border rounded-10 px-8 py-8 shadow-1 mb-11">
+                <form action="./">
+                  <div class="form-group">
+                    <label for="email" class="gr-text-11 font-weight-bold text-blackish-blue">Company Name</label>
+                    <div class="input-container">
+                        <input class="form-control gr-text-11 border" type="email" id="email" placeholder="i.e. mycompanyname">
+                        <span class="placeholder">.live.fibodo.com</span>
+                    </div>
+                </div>
+                  <p class="gr-text-12">Your company login will become part of your booking website URL. It cannot be changed!</p>
+                  <div class="form-group">
+                    <label for="email" class="gr-text-11 font-weight-bold text-blackish-blue">First & Last Name</label>
+                    <input class="form-control gr-text-11 border" type="email" id="email" placeholder="i.e. John Doe">
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="gr-text-11 font-weight-bold text-blackish-blue">Email</label>
+                    <input class="form-control gr-text-11 border" type="email" id="email" placeholder="i.e. john@mail.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="gr-text-11 font-weight-bold text-blackish-blue">Phone Number</label>
+                    <input class="form-control gr-text-11 border" type="email" id="email" placeholder="i.e. 0712341234">
+                  </div>
+                  <div class="form-group forget-block">
+                    <label for="password" class="gr-text-11 font-weight-bold text-blackish-blue">Password</label>
+                    <input id="password" class="form-control gr-text-11 border" type="password" placeholder="********">
+                  </div>
+                  <div class="form-group forget-block">
+                    <label for="password" class="gr-text-11 font-weight-bold text-blackish-blue">Confirm Password</label>
+                    <input id="password" class="form-control gr-text-11 border" type="password" placeholder="********">
+                  </div>
+                  <div class="form-group  mb-7">
+                    <label for="terms-check" class="gr-check-input mb-7 d-flex">
+                      <input class="d-none" type="checkbox" id="terms-check">
+                      <span class="checkbox mt-1 mr-2"></span>
+                      <p class="gr-text-11 text-blackish-blue mb-0">I agree to the Terms & conditions</p>
+                    </label>
+                  </div>
+                  <div class="form-group button-block mb-2">
+                    <button class="form-btn btn btn-primary gr-hover-y w-100">Create an account</button>
+                  </div>
+                </form>
+              </div>
+              <div class="form-bottom excerpt text-center">
+                <p class="sign-up-text gr-text-9 gr-text-color">Already have an account? <a href="sign-up.html" class="text-primary">Sign in now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- ///////////////////////////////// Footer section /////////////////////////////////  -->
+
+        <!-- Footer section -->
+        <footer class="footer-section dark-mode-texts bg-blackish-blue">
+          <div class="container">
+              <div id="footer-placeholder"></div>
+          </div>
+      </footer>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/date-picker/js/gijgo.min.js"></script>
+  <script src="plugins/counter-up/jquery.waypoints.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+
+</html>
