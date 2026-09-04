@@ -1,0 +1,43 @@
+// Font family
+$font-base: 		  "DM Sans", sans-serif;
+$font-hedding:		  "DM Sans", sans-serif;
+
+// Colors
+$body-color: 				#606060; // body-text
+$primary:    				linear-gradient(to right, #ffde59, #ff914d);
+$secondary:					#0d1615;
+$white:		   				#ffffff;
+$gray-1:			 		#969696; 	
+$gray-2:			 		#F9FAF9; // bg light
+$gray-3:			 		#c2c2c2;
+$gray-4:			 		#f1f1f1;
+$gray-5:			 		#828282;
+$gray-6:			 		#c8c8c8;
+$gray-7:			 		#eeeeee;
+$dark-gray:                 #121C1B;
+$black: 	 	 		    #000000;
+
+// Border color
+$border-color: 			    #e8e8e8;
+$border-color-2: 			#828282;
+
+// For button and input border radius
+$radius-3: 3px;
+$radius-5: 5px;
+$radius-20: 20px;
+$radius-50: 50px;
+$radius-100: 100%;
+
+// Box shadow sizes
+$box-shadow         : 2px 2px 4px 0px rgba(2, 45, 98, 0.1);
+$boxshadow-lg       : 5px 5px 24px 0px rgba(2, 45, 98, 0.1);
+
+
+/*Transition*/
+
+$transition:   all 0.25s ease-in-out;
+$transition-2: all 0.2s ease-in-out;
+$transition-3: all 0.3s ease-in-out;
+$transition-4: all 0.4s ease-in-out;
+$transition-5: all 0.5s ease-in-out;
+

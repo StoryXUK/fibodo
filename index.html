@@ -1,956 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fibodo</title>
-    <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
-    <!-- Bootstrap , fonts & icons  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="fonts/icon-font/css/style.css">
-    <link rel="stylesheet" href="fonts/typography-font/typo.css">
-    <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
-    <!-- Plugin'stylesheets  -->
-    <link rel="stylesheet" href="plugins/aos/aos.min.css">
-    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
-    <link rel="stylesheet" href="plugins/slick/slick.min.css">
-    <link rel="stylesheet" href="plugins/date-picker/css/gijgo.min.css" type="text/css" />
-    <!-- Vendor stylesheets  -->
-    <link rel="stylesheet" href="plugins/theme-mode-switcher/switcher-panel.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/theme-mode-custom.css">
-    <!-- Custom stylesheet -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fibodo | Your business. Everything connected.</title>
+  <meta name="description" content="Bring bookings, payments, customers and day-to-day operations together with fibodo — the connected platform for experience-led businesses.">
+  <meta name="author" content="fibodo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fibodo.com/">
+  <meta property="og:title" content="fibodo | Your business. Everything connected.">
+  <meta property="og:description" content="Bookings, payments, customers and operations, all working together.">
+  <meta property="og:image" content="images/social.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/professional.css?v=20260720">
+  <link rel="stylesheet" href="css/homepage.css?v=20260904">
 </head>
-
-<body data-theme="light">
-    <div class="site-wrapper overflow-hidden">
-        <!-- Header Area -->
-        <header class="site-header site-header--menu-center dark-mode-texts site-header--absolute">
-            <div class="container-fluid pr-lg-9 pl-lg-9">
-                <nav id="navigation-placeholder"></nav>
-
+<body class="home-v2">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div id="page" class="main">
+    <header id="navbar"></header>
+    <main id="main-content">
+      <section class="home-hero">
+        <div class="home-shell home-hero__grid">
+          <div class="home-hero__copy">
+            <p class="eyebrow"><span></span> The platform for experience-led businesses</p>
+            <h1>Your business.<br><em>Everything connected.</em></h1>
+            <p class="home-hero__lead">Bring bookings, payments, customers and day-to-day operations together, so you can focus on delivering great experiences.</p>
+            <div class="button-row">
+              <a class="home-button home-button--primary" href="#products">Find your product <span aria-hidden="true">↗</span></a>
+              <a class="home-button home-button--secondary" href="contact-us.html">Book a demo</a>
             </div>
-
-        </header>
-        <!-- navbar-light -->
-
-        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////////// Header End ////////////////////////////////////////////////////////////////////
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            ///////////////////////////////////////////////////////////////////////// -->
-        <section></section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Hero Area -->
-
-        <section class="bg-image pb-17 pt-24 pt-lg-32 pb-lg-28"
-            style="background-image:url(image/home-page/home-pink.jpg);">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-9 col-lg-7 col-xl-6" data-aos="fade-right" data-aos-duration="500"
-                        data-aos-once="true">
-                        <div class="hero-content section-title dark-mode-texts">
-                            <h1 class="gr-text-2 font-weight-bold mb-8">Better Bookings <br>for Everyone</h1>
-                            <h1 class="gr-text-6 font-weight-bold mb-8">It dosen't matter who your clients <br>are, they
-                                can book it on fibodo.</h1>
-
-                            <div class="hero-btns mt-10">
-                                <a href="#" class="btn btn-primary with-icon gr-hover-y">Get started now<i
-                                        class="icon icon-tail-right font-weight-bold"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <ul class="hero-points" aria-label="Platform benefits">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> One connected setup</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Built to fit your business</li>
+            </ul>
+          </div>
+          <div class="home-hero__visual" aria-label="fibodo timetable and customer booking experience">
+            <div class="hero-orbit hero-orbit--one"></div><div class="hero-orbit hero-orbit--two"></div>
+            <div class="dashboard-frame">
+              <div class="dashboard-frame__bar"><span></span><span></span><span></span><b>Business dashboard</b></div>
+              <img src="images/home pages/payments.webp" alt="fibodo Planner showing a weekly class timetable" fetchpriority="high">
             </div>
-        </section>
-
-        <!-- //////////////////////////////// A solution for all businesses ////////////////////////////// -->
-
-
-
-
-        <section class="content-section bg-default-4 pt-lg-25 pt-15 pb-15 pb-lg-25">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7 col-md-8">
-                        <div class="section-title mb-13">
-                            <h4 class="pre-title gr-text-12 text-red text-uppercase mb-9">A solution for all businesses
-                            </h4>
-                            <h2 class="title gr-text-4">Fibodo powers solopreneurs, communities, the world’s biggest
-                                brands, and everyone in between.</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="about-image img-big pt-lg-13" data-aos="fade-right" data-aos-duration="800"
-                            data-aos-once="true">
-                            <img class="w-100 rounded-10" src="image/home-page/fitness.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="row justify-content-between align-items-center pl-lg-13">
-                            <div class="col-md-6">
-                                <div class="about-image img-mid mt-9 mt-lg-0" data-aos="fade-up" data-aos-duration="900"
-                                    data-aos-once="true">
-                                    <img class="w-100 rounded-10" src="image/home-page/dog_grooming.jpg" alt="">
-                                    <div class="abs-pattern gr-abs-tr-custom" data-aos="zoom-in" data-aos-duration="800"
-                                        data-aos-delay="300" data-aos-once="true">
-                                        <img src="./image/l5/png/l5-about-pattern.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="about-image img-sm mt-9 mt-lg-0" data-aos="fade-left"
-                                    data-aos-duration="1000" data-aos-once="true">
-                                    <img class="rounded-10" src="image/home-page/golf_lesson.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-xl-10">
-                                <div class="about-content mt-12 mt-lg-23">
-                                    <h1>Great experiences</h1>
-                                    <h4>start with great a booking
-                                        experience</h4>
-                                    <p class="gr-text-9">Empowering solopreneurs, communities, and global brands alike.
-                                        Join
-                                        the diverse network of individuals and businesses who trust Fibodo for their
-                                        service transactions, making it easy for everyone, from solo practitioners to
-                                        industry giants, to connect and thrive.</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="booking-card">
+              <div class="booking-card__top"><span class="booking-card__mark">f</span><span>Customer app</span></div>
+              <p class="booking-card__label">BOOKING CONFIRMED</p><h2>Strength &amp; Conditioning</h2>
+              <p><i class="bi bi-calendar3" aria-hidden="true"></i> Tue 8 Sep · 18:30</p><p><i class="bi bi-geo-alt" aria-hidden="true"></i> Studio One</p>
+              <span class="booking-card__status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Paid</span>
             </div>
-        </section>
+            <div class="live-note"><span></span> Timetable updated live</div>
+          </div>
+        </div>
+      </section>
 
+      <section class="trust-strip" aria-labelledby="trusted-heading">
+        <div class="home-shell"><p id="trusted-heading">Trusted to support experiences for organisations including</p><div class="trust-logos">
+          <img src="images/client-logo/sodexo.webp" alt="Sodexo"><img src="images/client-logo/shell.webp" alt="Shell"><img src="images/client-logo/jlr.webp" alt="Jaguar Land Rover"><img src="images/client-logo/toyota.webp" alt="Toyota"><img src="images/client-logo/johnson.webp" alt="Johnson &amp; Johnson">
+        </div></div>
+      </section>
 
-
-
-
-
-        <!-- Brand section -->
-        <!-- <section class="brand-section pt-13 pt-lg-17 pb-11 bg-default-6">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-
-                    <div class="col-12">
-                        <div
-                            class="brand-logos d-flex justify-content-center justify-content-xl-between align-items-center mx-n9 flex-wrap">
-                            <div class="single-brand mx-9 py-6 gr-opacity-8 gr-hover-opacity-full"
-                                data-aos="zoom-in-right" data-aos-duration="500" data-aos-once="true">
-                                <img src="./image/l4/png/l4-brand1.png" alt="" class="w-100">
-                            </div>
-                            <div class="single-brand mx-9 py-6 gr-opacity-8 gr-hover-opacity-full"
-                                data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="200"
-                                data-aos-once="true">
-                                <img src="./image/l4/png/l4-brand2.png" alt="" class="w-100">
-                            </div>
-                            <div class="single-brand mx-9 py-6 gr-opacity-8 gr-hover-opacity-full"
-                                data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="400"
-                                data-aos-once="true">
-                                <img src="./image/l4/png/l4-brand3.png" alt="" class="w-100">
-                            </div>
-                            <div class="single-brand mx-9 py-6 gr-opacity-8 gr-hover-opacity-full"
-                                data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
-                                data-aos-once="true">
-                                <img src="./image/l4/png/l4-brand4.png" alt="" class="w-100">
-                            </div>
-                            <div class="single-brand mx-9 py-6 gr-opacity-8 gr-hover-opacity-full"
-                                data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="800"
-                                data-aos-once="true">
-                                <img src="./image/l4/png/l4-brand6.png" alt="" class="w-100">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="home-section connected-section">
+        <div class="home-shell">
+          <div class="section-heading section-heading--centred"><p class="eyebrow"><span></span> One connected platform</p><h2>Everything your business needs.<br>Working as one.</h2><p>One journey for your customers. One clear view for your team. No stitching systems together.</p></div>
+          <div class="connected-grid">
+            <article class="connected-copy">
+              <ol class="connection-list">
+                <li class="is-active"><span>01</span><div><h3>Bookings</h3><p>Customers see live availability and book in a few simple steps.</p></div></li>
+                <li><span>02</span><div><h3>Payments</h3><p>Take payment at booking and manage plans, passes and renewals.</p></div></li>
+                <li><span>03</span><div><h3>Customers</h3><p>Keep every profile, preference and conversation in one place.</p></div></li>
+                <li><span>04</span><div><h3>Operations</h3><p>Give staff the same timetable, data and up-to-date view.</p></div></li>
+              </ol><a class="text-link" href="platform.html">Explore the platform <span aria-hidden="true">→</span></a>
+            </article>
+            <div class="connected-demo">
+              <img src="images/home pages/bookings1.webp" alt="fibodo upcoming activities view alongside a Pilates class" loading="lazy">
+              <div class="flow-chip flow-chip--booking"><i class="bi bi-check2-circle"></i><span><b>Booking confirmed</b>Alex Morgan · Pilates</span></div>
+              <div class="flow-chip flow-chip--payment"><i class="bi bi-credit-card"></i><span><b>Payment received</b>Membership · £48.00</span></div>
             </div>
-        </section> -->
-
-
-
-
-
-
-        <!-- features -->
-        <section class="job-site-page feature-section bg-default-6 bg-pattern pattern-5 pt-13 pt-lg-24 pb-2 pb-lg-22">
-            <div class="container">
-                <div class="row justify-content-lg-between align-items-center pb-9 pb-sm-0">
-                    <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5">
-                        <div class="section-title mb-9 mb-sm-13 mb-lg-21">
-                            <h2 class="title gr-text-4 mb-6">Fibodo is packed with awesome Features</h2>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-6 col-lg-4 col-xl-3">
-                        <div class="job-feature-slider-arrows ml-auto">
-                        </div>
-                    </div>
-                </div>
-                <div class="job-feature-slider" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-                    <div class="single-slide">
-                        <a href="bookings.html"
-                            class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-200 border rounded-10 pt-10 pb-6 pl-9 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
-
-                            <div class="d-flex">
-                                <div class="circle-32 pr-4 pl-9 pt-10">
-                                    <img src="image/icons/bookings.webp" alt="money icon">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-auto mt-20">
-                                <!-- <h5 class="gr-text-12 pb-1 text-green text-uppercase">Full-time</h5> -->
-                                <h3 class="gr-text-7 text-blackish-blue">Bookings</h3>
-                                <p class="gr-text-11 gr-color-blackish-blue-opacity-7 mb-0">Lets clients book manage and
-                                    update bookings all day every day.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="single-slide">
-                        <a href="payments.html"
-                            class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-200 border rounded-10 pt-10 pb-6 pl-9 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
-
-                            <div class="d-flex">
-                                <div class="circle-32 pr-4 pl-9 pt-10">
-                                    <img src="image/icons/money.webp" alt="money icon">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-auto mt-20">
-                                <!-- <h5 class="gr-text-12 pb-1 text-green text-uppercase">Full-time</h5> -->
-                                <h3 class="gr-text-7 text-blackish-blue">Payments</h3>
-                                <p class="gr-text-11 gr-color-blackish-blue-opacity-7 mb-0">Accept payments seamlessly,
-                                    no matter where you are.</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-
-                    <div class="single-slide">
-                        <a href="memberships.html"
-                            class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-200 border rounded-10 pt-10 pb-6 pl-9 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
-
-                            <div class="d-flex">
-                                <div class="circle-32 pr-4 pl-9 pt-10">
-                                    <img src="image/icons/people.webp" alt="money icon">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-auto mt-20">
-                                <!-- <h5 class="gr-text-12 pb-1 text-green text-uppercase">Full-time</h5> -->
-                                <h3 class="gr-text-7 text-blackish-blue">Memberships</h3>
-                                <p class="gr-text-11 gr-color-blackish-blue-opacity-7 mb-0">Provides clients with
-                                    subscription-based access and benefits.</p>
-
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="single-slide">
-                        <a href="planner.html"
-                            class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-200 border rounded-10 pt-10 pb-6 pl-9 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
-
-                            <div class="d-flex">
-                                <div class="circle-32 pr-4 pl-9 pt-10">
-                                    <img src="image/icons/diary.webp" alt="money icon">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-auto mt-20">
-                                <!-- <h5 class="gr-text-12 pb-1 text-green text-uppercase">Full-time</h5> -->
-                                <h3 class="gr-text-7 text-blackish-blue">Planner</h3>
-                                <p class="gr-text-11 gr-color-blackish-blue-opacity-7 mb-0">Organizes appointments,
-                                    events, and tasks efficiently for clients.</p>
-
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="single-slide">
-                        <a href="marketing.html"
-                            class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-200 border rounded-10 pt-10 pb-6 pl-9 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
-
-                            <div class="d-flex">
-                                <div class="circle-32 pr-4 pl-9 pt-10">
-                                    <img src="image/icons/marketing.webp" alt="money icon">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-auto mt-20">
-                                <!-- <h5 class="gr-text-12 pb-1 text-green text-uppercase">Full-time</h5> -->
-                                <h3 class="gr-text-7 text-blackish-blue">Marketing</h3>
-                                <p class="gr-text-11 gr-color-blackish-blue-opacity-7 mb-0">Unlock the power of
-                                    strategic marketing with Fibodo. </p>
-
-
-                            </div>
-                        </a>
-                    </div>
-
-
-
-
-                    <div class="single-slide">
-                        <a href="insights.html"
-                            class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-200 border rounded-10 pt-10 pb-6 pl-9 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
-
-                            <div class="d-flex">
-                                <div class="circle-32 pr-4 pl-9 pt-10">
-                                    <img src="image/icons/reporting.webp" alt="money icon">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-auto mt-20">
-                                <!-- <h5 class="gr-text-12 pb-1 text-green text-uppercase">Full-time</h5> -->
-                                <h3 class="gr-text-7 text-blackish-blue">Insights</h3>
-                                <p class="gr-text-11 gr-color-blackish-blue-opacity-7 mb-0">Generates comprehensive
-                                    reports and analytics for better insights.</p>
-
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="single-slide">
-                        <a href="mobile-app.html"
-                            class="feature-widget focus-reset bg-white d-flex flex-column min-height-px-200 border rounded-10 pt-10 pb-6 pl-9 pl-lg-9 pr-md-8 pr-lg-10 gr-hover-shadow-1">
-
-                            <div class="d-flex">
-                                <div class="circle-32 pr-4 pl-9 pt-10">
-                                    <img src="image/icons/apps.webp" alt="money icon">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-auto mt-20">
-                                <!-- <h5 class="gr-text-12 pb-1 text-green text-uppercase">Full-time</h5> -->
-                                <h3 class="gr-text-7 text-blackish-blue">Apps</h3>
-                                <p class="gr-text-11 gr-color-blackish-blue-opacity-7 mb-0">Provides clients with
-                                    convenient access to your services through dedicated apps.</p>
-
-                            </div>
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Content 1 - the most important -->
-
-
-        <!-- Apps -->
-        <section class="bg-default-8 pb-15 pt-24 pt-lg-32 pb-lg-28" id="hero-area-animation">
-            <div class="container" id="animation-area-1">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-9 col-md-7 col-lg-5 offset-xl-1 align-self-sm-end order-lg-2">
-                        <div class="hero-img image-group-p12 position-relative mb-9 mb-sm-15 mb-lg-0"
-                            data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
-                            <img class="w-100" src="image/l4/webp/2-layers.webp" alt="">
-                            <div class="image-bg-positioning">
-                                <img src="image/telemedicine/png/hero-img-sub.png" alt="">
-                            </div>
-                        </div>
-                        <div class=" hero-sm-card-1">
-                            <div class="px-7 py-6 d-flex bg-white shadow-10 rounded-15 w-xs-75 w-lg-76 w-xl-68 hero-card-1-animation"
-                                id="an-item-1p1">
-                                <p class="gr-text-11 mb-0 text-mirage-2">“Sarah has just booked a slot in the 4:30pm
-                                    spinning class”</p>
-                                <div class="small-card-img ml-6">
-                                    <img src="image/telemedicine/png/hero-card-1.png" alt="" class="circle-42">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="animation-item">
-                            <div class="px-7 py-6 d-flex bg-red shadow-9 rounded-15 w-xs-80 w-xl-68 hero-sm-card-2 hero-card-2-animation"
-                                id="an-item-1p2">
-                                <div class="small-card-img mr-6 text-white">
-                                    <img src="image/telemedicine/png/hero-card-2.png" alt="" class="circle-42">
-                                </div>
-                                <p class="gr-text-11 mb-0 text-white">“Don't miss out on our special offer”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-9 col-lg-7 col-xl-6 order-lg-1" data-aos="fade-right"
-                        data-aos-duration="500" data-aos-once="true">
-                        <div class="hero-content section-title text-center text-lg-left">
-                            <h1 class="gr-text-1 font-weight-bold mb-8">Your App,</h1>
-                            <h1 class="gr-text-4 font-weight-bold mb-8">Your Clients Home Screen</h1>
-                            <p class="gr-text-9 gr-text-color pr-md-7">Revolutionize your booking experience with our
-                                cutting-edge platform that empowers clients to seamlessly book, pay, and effortlessly
-                                manage their appointments around the clock.</p>
-                            <div class="hero-btns mt-11">
-                                <a href="mobile-app.html" class="btn btn-primary with-icon gr-hover-y">Learn more<i
-                                        class="icon icon-tail-right font-weight-bold"></i></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-        <!-- ////////////////////// stats ////////////////////// -->
-
-        <section class="content-section  bg-default-6  pt-lg-25 mb-10">
-            <div class="container">
-                <div class="row align-items-center justify-content-md-center">
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="content-img rounded-8">
-                            <img class="w-100 rounded-8" src="image/home-page/world.webp" alt="planet earth graphic">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="stats-wrapper mt-6 mt-md-0 pl-xl-9">
-                            <h2 class="title gr-text-4 mb-8">
-                                <!-- <p>Stats sell .... even if they aren't true</p> -->
-                                Discover why thousands of entrepreneurs chose fibodo to grow their business.
-                            </h2>
-
-                            <div class="single-stat py-6" data-aos="fade-left" data-aos-duration="800"
-                                data-aos-once="true">
-                                <h3 class="title gr-text-5 mb-5">1M+</h3>
-                                <p class="gr-text-8 mb-0">Customers visit Fibodo every month to get their service done.
-                                </p>
-                            </div>
-                            <div class="single-stat py-6" data-aos="fade-left" data-aos-duration="1200"
-                                data-aos-once="true">
-                                <h3 class="title gr-text-5 mb-5">£<span class="counter">10</span>M+</h3>
-                                <p class="gr-text-8 mb-0">Bookings made with fibodo every month.</p>
-                            </div>
-                            <div class="single-stat py-6" data-aos="fade-left" data-aos-duration="1800"
-                                data-aos-once="true">
-                                <h3 class="title gr-text-5 mb-5"><span class="counter">4.9</span>/5.0</h3>
-                                <p class="gr-text-8 mb-0">Average customer ratings we have got all over internet.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Testimonial -->
-        <section class="pt-13 pt-md-25 pb-13 pb-md-25 mx-md-6 rounded-10 mb-6 bg-blackish-blue dark-mode-texts">
-            <div class="container">
-                <div class="row justify-content-center justify-content-lg-between align-items-center">
-                    <!-- .testimonial-right-image starts -->
-                    <div class="col-xs-10 col-md-6 col-lg-5 mb-n15 order-md-2">
-                        <div class="text-right pr-xl-13">
-                            <img src="image/l8/png/testimonial-right-image.png" alt="" class="w-100">
-                        </div>
-                    </div>
-                    <!-- ./testimonial-right-image ends -->
-                    <div class="col-sm-11 col-md-6 col-lg-6 col-xl-6 pt-19 pt-lg-0">
-                        <div class="pr-lg-3 pr-xl-13 d-flex flex-column h-100 mt-8 mt-md-0">
-                            <div class="quote mb-13 mb-lg-25">
-                                <img src="image/svg/quote-image.svg" alt="" data-aos="fade-right"
-                                    data-aos-duration="400" data-aos-once="true">
-                            </div>
-                            <div class="ratings d-flex justify-content-start mb-12">
-                                <i class="fas fa-star mr-1 text-yellow-orange gr-text-8" data-aos="zoom-in"
-                                    data-aos-delay="300" data-aos-duration="400" data-aos-once="true"></i>
-                                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8" data-aos="zoom-in"
-                                    data-aos-delay="300" data-aos-duration="700" data-aos-once="true"></i>
-                                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8" data-aos="zoom-in"
-                                    data-aos-delay="300" data-aos-duration="1000" data-aos-once="true"></i>
-                                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8" data-aos="zoom-in"
-                                    data-aos-delay="300" data-aos-duration="1300" data-aos-once="true"></i>
-                                <i class="fas fa-star mx-1 text-yellow-orange gr-text-8" data-aos="zoom-in"
-                                    data-aos-delay="300" data-aos-duration="1600" data-aos-once="true"></i>
-                            </div>
-                            <p class="gr-text-6 gr-text-color-opacity" data-aos="fade-right" data-aos-delay="1000"
-                                data-aos-duration="800" data-aos-once="true">"fibodo has been an essential partner in
-                                enabling healthcare heroes through DoingOurBit. With their user-friendly platform, NHS
-                                and social care staff access fitness, health, and wellness services effortlessly.
-                                fibodo's commitment to providing this support free of charge demonstrates their
-                                dedication to the well-being of those who care for others."
-                            </p>
-                            <div class="pt-7 d-flex">
-                                <h3 class="gr-text-9 font-weight-bold mr-6">Julie Davis</h3>
-                                <span class="gr-text-9 gr-text-color-opacity">Founder - DoingOurBit</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <!-- 
-        <section class="bg-default-6 pt-24 position-relative mt-10">
-            <div class="hero-area bg-image dark-mode-texts mx-6 mx-lg-8 mx-xl-11 rounded-15"
-                style="background-image: url(image/conference/jpg/hero-bg.jpg);">
-                <div class="container">
-                    <div class="row justify-content-sm-end">
-                        <div class="col-lg-6 col-md-8">
-                            <div class="hero-content pr-xl-16 pt-18 pt-lg-31 pb-md-18 pb-lg-30 mb-9 mb-md-0">
-                                <h6 class="gr-text-12 text-uppercase mb-8">Expanding your business horizons</h6>
-                                <h1 class="title gr-text-2 mb-8">Marketplaces</h1>
-                                <p class="gr-text-8 mb-0">The more your customers see you the more they are likely to do
-                                    business with you.</p>
-                                <a href="#" class="btn btn-green text-white mt-11">Get Started</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 offset-lg-1 col-md-4 col-sm-7 align-self-sm-end">
-                            <div class="hero-img hero-img-custom z-index-1 mb-n12 mb-md-0 aos-init aos-animate"
-                                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-                                <img class="w-100 w-xl-auto" src="image/conference/png/hero-main.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-
-
-
-
-
-
-
-
-
-        <!-- Case Studies section  -->
-        <section class="case-section pt-15 pb-14 py-lg-25">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-7 col-md-8">
-                        <div class="section-title text-center mb-11 mb-lg-21">
-                            <h3 class="sub-badge gr-text-12 text-uppercase text-red mb-7">Case studies</h3>
-                            <h2 class="title gr-text-4 mb-0">Powering experiences for everyone</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="card-columns mb-lg-9">
-                            <div class="single-case d-inline-block px-md-6 mb-1 mb-lg-9 gr-hover-rotate-img">
-                                <div class="case-img overflow-hidden">
-                                    <img src="image/case-studies/gyms.jpg" alt="" class="w-100 rounded-10">
-                                </div>
-                                <div class="case-content px-5 px-md-9 py-9">
-                                    <span
-                                        class="case-category gr-text-11 mb-2 d-inline-block gr-text-color-opacity">Healthworks</span>
-                                    <h3 class="case-title gr-text-6 mb-0">Sodexo</h3>
-                                </div>
-                            </div>
-                            
-                            <div class="single-case d-inline-block px-md-6 mb-3 mb-lg-9 gr-hover-rotate-img">
-                                <div class="case-img overflow-hidden">
-                                    <img src="image/home-page/dob.jpg" alt="" class="w-100 rounded-10">
-                                </div>
-                                <div class="case-content px-5 px-md-9 py-9">
-                                    <span
-                                        class="case-category gr-text-11 mb-2 d-inline-block gr-text-color-opacity">NHS</span>
-                                    <h3 class="case-title gr-text-6 mb-0">Doing Our Bit</h3>
-                                </div>
-                            </div>
-                            <div class="single-case d-inline-block px-md-6 mt-30 mb-3 mb-lg-9 gr-hover-rotate-img">
-                                <div class="case-img overflow-hidden">
-                                    <img src="image/home-page/champneys.jpg" alt="" class="w-100 rounded-10">
-                                </div>
-                                <div class="case-content px-5 px-md-9 py-9">
-                                    <span
-                                        class="case-category gr-text-11 mb-2 d-inline-block gr-text-color-opacity">Spa</span>
-                                    <h3 class="case-title gr-text-6 mb-0">Champneys</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-7">
-                        <div class="more-btn case-btn text-center">
-                            <a href="#" class="btn-link with-icon mb-0 gr-text-7 font-weight-bold">See all works<i
-                                    class="icon icon-tail-right font-weight-bold"></i></a>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-        <section class="content-section bg-default-2 pb-13 pb-lg-25 pt-15">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-sm-10 col-lg-6 mb-9 mb-lg-0">
-                        <div class="content-grid-image-group d-flex  mx-sm-n3">
-                            <div class="single-image d-flex flex-column px-3 px-sm-6">
-                                <!-- single image -->
-                                <img src="./image/l4/png/l4-content3-img1.png" alt="" data-aos="zoom-in"
-                                    data-aos-duration="500" data-aos-once="true" class="w-100 pb-6 pb-sm-9 rounded-8">
-                                <!-- single image -->
-                                <img src="./image/l4/png/l4-content3-img2.png" alt="" data-aos="zoom-in"
-                                    data-aos-duration="500" data-aos-delay="700" data-aos-once="true"
-                                    class="w-100 pb-6 pb-sm-9 rounded-8">
-                            </div>
-                            <div class="single-image d-flex flex-column pt-11 px-3 px-sm-6">
-                                <!-- single image -->
-                                <img src="./image/l4/png/l4-content3-img3.png" alt="" data-aos="zoom-in"
-                                    data-aos-duration="500" data-aos-delay="400" data-aos-once="true"
-                                    class="w-100 pb-6 pb-sm-9 rounded-8">
-                                <!-- single image -->
-                                <img src="./image/l4/png/l4-content3-img4.png" alt="" data-aos="zoom-in"
-                                    data-aos-duration="500" data-aos-delay="1000" data-aos-once="true"
-                                    class="w-100 rounded-8">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 col-lg-5">
-                        <div class="content-text pl-xl-7">
-                            <h2 class="gr-text-4 mb-7">Marketplaces in <br class="d-none d-lg-block">many
-                                sectors.
-                            </h2>
-                            <p class="gr-text-8 mb-0">Fibodo empowers
-                                users to build their own marketplaces, allowing them to effectively market their
-                                businesses to a broader audience. With Fibodo's marketplace feature, businesses and
-                                professionals can showcase their services to potential clients, opening up new
-                                opportunities for exposure and growth.</p>
-                            <a href="marketplaces.html" class="btn-link with-icon gr-text-blue gr-text-7 font-weight-bold mt-9">Get
-                                started <i class="icon icon-tail-right font-weight-bold"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Feature section -->
-        <section class="feature-section pt-14 pt-lg-21 pb-7 bg-default-6">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-5 col-lg-6 col-md-8">
-                        <div class="section-title text-center mb-13 mb-lg-21">
-                            <h2 class="title gr-text-4 mb-6">How we do it!</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-4 col-md-6 mb-11 mb-lg-19 px-xs-6 px-md-6 px-lg-0 px-xl-8" data-aos="fade-right"
-                        data-aos-duration="800" data-aos-once="true">
-                        <div class="feature-widget text-center">
-                            <div class="widget-icon square-80 rounded-15 mx-auto mb-9 mb-lg-12 bg-blue shadow-blue">
-                                <img src="image/home-page/find.svg" alt="">
-                            </div>
-                            <div class="widget-text">
-                                <h3 class="title gr-text-6 mb-7">Find</h3>
-                                <p class="gr-text-11 mb-0">Discover a wide range of activities and services tailored to
-                                    your interests and needs on Fibodo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-11 mb-lg-19 px-xs-6 px-md-6 px-lg-0 px-xl-8" data-aos="fade-right"
-                        data-aos-duration="800" data-aos-delay="400" data-aos-once="true">
-                        <div class="feature-widget text-center">
-                            <div class="widget-icon square-80 rounded-15 mx-auto mb-9 mb-lg-12 bg-red shadow-red">
-                                <img src="image/home-page/book.svg" alt="">
-                            </div>
-                            <div class="widget-text">
-                                <h3 class="title gr-text-6 mb-7">Book</h3>
-                                <p class="gr-text-11 mb-0">Effortlessly schedule and secure bookings for your chosen
-                                    activities with just a few clicks.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-11 mb-lg-19 px-xs-6 px-md-6 px-lg-0 px-xl-8" data-aos="fade-right"
-                        data-aos-duration="800" data-aos-delay="600" data-aos-once="true">
-                        <div class="feature-widget text-center">
-                            <div class="widget-icon square-80 rounded-15 mx-auto mb-9 mb-lg-12 bg-green shadow-green">
-                                <img src="image/home-page/do.svg" alt="">
-                            </div>
-                            <div class="widget-text">
-                                <h3 class="title gr-text-6 mb-7">Do</h3>
-                                <p class="gr-text-11 mb-0">Participate in the activities you've booked and enjoy
-                                    memorable experiences hassle-free.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- Gradient Sections Wrapper -->
-        <section class="gradient-sections-wrapper bg-gradient-1">
-
-            <!-- Features section -->
-            <div class="feature-section pt-16 pt-lg-25 dark-mode-texts">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 col-lg-8 col-xl-8 ">
-                            <div class="section-title text-center mb-13 mb-lg-23">
-                                <h2 class="title gr-text-3">Seamlessly manage your business.</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-6 col-lg-4 mb-12">
-                            <div class="feature-widget d-sm-flex">
-                                <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
-                                    <img class="" src="./image/svg/l6-feature-icon5.svg"
-                                        alt="Manage your class & appointment schedules icon">
-                                </div>
-                                <div class="content">
-                                    <h3 class="title gr-text-7 mb-5">Simplify Class and Appointment Management
-                                    </h3>
-                                    <p class="gr-text-9 gr-text-color-opacity">Effortlessly manage your class
-                                        and
-                                        appointment schedules with our intuitive tools.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-12">
-                            <div class="feature-widget d-sm-flex">
-                                <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
-                                    <img class="" src="./image/svg/l6-feature-icon6.svg"
-                                        alt="Accept payments anytime, anywhere icon">
-                                </div>
-                                <div class="content">
-                                    <h3 class="title gr-text-7 mb-5">Accept Payments Anytime, Anywhere</h3>
-                                    <p class="gr-text-9 gr-text-color-opacity">Our platform enables you to
-                                        accept
-                                        payments
-                                        seamlessly, no matter where you are. Build your next landing page
-                                        without
-                                        hassle.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-12">
-                            <div class="feature-widget d-sm-flex">
-                                <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
-                                    <img class="" src="./image/svg/l1-feature-icon3.svg"
-                                        alt="Run your business from your phone icon">
-                                </div>
-                                <div class="content">
-                                    <h3 class="title gr-text-7 mb-5">Run Your Business Right from Your Phone
-                                    </h3>
-                                    <p class="gr-text-9 gr-text-color-opacity">Access your business tools and
-                                        manage
-                                        your
-                                        operations directly from your phone. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-12">
-                            <div class="feature-widget d-sm-flex">
-                                <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
-                                    <img class="" src="./image/svg/l6-feature-icon4.svg"
-                                        alt="Get actionable insights about your business icon">
-                                </div>
-                                <div class="content">
-                                    <h3 class="title gr-text-7 mb-5">Valuable Insights About Your Business</h3>
-                                    <p class="gr-text-9 gr-text-color-opacity">Get valuable insights and data to
-                                        make
-                                        informed decisions about your business.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-12">
-                            <div class="feature-widget d-sm-flex">
-                                <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
-                                    <img class="" src="./image/svg/l6-feature-icon3.svg"
-                                        alt="Market your business simply & automatically icon">
-                                </div>
-                                <div class="content">
-                                    <h3 class="title gr-text-7 mb-5">Market Your Business Simply & Automatically
-                                    </h3>
-                                    <p class="gr-text-9 gr-text-color-opacity">Effortlessly market your business
-                                        with
-                                        our
-                                        automation tools. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-12">
-                            <div class="feature-widget d-sm-flex ">
-                                <div class="widget-icon gr-text-4 text-green mr-sm-9 mb-7 mb-lg-0">
-                                    <img class="" src="./image/svg/l6-feature-icon2.svg" alt="Marketplaces icon">
-                                </div>
-                                <div class="content">
-                                    <h3 class="title gr-text-7 mb-5">Explore New Marketplaces</h3>
-                                    <p class="gr-text-9 gr-text-color-opacity">Discover and expand into new
-                                        marketplaces
-                                        effortlessly.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-
-        <!-- ///////////////////////////////////////// Support ///////////////////////////////////////// -->
-
-        <section class="feature-section pt-14 pt-lg-25 pb-7 pb-lg-11 dark-mode-texts bg-default-6">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-7 col-md-8">
-                        <div class="section-title text-center mb-13 mb-lg-23">
-                            <h4 class="pre-title gr-text-12 text-red text-uppercase mb-7">Fibodo Support</h4>
-                            <h2 class="title gr-text-4">We don't just build great apps we help you to build a
-                                great
-                                business</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-lg-6 col-md-10 mb-11 mb-lg-19" data-aos="fade-left" data-aos-duration="800"
-                                data-aos-delay="200" data-aos-once="true">
-                                <div class="feature-widget media">
-                                    <div class="widget-icon p-7 rounded-15 mr-9 gr-bg-blue-opacity-1">
-                                        <img src="./image/svg/l5-feature-icon1.svg" alt="">
-                                    </div>
-                                    <div class="widget-text">
-                                        <h3 class="title gr-text-7 mb-6">Blogs</h3>
-                                        <p class="gr-text-9 mb-0 pr-11">Get all the marketing and business
-                                            strategy
-                                            tips you need to help you run an online business.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-10 mb-11 mb-lg-19" data-aos="fade-left" data-aos-duration="800"
-                                data-aos-delay="400" data-aos-once="true">
-                                <div class="feature-widget media">
-                                    <div class="widget-icon p-7 rounded-15 mr-9 gr-bg-red-opacity-1">
-                                        <img src="./image/svg/l5-feature-icon2.svg" alt="">
-                                    </div>
-                                    <div class="widget-text">
-                                        <h3 class="title gr-text-7 mb-6">Help Center</h3>
-                                        <p class="gr-text-9 mb-0 pr-11">Find answers with a dedicated helpdesk
-                                            resource full of articles and videos from our Support team.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-10 mb-11 mb-lg-19" data-aos="fade-right" data-aos-duration="800"
-                                data-aos-delay="600" data-aos-once="true">
-                                <div class="feature-widget media">
-                                    <div class="widget-icon p-7 rounded-15 mr-9 gr-bg-green-opacity-1">
-                                        <img src="./image/svg/l5-feature-icon3.svg" alt="">
-                                    </div>
-                                    <div class="widget-text">
-                                        <h3 class="title gr-text-7 mb-6">Community</h3>
-                                        <p class="gr-text-9 mb-0 pr-11">Connect with a community of brands,
-                                            partners, and fellow merchants who understand Fibodo.
-                                            Discuss</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-10 mb-11 mb-lg-19" data-aos="fade-right" data-aos-duration="800"
-                                data-aos-delay="800" data-aos-once="true">
-                                <div class="feature-widget media">
-                                    <div class="widget-icon p-7 rounded-15 mr-9 gr-bg-blue-opacity-1">
-                                        <img src="./image/svg/l5-feature-icon4.svg" alt="">
-                                    </div>
-                                    <div class="widget-text">
-                                        <h3 class="title gr-text-7 mb-6">Fibodo Partners</h3>
-                                        <p class="gr-text-9 mb-0 pr-11">Learn tried-and-tested business tips
-                                            with
-                                            instant access to lessons from successful entrepreneurs.
-                                            Learn</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- ///////////////////////////////// Footer section /////////////////////////////////  -->
-
-        <!-- Footer section -->
-        <footer class="footer-section dark-mode-texts bg-default-8">
-            <div class="container">
-                <div id="footer-placeholder"></div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Vendor Scripts -->
-    <script src="js/vendor.min.js"></script>
-    <script src="js/navigation.js"></script>
-    <!-- Plugin's Scripts -->
-    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-    <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
-    <script src="plugins/aos/aos.min.js"></script>
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/date-picker/js/gijgo.min.js"></script>
-    <script src="plugins/counter-up/jquery.waypoints.min.js"></script>
-    <script src="plugins/counter-up/jquery.counterup.min.js"></script>
-    <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
-    <!-- Activation Script -->
-    <script src="js/custom.js"></script>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section products-section" id="products">
+        <div class="home-shell">
+          <div class="section-heading section-heading--split"><div><p class="eyebrow eyebrow--light"><span></span> Find your fibodo</p><h2>Built around the way<br>you work.</h2></div><p>Whether you are building a solo practice or running an organisation across multiple sites, there is a fibodo product made for your next step.</p></div>
+          <div class="product-grid">
+            <a class="product-card product-card--core" href="https://core.fibodo.com/" target="_blank" rel="noopener noreferrer"><div class="product-card__top"><p>For independent coaches, instructors and service providers</p><span aria-hidden="true">↗</span></div><div class="product-card__image"><img src="images/redesign/core-tile.jpg" alt="Personal trainer coaching a client" loading="lazy"></div><div class="product-card__name"><h3>CORE</h3><p>Everything you need to start, run and grow your own business.</p></div></a>
+            <a class="product-card product-card--galaxy" href="products.html#galaxy"><div class="product-card__top"><p>For gyms, studios, clubs and single-site operators</p><span aria-hidden="true">↗</span></div><div class="product-card__image"><img src="images/redesign/galaxy-tile.jpg" alt="Group training together in a gym" loading="lazy"></div><div class="product-card__name"><h3>GALAXY</h3><p>Bring your team, timetable, members and venue together.</p></div></a>
+            <a class="product-card product-card--pulsar" href="products.html#pulsar"><div class="product-card__top"><p>For creators and educators</p><span aria-hidden="true">↗</span></div><div class="product-card__image"><img src="images/redesign/pulsar-tile.jpg" alt="Presenter filming educational content" loading="lazy"></div><div class="product-card__name"><h3>PULSAR</h3><p>Turn your knowledge into courses, content and live experiences.</p></div></a>
+            <a class="product-card product-card--enterprise" href="products.html#enterprise"><div class="product-card__top"><p>For multi-site organisations</p><span aria-hidden="true">↗</span></div><div class="product-card__image"><img src="images/redesign/enterprise-tile.jpg" alt="Team running together outdoors" loading="lazy"></div><div class="product-card__name"><h3>ENTERPRISE</h3><p>Operate at scale with control, consistency and clear reporting.</p></div></a>
+          </div>
+          <div class="products-action"><a class="home-button home-button--light" href="products.html">Compare all products <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <section class="home-section benefit-section"><div class="home-shell benefit-grid"><div class="benefit-copy"><p class="eyebrow"><span></span> Easy for customers</p><h2>Make every booking easier.</h2><p>Let customers find the right service, see live availability, book and pay from any device — without waiting for a reply.</p><ul class="feature-ticks"><li>Always-on online booking</li><li>Branded web and app experience</li><li>Confirmations and reminders included</li></ul><a class="text-link" href="bookings.html">Explore bookings <span aria-hidden="true">→</span></a></div><div class="benefit-visual benefit-visual--blue"><img src="images/redesign/group-x-iphone-image.jpg" alt="Customer booking a group fitness class in the fibodo app" loading="lazy"><span class="proof-note"><i class="bi bi-check-circle-fill"></i><b>You're booked</b> HIIT Group Class · 14:00</span></div></div></section>
+
+      <section class="home-section benefit-section benefit-section--soft"><div class="home-shell benefit-grid benefit-grid--reverse"><div class="benefit-copy"><p class="eyebrow"><span></span> Money in one place</p><h2>Keep every payment connected.</h2><p>Take payment when customers book, then manage memberships, packs, vouchers, renewals and refunds from the same platform.</p><ul class="feature-ticks"><li>Payments linked to every booking</li><li>Recurring plans and memberships</li><li>Clear transaction visibility</li></ul><a class="text-link" href="payments.html">Explore payments <span aria-hidden="true">→</span></a></div><div class="benefit-visual benefit-visual--orange"><img src="images/core-bookings-3.webp" alt="fibodo wallet and transaction history dashboard" loading="lazy"><span class="proof-note proof-note--dark"><i class="bi bi-credit-card-fill"></i><b>Payment received</b> Monthly membership · £48.00</span></div></div></section>
+
+      <section class="home-section benefit-section"><div class="home-shell benefit-grid"><div class="benefit-copy"><p class="eyebrow"><span></span> One live timetable</p><h2>Keep your timetable working together.</h2><p>Give staff and customers the same up-to-date view. Change a class once and keep every connected schedule in step.</p><ul class="feature-ticks"><li>Classes, appointments and spaces</li><li>Staff availability and time off</li><li>Live updates across channels</li></ul><a class="text-link" href="scheduling.html">Explore scheduling <span aria-hidden="true">→</span></a></div><div class="benefit-visual benefit-visual--photo"><img src="images/redesign/planner-dashboard-gym-bench.png" alt="fibodo Planner open on a laptop in a gym" loading="lazy"><span class="proof-note"><i class="bi bi-arrow-repeat"></i><b>Schedule synced</b> Updated across staff and app</span></div></div></section>
+
+      <section class="home-section benefit-section benefit-section--soft"><div class="home-shell benefit-grid benefit-grid--reverse"><div class="benefit-copy"><p class="eyebrow"><span></span> Relationships that grow</p><h2>Give customers a reason to return.</h2><p>Understand who books, what they enjoy and when to reach out. Build a more personal experience with every visit.</p><ul class="feature-ticks"><li>Complete customer profiles</li><li>Membership and booking history</li><li>Relevant messages and offers</li></ul><a class="text-link" href="customers.html">Explore customer management <span aria-hidden="true">→</span></a></div><div class="benefit-visual benefit-visual--blue"><img src="images/home pages/clients.webp" alt="fibodo client management dashboard and coaching experience" loading="lazy"></div></div></section>
+
+      <section class="home-section stories-section"><div class="home-shell"><div class="section-heading section-heading--split section-heading--dark"><div><p class="eyebrow"><span></span> Customer outcomes</p><h2>More time delivering.<br>Less time managing.</h2></div><p>Real businesses use fibodo to make booking easier, improve participation and keep operations clear.</p></div><div class="story-grid">
+        <a class="story-card story-card--feature" href="case-study-golf-professional.html"><img src="images/golf-lesson.webp" alt="Golf professional coaching a player" loading="lazy"><div class="story-card__overlay"><p>TEHIDY GOLF CLUB</p><h3>More bookings, without more admin.</h3><div class="story-stats"><span><b>+101%</b> total bookings</span><span><b>58%</b> booked outside opening hours</span></div><span class="story-link">Read Jonathan's story →</span></div></a>
+        <a class="story-card story-card--compact" href="case-study-sodexo.html"><div><p>SODEXO · 7HQ</p><h3>A smoother route to paid participation.</h3><span class="story-stat"><b>+200%</b> paid PT bookings</span></div><img src="images/pt/corporate.webp" alt="Trainer supporting a gym member" loading="lazy"><span class="story-link">Read the story →</span></a>
+      </div></div></section>
+
+      <section class="final-cta"><div class="home-shell final-cta__inner"><p class="eyebrow eyebrow--light"><span></span> Your next step</p><h2>Ready to make the<br>day-to-day feel simpler?</h2><p>Find the product that fits your business, or talk it through with our team.</p><div class="button-row button-row--centred"><a class="home-button home-button--light" href="products.html">Choose your product <span aria-hidden="true">↗</span></a><a class="home-button home-button--outline-light" href="contact-us.html">Book a demo</a></div></div></section>
+    </main>
+    <footer id="footer"></footer>
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script><script src="js/popper/popper.min.js"></script><script src="js/bootstrap/bootstrap.min.js"></script><script src="js/loadNav.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,436 @@
+/*****************************
+  Button
+*****************************/
+
+.btn{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $secondary;
+	padding: 17px 45px;
+	border-radius: 50px;
+	transition: $transition-3;
+	position: relative;
+	background-color: $primary;
+	z-index: 2;
+	overflow: hidden;
+	font-family: $font-base;
+	outline: none;
+
+	&:hover{
+		background-color: $secondary;
+		color: $white;
+	}
+
+	&:focus{
+		box-shadow: none;
+	}
+
+
+	&.lg-btn{
+		font-size: 22px;
+		padding: 24px 60px;
+	}
+
+	&.md-btn{
+		
+	}
+
+	&.sm-btn{
+		font-size: 14px;
+		padding: 9px 30px;
+	}
+
+	&.btn-w-icon {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+
+		.btn-icon {
+			svg {
+				height: 18px;
+				width: 18px;
+				transition: $transition-3;
+			}
+		}
+		&:hover {
+			.btn-icon {
+				svg {
+					fill: $white;
+				}
+			}
+		}
+	}
+}
+
+.circle-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 150px;
+	height: 150px;
+	padding: 0px;
+	border: 1px solid $primary;
+	border-radius: 100%;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	font-family: $font-base;
+
+	span{
+		font-size: 18px;
+		font-weight: 500;
+		color: $secondary;
+		margin-bottom: 35px;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.arrow{
+		position: absolute;
+		top: 72%;
+    	left: 58%;
+    	transform: translate(-50%, -50%);
+		transition:0.5s;
+		svg{
+			path{
+				stroke: $secondary;
+				transition: 0.5s;
+			}
+		}
+	}
+
+	&:before{
+		position: absolute;
+		content: "";
+		left: 0;
+		top:0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		height: 0;
+		width: 0;
+		background-color: $primary;
+		transition: all 0.5s ease-in-out;
+		z-index: -1;
+		border-radius: 100%;
+	}
+
+	&:hover{
+		border: 1px solid $primary;
+		&:before{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: $primary;
+			transition: all 0.5s ease-in-out;
+		}
+
+
+		span{
+			opacity: 0;
+		}
+
+		.arrow{
+			top: 50%;
+    	left: 50%;
+			transform: translate(-50%,-50%);
+			svg{
+				path{
+					stroke: $white;
+				}
+			}
+		}
+
+	}
+
+	&:focus{
+		box-shadow: none;
+	}
+
+	&.white-btn{
+		border: 1px solid $white;
+		
+		span{
+			color: $white;
+		}
+
+		.arrow{
+			svg{
+				path{
+					stroke: $white;
+				}
+			}
+		}
+
+		&:hover{
+			border: 1px solid $white;
+			&:before{
+				background-color: $white;
+			}
+			.arrow{
+				svg{
+					path{
+						stroke: $black;
+					}
+				}
+			}
+		}
+	}
+
+	&.secondary-btn{
+		border: 1px solid $secondary;
+		
+		span{
+			color: $secondary;
+		}
+
+		.arrow{
+			svg{
+				path{
+					stroke: $secondary;
+				}
+			}
+		}
+
+		&:before{
+			background-color: $white;
+		}
+
+		&:hover{
+			border: 1px solid $white;
+			&:before{
+				background-color: $white;
+			}
+			.arrow{
+				svg{
+					path{
+						stroke: $secondary;
+					}
+				}
+			}
+		}
+	}
+
+	&.lg-btn{
+		width: 200px;
+		height: 200px;
+
+		span{
+			font-size: 26px;
+		}
+
+		.arrow{
+			svg{
+				width: 85px;
+    			height: 85px;
+			}
+		}
+
+	}
+
+	&.md-btn{
+		width: 150px;
+		height: 150px;
+
+		.arrow{
+			svg{
+				width: 65px;
+    			height: 65px;
+			}
+		}
+	}
+
+
+
+
+	&.sm-btn{
+		width: 100px;
+		height: 100px;
+
+		span{
+			font-size: 14px;
+    		margin-bottom: 25px;
+		}
+
+		.arrow{
+			svg{
+				width: 40px;
+    			height: 40px;
+			}
+		}
+
+	}
+}
+
+.bg-dark {
+	.circle-btn{
+		span{
+			color: $white;
+		}
+		.arrow{
+			svg{
+				path{
+					stroke: $white;
+				}
+			}
+		}
+	}
+}
+
+
+/*Video Btn*/
+.video-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 170px;
+  padding: 0;
+  border-radius: 100%;
+  font-family: $font-hedding;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 600;
+  color: $secondary;
+  background-color: $white;
+  border: none;
+  margin: 0 auto;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    height: 25%;
+    width: 25%;
+    background-color: $primary;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $secondary;
+    background-color: $white;
+
+    &::before {
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.video-btn.btn.style-1{
+	color: $primary;
+	margin: inherit;
+  border: 1px solid $primary;
+  background-color: transparent;
+  &:hover{
+  	color: $secondary;
+  }
+}
+.video-btn.btn.style-2{
+	color: $secondary;
+	margin: inherit;
+  border: inherit;
+  background-color: $primary;
+  &:hover{
+  	color: $white;
+  	&:before{
+  		 background-color: $secondary;
+  	}
+  }
+}
+
+.video-btn.btn.icon-btn{
+  i{
+  	font-size: 30px;
+  }
+}
+
+
+
+
+@media (max-width: 1199px) {
+
+	.circle-btn{
+		&.lg-btn{
+			width: 180px;
+			height: 180px;
+
+			span{
+				font-size: 20px;
+			}
+		}
+
+
+	}
+}
+
+
+@media (max-width: 767px) {
+	.btn{
+	    font-size: 16px;
+	    line-height: 22px;
+		padding: 12px 30px;
+		
+		&.lg-btn{
+			font-size: 18px;
+			padding: 18px 40px;
+		}
+
+		&.sm-btn{
+			font-size: 14px;
+			padding: 9px 20px;
+		}
+	}
+
+	.circle-btn{
+		&.lg-btn{
+			width: 150px;
+			height: 150px;
+
+			span{
+				font-size: 18px;
+			}
+
+			.arrow{
+				svg{
+					height: 80px;
+					width: 80px;
+				}
+			}
+		}
+
+		&.md-btn{
+			width: 150px;
+			height: 150px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+
+.video-btn.btn.icon-btn{
+  i{
+  	font-size: 20px;
+  }
+}
+
+
+}
+
+
+
+
+
+
+
+
+

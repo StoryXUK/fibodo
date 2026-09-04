@@ -1,0 +1,142 @@
+/*****************************
+	Owl Carousel
+*****************************/
+
+.owl-carousel{
+  cursor: none;
+  position: relative;
+
+  .owl-nav{
+
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 60px;
+      height: 60px;
+      border: 1px solid $white;
+      border-radius: 100%;
+      transition: $transition-3;
+      overflow: hidden;
+      background: $primary !important;
+      font-family: $font-hedding;
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      transition: $transition-3;
+
+      &:before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top:0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 0;
+        width: 0;
+        background-color: $primary;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+        border-radius: 100%;
+      }
+
+      &.owl-prev {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      &.owl-next {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+
+      i {
+        font-size: 22px;
+        color: $white;
+      }
+    }
+  }
+
+  &:hover .owl-nav {
+    button {
+      opacity: 1;
+      visibility: visible;
+
+      &.owl-prev {
+        left: 20px;
+      }
+
+      &.owl-next {
+        right: 20px;
+      }
+    }
+  }
+}
+
+.owl-carousel {
+	.owl-item {
+		img {
+			width: auto;
+			display: inherit;
+		}
+	}
+
+}
+
+.owl-carousel {
+	.owl-dots {
+		text-align: center;
+		margin-top: 20px;
+	}
+	button.owl-dot {
+		width: 9px;
+		height: 9px;
+		background: $black !important;
+		border-radius: 50%;
+		margin-right: 10px;
+		opacity: 0.5;
+	}
+	button.owl-dot.active {
+		background: $primary !important;
+		opacity: 1;
+	}
+}
+
+
+.owl-carousel {
+	&.slider-overflow{
+		.owl-stage-outer{
+			overflow: visible;
+		}
+	}
+}
+
+.owl-carousel.owl-zigzag .owl-stage .owl-item:nth-child(odd) .item {
+  margin-top: 70px;
+}
+
+.owl-carousel.owl-zigzag .owl-stage .owl-item:nth-child(even) .item {
+  margin-top: 0;
+}
+
+
+
+@media (max-width: 991px) {
+  .owl-carousel{
+    cursor: pointer;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .owl-carousel{
+    .owl-nav{
+      display: none;
+    }
+  }
+}
+

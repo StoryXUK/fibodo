@@ -1,0 +1,70 @@
+/*****************************
+  Form Control
+*****************************/
+
+
+form{
+	.form-control{
+		font-size: 18px;
+		line-height: normal;
+		border-radius: 0px;
+		padding: 15px 0px;
+		border: none;
+		border-bottom: 1px solid $border-color;
+		color: $body-color;
+		margin-bottom: 15px;
+		transition:$transition-3;
+		height: 60px;
+
+		&::-ms-input-placeholder { 
+		  color:rgba($secondary,0.5);
+		}
+
+		&::placeholder {
+		  color:rgba($secondary,0.5);
+		}
+
+		&:focus{
+    	box-shadow:none;
+    	border-color:$primary;
+    }
+	}
+
+	.form-check-input:focus {
+    box-shadow: none;
+	}
+
+	textarea{
+		&.form-control{
+			margin-bottom: 15px;
+			height: auto;
+
+		}
+	}
+
+	.btn{
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+
+	&.fullborder{
+		.form-control{
+			padding: 15px 20px;
+			border: 1px solid $border-color;
+			border-radius:$radius-5;
+
+			&::-ms-input-placeholder { 
+			  color:rgba($secondary,0.5);
+			}
+
+			&::placeholder {
+			  color:rgba($secondary,0.5);
+			}
+
+			&:focus{
+		    	box-shadow:none;
+		    	border-color:$primary;
+		    }
+		}
+	}
+}

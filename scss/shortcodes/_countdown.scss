@@ -1,0 +1,171 @@
+/*****************************
+  Countdown
+*****************************/
+.countdown-main{
+	display: flex;
+	gap:50px;
+	margin-top: 30px;
+	z-index: 1;
+
+	.countdown {
+		text-align: center;
+		span{
+			font-family: $font-base;
+			font-size: 80px;
+			line-height: 100px;
+			font-weight: 600;
+			color: $black;
+			margin-bottom: 0;
+			display: block;
+		}
+
+		p{
+			font-family: $font-base;
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: normal;
+			color: $black;
+			text-transform: capitalize;
+			margin-bottom: 0;
+
+		}
+	}
+
+	&.countdown-medium{
+		.countdown {
+			span{
+				font-size: 54px;
+				line-height: 70px;
+			}
+
+			p{
+				font-size: 16px;
+				line-height: 30px;
+				color: $primary;
+			}
+		}
+	}
+
+	&.countdown-small{
+		.countdown {
+			span{
+				font-size: 32px;
+				line-height: 42px;
+			}
+
+			p{
+				font-size: 12px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	&.countdown-style-02 {
+		.countdown {
+			span {
+				color: $white;
+			}
+			p {
+				color: $white;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 991px) {
+	
+
+	.countdown-main {
+		.countdown{
+			span{
+				font-size: 70px;
+				line-height: 90px;
+				font-weight: 600;
+			}
+
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+
+
+}
+
+
+
+
+@media (max-width: 767px) {
+	
+	.countdown-main {
+		gap:30px;
+		.countdown{
+			span{
+				font-size: 50px;
+				line-height: 50px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+
+		&.countdown-medium{
+			.countdown {
+				span{
+					font-size: 40px;
+					line-height: 50px;
+				}
+
+				p{
+					font-size: 14px;
+					line-height: 30px;
+					color: $primary;
+				}
+			}
+		}
+
+	}
+}
+
+
+@media (max-width: 575px) {
+
+	.countdown-main {
+		gap:20px;
+		.countdown{
+			span{
+				font-size: 40px;
+			}
+
+			p{
+				font-size: 14px;
+				line-height: 28px;
+			}
+		}
+
+		&.countdown-medium{
+			.countdown {
+				span{
+					font-size: 30px;
+					line-height: 50px;
+				}
+
+				p{
+					font-size: 14px;
+					line-height: 30px;
+					color: $primary;
+				}
+			}
+		}
+
+		&.countdown-small{
+			.countdown {
+				span{
+					font-size: 30px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+}

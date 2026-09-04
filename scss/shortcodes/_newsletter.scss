@@ -1,0 +1,85 @@
+/*****************************
+  Newsletter
+*****************************/
+.newsletter-form {
+	position: relative;
+	.form-control {
+		padding-right: 50px;
+		background-color: transparent;
+	}
+	.subscribe-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: $primary;
+    padding: 10px;
+	}
+}
+
+.newsletter-form.dark-newsletter{
+    .form-control{
+    	border-color: $black;
+    }
+    .subscribe-btn {
+    	color: $secondary;
+    }
+}
+
+
+	.newsletter-form.newsletter-style-02{
+          margin-bottom: 0px;
+          position: relative;
+          .form-control{
+          	border-radius: $radius-50;
+            height: 67px;
+			color: $white;
+            margin-bottom: 0px;
+            padding: 10px 160px 10px 20px;
+            background-color: transparent;
+            border: 1px solid rgba($border-color-2, 0.25);
+          }
+          .btn{
+          	top: 5px;
+          	right: 5px;
+          	bottom: 5px;
+          	margin: 0px;
+          	height: 56px;
+          	color: $white;
+          	padding: 10px 30px;
+          	position: absolute;
+          	background-color: $secondary;
+          	&:hover{
+          		color: $secondary;
+          		background-color: $primary;
+          	}
+          }
+	}
+		.newsletter-form.newsletter-style-02.rounded{
+			    .form-control{
+             border-radius: $radius-5;
+			    }
+          .btn{
+            color: $secondary;
+            border-radius: $radius-5;
+        		background-color: $primary;
+        		&:hover{
+        			color: $white;
+        	   	background-color: $secondary;
+        		}
+       }
+	}
+
+
+	@media (max-width: 575px) {
+     .newsletter-form.newsletter-style-02 {
+     	.form-control{
+     		padding: 10px 120px 10px 20px;
+     	}
+     	.btn{
+     	    	padding: 10px 15px;
+      	}
+     }
+	}

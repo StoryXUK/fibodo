@@ -1,0 +1,98 @@
+/*****************************
+	Info box
+*****************************/
+.infobox-wrapper {
+	&.grid-wrapper {
+		grid-gap: 50px;
+	}
+}
+
+.infobox {
+	.infobox-info {
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid $border-color;
+		display: flex;
+		gap: 50px;
+		justify-content: space-between;
+		
+		.infobox-title {
+	    font-size: 24px;
+	    line-height: 36px;
+	    font-weight: 500;
+	    color: $secondary;
+		}
+
+		.infobox-link {
+			line-height: 36px;
+			align-self: flex-start;
+			svg {
+				vertical-align: middle;
+			}
+		}
+	}
+	.infobox-content {
+		.infobox-description {
+			line-height: 30px;
+		}
+	}
+
+	&.infobox-style-02 {
+		.infobox-icon {
+			display: inline-block;
+			padding: 15px;
+			border-radius: 10px;
+			margin-bottom: 20px;
+			background-color: $gray-7;
+
+			i {
+				font-size: 26px;
+				line-height: 26px;
+				color: $secondary;
+				display: block;
+				height: 26px;
+				width: 26px;
+				text-align: center;
+			}
+		}
+
+		.infobox-content {
+			.infobox-link {
+				font-size: 14px;
+				line-height: 22px;
+				font-weight: bold;
+				display: inline-flex;
+				gap: 5px;
+				align-items: center;
+				text-transform: uppercase;
+				color: $secondary;
+				border-bottom: 1px solid $secondary;
+				margin-top: 20px;
+
+				&:hover {
+					color: $primary;
+					margin-left: 10px;
+					border-color: $primary;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.infobox{
+		.infobox-info {
+		   gap: 20px;
+		}
+	} 
+}
+
+@media (max-width: 767px) {
+	.infobox{
+		.infobox-info {
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+		  gap: 30px;
+		}
+	} 
+}

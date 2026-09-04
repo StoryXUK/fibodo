@@ -1,0 +1,191 @@
+/*****************************
+	Team
+*****************************/
+
+.team-wrapper {
+	padding-left: 60px;
+}
+
+.team-item {
+	.team-img {
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 20px;
+
+
+		img {
+			border-radius: 25px;
+			transition: $transition-3;
+		}
+
+		.team-social-list {
+			padding: 30px 15px;
+			position: absolute;
+			top: 50%;
+			right: -100px;
+			transform: translateY(-50%);
+			background-color: $primary;
+			transition: $transition-3;
+
+			.team-social-profiles {
+				list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    display: flex;
+			    flex-direction: column;
+			    gap: 17px;
+
+			    li {
+			    	transform: rotate(-90deg);
+			    	a {
+				    	font-size: 20px;
+					    color: $white;
+					    line-height: 30px;
+					    display: inline-block;
+					    transition: $transition-3;
+				    }
+			    }
+			}
+		}
+	}
+
+	.team-info {
+		.team-title {
+			display: block;
+		    font-size: 22px;
+		    line-height: 36px;
+		    font-weight: 500;
+		    color: $secondary;
+		    margin-bottom: 0;
+		    transition: $transition-3;
+
+		    &:hover {
+		    	color: $primary;
+		    }
+		}
+
+		.team-destination {
+			line-height: 30px;
+		}
+	}
+
+	&.team-style-02 {
+		.team-img {
+			img {
+				filter: grayscale(100%);
+			}
+		}
+	}
+
+	&:hover {
+		.team-img {
+			img {
+				filter: grayscale(0);
+			}
+
+			.team-social-list {
+				right: 0;
+			}
+		}
+	}
+}
+
+/*Team-details*/
+
+.team-single {
+	.team-member-info {
+		.member-image {
+			margin-bottom: 20px;
+			position: relative;
+
+			img {
+				border-radius: 20px;
+			}
+
+			.team-social-profiles {
+				padding: 30px 22px;
+				background-color: $primary;
+				list-style: none;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 17px;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+
+				.team-social-profile {
+					transform: rotate(-90deg);
+					a {
+						color: $white;
+						font-size: 20px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+
+		.member-details {
+			.member-name {
+				font-size: 42px;
+				line-height: 42px;
+				font-weight: bold;
+			}
+			.member-position{
+				line-height: 30px;
+			}
+		}
+	}
+
+	.biography-info{
+		.title{
+			margin-bottom: 20px;
+		}
+	}
+
+	.skill-wrapper{
+		.skill{
+			&:before {
+		      border: 1px solid $secondary;
+		    }
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.team-wrapper {
+	    padding-left: 0px;
+	}
+
+	.team-item .team-img .team-social-list {
+		padding: 20px 10px;
+
+		.team-social-profiles {
+			gap: 10px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.team-single .team-member-info .member-details .member-name {
+		font-size: 32px;
+		line-height: 32px;
+	}
+}
+
+	
+
+@media (max-width: 575px) {
+
+	.team-item .team-img {
+	    overflow: hidden;
+	    position: relative;
+	    margin-bottom: 15px;
+	}
+
+	.team-single .team-member-info .member-details .member-name {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}

@@ -1,0 +1,199 @@
+/*****************************
+  Shortcodes
+*****************************/
+
+/*****************************
+  Accordion
+*****************************/
+.accordion {
+	.accordion-item {
+		border: none;
+		border: 1px solid $border-color;
+		border-bottom: none;
+		background-color: transparent;
+
+		&:last-of-type {
+			border-radius: 0;
+		}
+		.accordion-header {
+			 padding: 20px 20px 20px 20px;
+			.accordion-button {
+				font-size: 22px;
+				padding: 0;
+				line-height: 34px;
+				font-weight: 600;
+				gap: 30px;
+				color: $secondary;
+				background-color: transparent;
+
+				&:after {
+					content: "\f64d";
+					background-image: inherit;
+					font-family: bootstrap-icons !important;
+					font-size: 17px;
+					margin-right: 0px;
+					color: $secondary;
+					height: auto;
+					width: auto;
+				}
+			}
+		}
+
+		.accordion-button:not(.collapsed) {
+			background-color: transparent;
+			box-shadow: none;
+			outline: none;
+			color: $secondary;
+
+			&:after {
+				content: "\F2EA";
+				background-image: inherit;
+				font-family: bootstrap-icons !important;
+				transform: inherit;
+				color: $secondary;
+			}
+		}
+		&:last-child{
+			border-bottom: 1px solid $border-color;
+		}
+
+	}
+
+	.accordion-button:focus {
+		border-color: inherit;
+		box-shadow: inherit;
+	}
+
+	.accordion-collapse {
+		.accordion-body {
+			line-height: 30px;
+			color: $body-color;
+			padding: 25px 20px 25px 20px;
+			border-top: 1px solid $border-color;
+		}
+
+	}
+
+	&:first-of-type {
+		border-radius: 0px;
+	}
+
+	&:last-of-type {
+		border-radius: 0px;
+	}
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+.accordion.accordion-style-pgs-one{
+		.accordion-item {
+			border: 1px solid $border-color;
+			background-color: $white;
+			margin-bottom: 15px;
+
+		h6.accordion-header {
+			   background-color: #FFFFFF;
+         padding: 22px 25px 22px 25px;
+			.accordion-button {
+				padding:0px;
+				&:after {
+					content: "\e628";
+					font-size: 17px;
+					font-family:themify-icons !important;
+				}
+			}
+
+			.accordion-button:not(.collapsed) {
+				border-bottom:0px;
+				&:after {
+					content: "\e62a";
+				}
+
+			}
+
+		}
+
+		.accordion-collapse {
+			.accordion-body {
+				padding: 25px 20px;
+				padding-top: 0px;
+				border-top: none;
+			}
+
+		}
+	}
+}
+
+.accordion.accordion-style-pgs-two{
+	.accordion-item {
+		border: 0px solid $border-color;
+		border-bottom: 1px solid $secondary;
+		
+		h6.accordion-header {
+			  padding:0px;
+			.accordion-button {
+				font-size: 20px;
+				padding:25px 0px;
+				
+				&:after {
+					content: "\F231";
+					background-image: inherit;
+					font-family: bootstrap-icons !important;
+					font-size: 14px;
+					margin-right: 0px;
+					color: $secondary;
+					height: auto;
+					width: auto;
+				}
+			}
+			.accordion-button:not(.collapsed) {
+				border-bottom:0px solid $border-color;
+
+				&:after {
+					content: "\F229";
+					background-image: inherit;
+					font-family: bootstrap-icons !important;
+					transform: inherit;
+					color: $primary;
+				}
+			}
+		}
+		.accordion-body{
+      border: none;
+      padding: 0px 50px 30px 0px;
+		}
+		.accordion-button:focus {
+			border-color: inherit;
+			box-shadow: inherit;
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+
+	.accordion {
+		.accordion-item {
+			h5.accordion-header {
+				.accordion-button {
+					padding:15px 15px;
+					&:after {
+						font-size: 16px;
+						margin-right:0px;
+					}
+				}
+			}
+
+			.accordion-collapse {
+				.accordion-body {
+					padding: 15px;
+					padding-top: 0px;
+				}
+
+			}
+		}
+	}
+}
+

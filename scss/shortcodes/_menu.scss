@@ -1,0 +1,114 @@
+/*****************************
+  Menu
+*****************************/
+
+.menu-widget{
+	.menu-widget-items{
+		gap: 8px;
+		padding: 0px;
+		margin: 0;
+		display: flex;
+		list-style: none;
+		flex-direction: column;
+		.menu-item{
+			a{
+				gap: 8px;
+				cursor: pointer;
+				display: flex;
+				color: $secondary;
+			  padding: 10px 20px;
+			  align-items: center;
+			  position: relative;
+			  border-radius: $radius-5;
+			  background-color: $primary;
+			  &:after{
+			  		border: none;
+			  	  content: "\f061";
+				    font-size: 0.8rem;
+				    font-weight: 900;
+				    margin-left: auto;
+				    font-family: 'Font Awesome 6 Free';
+			  }
+			  &:hover{
+			  	color: $white;
+			  	padding-left: 30px;
+			  }
+			}
+		}
+	}
+}
+
+.menu-widget.menu-style-style-2{
+  .menu-widget-items{
+  	.menu-item{
+  		a{
+  			color: $secondary;
+  			padding: 10px 0px;
+  			border-radius: inherit;
+  			background-color: transparent;
+  			border-bottom: 1px solid $secondary;
+  			&:hover{
+			  	color: $primary;
+			  	padding-left: 10px;
+			  	border-bottom: 1px solid $primary;
+			  }
+  		}
+  	}
+  }
+}
+
+.menu-widget.menu-widget-dark.menu-style-style-1{
+   .menu-widget-items{
+   	 .menu-item{
+   	 	 a{
+   	 	 	  color: $white;
+   	 	 	  background-color: $secondary;
+   	 	 	  &:hover{
+   	 	 	  	color: $secondary;
+   	 	 	  	background-color: $primary;
+   	 	 	  }
+   	 	 }
+   	 }
+   }
+}
+
+.menu-widget.menu-widget-dark.menu-style-style-2{
+  .menu-widget-items{
+   	.menu-item{
+   	 	a{
+   	 	 	color: $body-color;
+   	 	 	border-bottom: 1px solid $border-color;
+
+   	 	 	&:hover{
+   	 	 	 	color: $secondary;
+   	 	 	  border-bottom: 1px solid $secondary;
+   	 	 	}
+   	 	}
+   	}
+  }
+}
+
+.menu-widget.menu-style-style-3 {
+
+	.menu-widget-items {
+    padding: 40px 35px;
+    border-radius: 25px;
+    background-color: $gray-2;
+
+    .menu-item{
+    	a {
+    		background-color: $white;
+    		color: $secondary;
+
+    		&:hover {
+    			background-color: $primary;
+    		}
+    	}
+
+  		&.is-active a {
+  			padding-left: 30px;
+  			background-color: $primary;
+  		}
+    } 
+	}
+}
