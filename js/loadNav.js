@@ -90,8 +90,12 @@ document.addEventListener("DOMContentLoaded", function () {
   loadContent("navbar", "nav.html", highlightActiveNavItem);
   // Load footer
   loadContent("footer", "footer.html");
-  // Optional: load pricing/features only if placeholders exist on page
-  if (document.getElementById("pricing")) loadContent("pricing", "pricing.html");
-  if (document.getElementById("core-features")) loadContent("core-features", "core-features.html");
-  if (document.getElementById("additional-features")) loadContent("additional-features", "additional-features.html");
+  // Optional fragments are loaded only into empty legacy placeholders.
+  const loadEmptyPlaceholder = (elementId, file) => {
+    const element = document.getElementById(elementId);
+    if (element && !element.children.length && !element.textContent.trim()) loadContent(elementId, file);
+  };
+  loadEmptyPlaceholder("pricing", "pricing.html");
+  loadEmptyPlaceholder("core-features", "core-features.html");
+  loadEmptyPlaceholder("additional-features", "additional-features.html");
 });

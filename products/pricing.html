@@ -13,14 +13,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Permanent+Marker&amp;display=swap"
     rel="stylesheet" />
-  <link href="../../navigation.css" rel="stylesheet" />
-  <link href="footer.css" rel="stylesheet" />
+  <link href="../navigation.css" rel="stylesheet" />
   <link href="pricing.css" rel="stylesheet" />
-  <link href="../../fibodo-navigation-base.css" rel="stylesheet" />
+  <link href="../fibodo-navigation-base.css" rel="stylesheet" />
+  <link href="../css/bootstrap/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="../fibodo-footer.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div data-root="../../" id="core-navigation"></div>
+  <div data-root="../" id="core-navigation"></div>
   <main id="top">
     <!-- <section id="pricing-intro" class="final-cta section-panel section-break">
       <div class="container final-grid reveal">
@@ -111,7 +112,7 @@
     </section>
     <section aria-labelledby="plans-title" class="plans-section section-panel section-break" id="pricing">
       <div class="container">
-        
+        <details class="plans-comparison" open>
           <summary>Compare plan features <span aria-hidden="true">+</span></summary>
           <div aria-label="Plan feature comparison" class="plans-table-scroll" role="region" tabindex="0">
             <table>
@@ -326,12 +327,9 @@
       </div>
     </section>
   </main>
-  <div data-root="./" id="core-footer"></div>
-
-
-
-  <script src="../../navigation.js"></script>
-  <script src="footer.js"></script>
+  <footer data-root="../" id="footer"></footer>
+  <script src="../js/loadNav.js"></script>
+  <script src="../navigation.js"></script>
 </body>
 
 </html>
