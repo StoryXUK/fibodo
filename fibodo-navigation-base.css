@@ -6,7 +6,7 @@
 #core-navigation *{box-sizing:border-box}
 #core-navigation a{text-decoration:none;color:inherit}
 #core-navigation .wrap{width:min(1200px,calc(100% - 44px));margin:auto}
-#core-navigation .site-header{background:#fff;position:relative;z-index:1000;border-bottom:1px solid #e3e2db}
+#core-navigation .site-header{background:#fff;color:var(--ink,#121916);position:relative;z-index:1000;border-bottom:1px solid #e3e2db}
 #core-navigation .nav{display:flex;align-items:center;justify-content:space-between;min-height:84px;gap:28px}
 #core-navigation .brand{display:flex;align-items:baseline;gap:8px;white-space:nowrap;font-weight:900;font-size:26px}
 #core-navigation .brand span{color:#f45b25}
