@@ -1,0 +1,20 @@
+/* Shared fibodo corporate footer. Edit footer.html once to update all pages. */
+.fibodo-footer{background:#061b46;color:#fff;padding:76px 0 28px;font-family:Inter,"DM Sans",Arial,sans-serif;line-height:1.6}
+.fibodo-footer *{box-sizing:border-box}
+.fibodo-footer__container{width:min(1200px,calc(100% - 40px));margin:0 auto}
+.fibodo-footer__grid{display:grid;grid-template-columns:minmax(210px,1.35fr) repeat(3,minmax(130px,1fr));gap:clamp(28px,5vw,72px);padding-bottom:70px}
+.fibodo-footer__logo{display:inline-block;max-width:200px;margin:0 0 32px}
+.fibodo-footer__logo img{display:block;max-width:100%;max-height:65px;object-fit:contain}
+.fibodo-footer__social{display:flex;gap:12px;list-style:none;padding:0;margin:0}
+.fibodo-footer__social a{width:39px;height:39px;display:grid;place-items:center;border:1px solid #ffffff35;border-radius:50%;color:#fff;transition:background .2s,border-color .2s,transform .2s}
+.fibodo-footer__social a:hover{background:#ff6b2b;border-color:#ff6b2b;transform:translateY(-2px)}
+.fibodo-footer__social svg{width:18px;height:18px}
+.fibodo-footer__heading{color:#fff;font-size:.84rem;font-weight:800;letter-spacing:.035em;margin:0 0 23px;line-height:1.3}
+.fibodo-footer__links{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.fibodo-footer__links a{font-size:.9rem;font-weight:450;color:#aebdd6;text-decoration:none;transition:color .2s}
+.fibodo-footer__links a:hover{color:#fff}
+.fibodo-footer a:focus-visible{outline:3px solid #ff9b63;outline-offset:4px}
+.fibodo-footer__bar{border-top:1px solid #ffffff28;padding-top:24px}
+.fibodo-footer__copy{font-size:.8rem;color:#aebdd6;margin:0}
+@media(max-width:860px){.fibodo-footer__grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:38px}.fibodo-footer__brand{grid-column:1/-1}}
+@media(max-width:540px){.fibodo-footer{padding:55px 0 26px}.fibodo-footer__container{width:calc(100% - 32px)}.fibodo-footer__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 22px;padding-bottom:50px}.fibodo-footer__brand{grid-column:1/-1}.fibodo-footer__col--legal{grid-column:1/-1}}
