@@ -15,21 +15,12 @@
         rel="stylesheet" />
     <link href="swim/swim.css" rel="stylesheet" />
     <link href="core_css/fitness-pricing.css" rel="stylesheet" />
+    <link href="../fibodo-navigation-base.css" rel="stylesheet" />
+    <link href="../navigation.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container nav-wrap"><a aria-label="CORE homepage" class="logo" href="index.html">CORE <small>by
-                    fibodo</small></a><button aria-controls="primary-nav" aria-expanded="false"
-                aria-label="Toggle navigation" class="nav-toggle">☰</button>
-            <nav aria-label="Primary" class="nav-links" id="primary-nav"><a href="fitness.html">Fitness</a><a
-                    aria-current="page" class="active" href="swim.html">Swim</a><a href="paddle.html">Paddle</a><a
-                    href="tennis.html">Tennis</a><a href="golf.html">Golf</a><a href="features.html">Features</a><a
-                    href="#pricing">Pricing</a><a href="#free-website">Free Website</a><a class="nav-talk"
-                    href="mailto:hello@fibodo.com">Talk to Us</a><a class="btn btn-primary nav-free"
-                    href="https://web.fibodo.com/signup/information?app=c1">Get Started For Free</a></nav>
-        </div>
-    </header>
+    <div data-root="../" id="core-navigation"></div>
     <main>
         <section class="hero" id="top">
             <div class="container hero-layout">
@@ -619,8 +610,9 @@
         <div class="container foot-row"><a class="logo" href="index.html">CORE <small>by fibodo</small></a><span>Built
                 for your business today. Ready for what comes next.</span><a href="#top">Back to top ↑</a></div>
     </footer>
-    <script>const b = document.querySelector('.nav-toggle'), n = document.querySelector('.nav-links'); b.addEventListener('click', () => { const x = b.getAttribute('aria-expanded') === 'true'; b.setAttribute('aria-expanded', String(!x)); n.classList.toggle('open', !x) }); n.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { n.classList.remove('open'); b.setAttribute('aria-expanded', 'false') }));</script>
     <script defer="True" src="core_js/fitness-pricing.js"></script>
+    <script src="../js/loadNav.js"></script>
+    <script src="../navigation.js"></script>
 </body>
 
 </html>
