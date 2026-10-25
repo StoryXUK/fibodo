@@ -1,0 +1,74 @@
+# Legacy URL redirects for fibodo.com (301 permanent)
+# See REDIRECTS.md for full list and notes.
+
+/home.html /index.html 301
+/index-01.html / 301
+/index-full.html / 301
+/index-mega-menu.html / 301
+/contact-us-02.html /contact-us.html 301
+/work-with-us.html /jobs.html 301
+
+# 2026 IA: Solutions → Products
+/solutions.html /products.html 301
+/solutions-professionals.html /products.html#core 301
+/solutions-operators.html /products.html#galaxy 301
+/solutions-creators.html /products.html#pulsar 301
+/solutions-partners.html /products.html#enterprise 301
+/features.html /products.html 301
+
+# 2026 IA: Industries → Sectors
+/industries.html /sectors.html 301
+/industries-fitness-sport.html /sectors.html#fitness-sport 301
+/industries-wellness-therapy.html /sectors.html#wellness-therapy 301
+/industries-hospitality-spas.html /sectors.html#beauty-spa-hospitality 301
+/industries-education-training.html /sectors.html#education-content 301
+/industries-community-public-sector.html /sectors.html#community-public-sector 301
+
+# 2026 IA: Platform → Why fibodo?
+/platform.html /why-fibodo.html 301
+
+# Legacy product pages → Why fibodo / Products
+/core.html /products.html#core 301
+/galaxy.html /products.html#galaxy 301
+/pulsar.html /products.html#pulsar 301
+/nebula.html /why-fibodo.html 301
+/nebula-index.html /why-fibodo.html 301
+/orbit.html /why-fibodo.html 301
+/cosmos.html /why-fibodo.html 301
+/galaxy-index.html /products.html#galaxy 301
+/coming-soon.html /why-fibodo.html 301
+/technology.html /why-fibodo.html 301
+/our-apps.html /why-fibodo.html 301
+/bookings.html /why-fibodo.html 301
+/payments.html /why-fibodo.html 301
+
+/sign-up.html /contact-us.html 301
+/sign-up-2.html /contact-us.html 301
+/pricing.html /contact-us.html 301
+/pricing2.html /contact-us.html 301
+/pricing-table.html /contact-us.html 301
+/pricing-table2.html /contact-us.html 301
+/pricing-one.html /contact-us.html 301
+/blog-big-business-strategies.html /blog.html 301
+/blog-easy-online-booking.html /blog.html 301
+/blog-mobile-first.html /blog.html 301
+/case-study.html /customers.html 301
+/case-studies.html /customers.html 301
+/team-single.html /team.html 301
+/personal-trainer.html /products.html#core 301
+/gym.html /sectors.html#fitness-sport 301
+/yoga.html /sectors.html#wellness-therapy 301
+/fitness.html /sectors.html#fitness-sport 301
+/golf.html /sectors.html#fitness-sport 301
+/support.html /contact-us.html 301
+/faq.html /contact-us.html 301
+/portfolio.html /customers.html 301
+/everthing-app.html / 301
+/marketplace.html /partners-marketplaces.html 301
+
+# Resources pages hidden until content is ready
+/resources.html / 302
+/resources-guides.html / 302
+/resources-webinars.html / 302
+/resources-glossary.html / 302
+/resources-press-kit.html / 302

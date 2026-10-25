@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GALAXY by fibodo — Good systems feel simple.</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="GALAXY by fibodo — Good systems feel simple.">
+    <meta name="description"
+        content="fibodo is the infrastructure behind modern experience-led services. From fitness and wellness to education, hospitality and community programmes. We power how experiences are found, booked, delivered and repeated — with a clear account of outcomes for operators.">
+    <meta name="keywords"
+        content="fibodo, bookings, payments, fitness software, club management, studio management, subscriptions, memberships, live streaming, marketplace, franchise, SaaS">
+    <meta name="author" content="fibodo">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fibodo.com/">
+    <meta property="og:title" content="GALAXY by fibodo — Good systems feel simple.">
+    <meta property="og:description"
+        content="fibodo is the infrastructure behind modern experience-led services. From fitness and wellness to education, hospitality and community programmes.">
+    <meta property="og:image" content="images/social.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.fibodo.com/">
+    <meta name="twitter:title" content="GALAXY by fibodo — Good systems feel simple.">
+    <meta name="twitter:description"
+        content="fibodo is the infrastructure behind modern experience-led services. We power how experiences are found, booked, delivered and repeated — with a clear account of outcomes for operators.">
+    <meta name="twitter:image" content="images/social.webp">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/font-awesome/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/animate/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/landing-style.css">
+
+    <style>
+        /* ── Hero ── */
+        .gs-hero {
+            min-height: 100vh;
+            background: url('images/goodsystems-hero.jpeg') center center / cover no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .gs-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.58);
+        }
+        .gs-hero .container {
+            position: relative;
+            z-index: 2;
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+        .gs-hero .hero-headline {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(2.8rem, 5vw, 4rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+        .gs-hero .hero-subhead {
+            font-size: clamp(1.05rem, 2vw, 1.3rem);
+            color: rgba(255,255,255,0.9);
+            max-width: 560px;
+            margin-bottom: 0.75rem;
+            line-height: 1.55;
+        }
+        .gs-hero .hero-support {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.72);
+            max-width: 520px;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        /* ── Hero form card ── */
+        .gs-hero-form {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem 1.75rem;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+        }
+        .gs-hero-form .form-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 1.25rem;
+        }
+        .gs-hero-form .form-control {
+            border: 1.5px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 0.65rem 0.9rem;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            background: #fafafa;
+            transition: border-color 0.2s;
+            width: 100%;
+            display: block;
+        }
+        .gs-hero-form .form-control:focus {
+            border-color: #111;
+            background: #fff;
+            box-shadow: none;
+            outline: none;
+        }
+        .gs-hero-form textarea.form-control {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .gs-hero-form .btn {
+            width: 100%;
+            margin-top: 0.25rem;
+        }
+
+        /* ── Section: We get independent operators ── */
+        .gs-operators {
+            background: #f7f7f5;
+        }
+        .gs-proof-line {
+            display: inline-block;
+            margin-top: 1.75rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #555;
+            border-left: 3px solid #111;
+            padding-left: 0.85rem;
+            text-align: left;
+        }
+
+        /* ── Section: What GALAXY brings together ── */
+        .gs-feature-card {
+            background: #fff;
+            border: 1.5px solid #ebebeb;
+            border-radius: 10px;
+            padding: 1.75rem 1.5rem;
+            height: 100%;
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .gs-feature-card:hover {
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            border-color: #ccc;
+        }
+        .gs-feature-icon {
+            width: 44px;
+            height: 44px;
+            background: #111;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        .gs-feature-icon i {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        .gs-feature-card h5 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 0.4rem;
+        }
+        .gs-feature-card p {
+            font-size: 0.88rem;
+            color: #555;
+            margin: 0;
+            line-height: 1.55;
+        }
+        .gs-end-line {
+            margin-top: 3rem;
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+            font-weight: 700;
+            color: #111;
+            text-align: center;
+        }
+
+        /* ── Section: Product family ── */
+        .gs-product-link {
+            display: block;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+        .gs-product-link:hover .gs-product-card {
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            border-color: #ccc;
+        }
+        .gs-product-link:hover h4 {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .gs-products {
+            background: #fff;
+        }
+        .gs-product-card {
+            background: #fff;
+            border: 1.5px solid #ebebeb;
+            border-radius: 10px;
+            padding: 2rem 1.75rem;
+            height: 100%;
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .gs-product-card:hover {
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            border-color: #ccc;
+        }
+        .gs-product-card.is-galaxy {
+            border-color: #111;
+            background: #111;
+        }
+        .gs-product-card.is-galaxy h4,
+        .gs-product-card.is-galaxy p {
+            color: #fff;
+        }
+        .gs-product-card.is-galaxy .gs-product-label {
+            background: rgba(255,255,255,0.15);
+            color: rgba(255,255,255,0.85);
+        }
+        .gs-product-label {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: #f0f0f0;
+            color: #444;
+            border-radius: 4px;
+            padding: 0.25rem 0.6rem;
+            margin-bottom: 1rem;
+        }
+        .gs-product-card h4 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 0.6rem;
+        }
+        .gs-product-card p {
+            font-size: 0.88rem;
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ── Final CTA ── */
+        .gs-final-cta {
+            background: #111;
+        }
+        .gs-final-cta .gs-section-headline,
+        .gs-final-cta .gs-body-copy {
+            color: #fff;
+        }
+        .gs-final-cta .gs-body-copy {
+            color: rgba(255,255,255,0.78);
+        }
+        .gs-final-cta .gs-subtitle {
+            color: rgba(255,255,255,0.45);
+        }
+        .gs-final-cta .microcopy {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.45);
+            margin-top: 1.5rem;
+            line-height: 1.6;
+        }
+        .gs-final-cta .gs-hero-form {
+            background: #1e1e1e;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: none;
+        }
+        .gs-final-cta .gs-hero-form .form-title {
+            color: #fff;
+        }
+        .gs-final-cta .gs-hero-form .form-control {
+            background: #2a2a2a;
+            border-color: rgba(255,255,255,0.15);
+            color: #fff;
+        }
+        .gs-final-cta .gs-hero-form .form-control::placeholder {
+            color: rgba(255,255,255,0.38);
+        }
+        .gs-final-cta .gs-hero-form .form-control:focus {
+            border-color: rgba(255,255,255,0.45);
+            background: #333;
+        }
+        .gs-final-cta .gs-hero-form select.form-control option {
+            background: #2a2a2a;
+            color: #fff;
+        }
+
+        /* ── Shared utilities ── */
+        .gs-section {
+            padding: 80px 0;
+        }
+        @media (max-width: 768px) {
+            .gs-section { padding: 56px 0; }
+            .gs-hero { min-height: auto; }
+        }
+        .gs-subtitle {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+        .gs-section-headline {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            font-weight: 700;
+            color: #111;
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+        }
+        .gs-body-copy {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.7;
+            max-width: 640px;
+        }
+
+        /* ── Form feedback ── */
+        .gs-form-feedback {
+            display: none;
+            margin-top: 0.85rem;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+        .gs-form-feedback.is-success {
+            display: block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+        }
+        .gs-form-feedback.is-error {
+            display: block;
+            background: #fdecea;
+            color: #c62828;
+            border: 1px solid #ef9a9a;
+        }
+        .gs-final-cta .gs-form-feedback.is-success {
+            background: rgba(46,125,50,0.2);
+            border-color: rgba(165,214,167,0.4);
+            color: #a5d6a7;
+        }
+        .gs-final-cta .gs-form-feedback.is-error {
+            background: rgba(198,40,40,0.2);
+            border-color: rgba(239,154,154,0.4);
+            color: #ef9a9a;
+        }
+        .gs-hero-form .btn:disabled {
+            opacity: 0.65;
+            cursor: not-allowed;
+        }
+    </style>
+<link rel="stylesheet" href="css/professional.css?v=20260720">
+</head>
+
+<body>
+
+    <!-- cursor -->
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+
+    <div id="page" class="main">
+        <header id="navbar">
+            <!-- Navigation will be loaded here -->
+        </header>
+
+        <div class="site-content">
+
+            <!-- ================================================
+            SECTION 1: HERO
+            ================================================ -->
+            <section class="gs-hero" id="hero">
+                <div class="container">
+                    <div class="row align-items-center gy-5">
+
+                        <!-- Left: copy -->
+                        <div class="col-lg-6">
+                            <h1 class="hero-headline">Good systems<br>feel simple.</h1>
+                            <p class="hero-subhead">Bookings, payments, staff, scheduling and memberships — joined up so your business runs smoother.</p>
+                            <p class="hero-support">GALAXY by fibodo is built for independent gyms, clubs and studios that want less admin, more control and a better way to run the day.</p>
+                            <a href="#demo-form" class="btn">Book a GALAXY demo</a>
+                        </div>
+
+                        <!-- Right: enquiry form -->
+                        <div class="col-lg-5 offset-lg-1" id="demo-form">
+                            <div class="gs-hero-form">
+                                <p class="form-title">Book a GALAXY demo</p>
+                                <form class="contact-form gs-enquiry-form" id="gs-form-hero" novalidate>
+                                    <input type="text" name="name" class="form-control" placeholder="Name *" aria-label="Name" required>
+                                    <input type="text" name="business_name" class="form-control" placeholder="Business name *" aria-label="Business name" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Email *" aria-label="Email" required>
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone *" aria-label="Phone" required>
+                                    <select name="business_type" class="form-control" aria-label="Business type" required>
+                                        <option value="" disabled selected>Business type *</option>
+                                        <option>Independent gym</option>
+                                        <option>Fitness studio</option>
+                                        <option>Sports club</option>
+                                        <option>Martial arts / boxing</option>
+                                        <option>Yoga / Pilates studio</option>
+                                        <option>Dance studio</option>
+                                        <option>Swimming club</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <textarea name="message" class="form-control" placeholder="Tell us about your business (optional)" rows="3" aria-label="Message"></textarea>
+                                    <button type="submit" class="btn">Book a GALAXY demo</button>
+                                    <div class="gs-form-feedback" role="alert" aria-live="polite"></div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- /HERO -->
+
+
+            <!-- ================================================
+            SECTION 2: WE GET INDEPENDENT OPERATORS
+            ================================================ -->
+            <section class="gs-section gs-operators">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <span class="gs-subtitle">Who we built this for</span>
+                            <h2 class="gs-section-headline">Built for independent gyms, clubs and studios.</h2>
+                            <p class="gs-body-copy mx-auto">Running a fitness business is not just about taking bookings. You are managing people, payments, memberships, staff, timetables, customers and the daily pressure of keeping everything moving.</p>
+                            <p class="gs-body-copy mx-auto mt-3">GALAXY has been developed for independent operators who need one connected system that supports how the business actually works.</p>
+                            <div class="text-center">
+                                <span class="gs-proof-line">fibodo has spent 14 years working in and investing into the UK wellness industry.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /OPERATORS -->
+
+
+            <!-- ================================================
+            SECTION 3: WHAT GALAXY BRINGS TOGETHER (hidden)
+            ================================================ -->
+            <section class="gs-section d-none" aria-hidden="true">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <span class="gs-subtitle">The platform</span>
+                            <h2 class="gs-section-headline">Everything connected. Nothing overcomplicated.</h2>
+                        </div>
+                    </div>
+
+                    <div class="row gy-4 mt-2">
+
+                        <div class="col-md-4">
+                            <div class="gs-feature-card">
+                                <div class="gs-feature-icon">
+                                    <i class="bi bi-calendar-check"></i>
+                                </div>
+                                <h5>Bookings</h5>
+                                <p>Let customers book classes, sessions and services easily.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="gs-feature-card">
+                                <div class="gs-feature-icon">
+                                    <i class="bi bi-credit-card"></i>
+                                </div>
+                                <h5>Payments</h5>
+                                <p>Take secure payments and reduce chasing.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="gs-feature-card">
+                                <div class="gs-feature-icon">
+                                    <i class="bi bi-person-badge"></i>
+                                </div>
+                                <h5>Memberships</h5>
+                                <p>Manage members, packages and recurring revenue.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="gs-feature-card">
+                                <div class="gs-feature-icon">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h5>Staff</h5>
+                                <p>Keep your team organised and your timetable covered.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="gs-feature-card">
+                                <div class="gs-feature-icon">
+                                    <i class="bi bi-grid-1x2"></i>
+                                </div>
+                                <h5>Scheduling</h5>
+                                <p>Run classes, spaces, courses and events from one planner.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="gs-feature-card">
+                                <div class="gs-feature-icon">
+                                    <i class="bi bi-person-lines-fill"></i>
+                                </div>
+                                <h5>Customer management</h5>
+                                <p>Understand customers and keep them engaged.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class="gs-end-line">Less admin. More control. Better days.</p>
+                </div>
+            </section>
+            <!-- /FEATURES -->
+
+
+            <!-- ================================================
+            SECTION 4: PRODUCT FAMILY
+            ================================================ -->
+            <section class="gs-section gs-products">
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8 text-center">
+                            <span class="gs-subtitle">The fibodo product family</span>
+                            <h2 class="gs-section-headline">The right system for where you are.</h2>
+                        </div>
+                    </div>
+
+                    <div class="row gy-4">
+
+                        <div class="col-md-6 col-xl-3">
+                            <a href="https://core.fibodo.com/" target="_blank" rel="noopener noreferrer" class="gs-product-link">
+                                <div class="gs-product-card">
+                                    <span class="gs-product-label">CORE</span>
+                                    <h4>CORE by fibodo</h4>
+                                    <p>For self-employed coaches, PTs and instructors who want control of their own business. Manage bookings, payments, clients and scheduling in one simple platform.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="gs-product-card is-galaxy">
+                                <span class="gs-product-label">GALAXY &mdash; You are here</span>
+                                <h4>GALAXY by fibodo</h4>
+                                <p>For independent gyms, clubs and studios that need bookings, payments, memberships, staff and scheduling connected. Built to help operators run smoother days with less admin and more control.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <a href="https://pulsar.fibodo.com/" target="_blank" rel="noopener noreferrer" class="gs-product-link">
+                                <div class="gs-product-card">
+                                    <span class="gs-product-label">PULSAR</span>
+                                    <h4>PULSAR by fibodo</h4>
+                                    <p>For businesses that want to deliver live, on-demand or digital content alongside their physical services. Create, manage and monetise video sessions, courses, replays and member content through a connected platform.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <a href="https://enterprise.fibodo.com/" target="_blank" rel="noopener noreferrer" class="gs-product-link">
+                                <div class="gs-product-card">
+                                    <span class="gs-product-label">ENTERPRISE</span>
+                                    <h4>ENTERPRISE by fibodo</h4>
+                                    <p>For local authority leisure centres and multisite operators that need a bespoke system built around their requirements. Designed for complex operations, multiple locations, integrations and tailored customer journeys.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- /PRODUCTS -->
+
+
+            <!-- ================================================
+            SECTION 5: FINAL CTA
+            ================================================ -->
+            <section class="gs-section gs-final-cta">
+                <div class="container">
+                    <div class="row align-items-center gy-5">
+
+                        <!-- Left: copy -->
+                        <div class="col-lg-6">
+                            <span class="gs-subtitle">Get started</span>
+                            <h2 class="gs-section-headline">See how GALAXY could work for your business.</h2>
+                            <p class="gs-body-copy">Tell us a little about your gym, club or studio and we'll show you how GALAXY can help simplify your operation, improve control and create a better experience for your customers.</p>
+                            <p class="microcopy">No pressure. Just a useful conversation about how your business runs today and where GALAXY can help.</p>
+                        </div>
+
+                        <!-- Right: form -->
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="gs-hero-form">
+                                <p class="form-title">Book a GALAXY demo</p>
+                                <form class="contact-form gs-enquiry-form" id="gs-form-cta" novalidate>
+                                    <input type="text" name="name" class="form-control" placeholder="Name *" aria-label="Name" required>
+                                    <input type="text" name="business_name" class="form-control" placeholder="Business name *" aria-label="Business name" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Email *" aria-label="Email" required>
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone *" aria-label="Phone" required>
+                                    <select name="business_type" class="form-control" aria-label="Business type" required>
+                                        <option value="" disabled selected>Business type *</option>
+                                        <option>Independent gym</option>
+                                        <option>Fitness studio</option>
+                                        <option>Sports club</option>
+                                        <option>Martial arts / boxing</option>
+                                        <option>Yoga / Pilates studio</option>
+                                        <option>Dance studio</option>
+                                        <option>Swimming club</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <textarea name="message" class="form-control" placeholder="Tell us about your business (optional)" rows="3" aria-label="Message"></textarea>
+                                    <button type="submit" class="btn">Book a GALAXY demo</button>
+                                    <div class="gs-form-feedback" role="alert" aria-live="polite"></div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- /FINAL CTA -->
+
+        </div>
+        <!-- /site-content -->
+
+        <!-- footer -->
+        <footer id="footer">
+            <!-- Footer will be loaded here -->
+        </footer>
+    </div>
+    <!-- /page -->
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/swiperanimation/SwiperAnimation.min.js"></script>
+    <script src="js/shuffle/shuffle.min.js"></script>
+    <script src="js/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="js/counter/jquery.countTo.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/attracthover.js"></script>
+    <script src="js/countdown/jquery.downCount.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/loadNav.js"></script>
+
+    <script>
+        // Smooth scroll for hero CTA
+        document.querySelector('a[href="#demo-form"]')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('demo-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        // GALAXY demo enquiry — AJAX form handler
+        // Registered in capture phase so it fires before custom.js's jQuery
+        // bubble-phase handler that calls preventDefault() on all forms.
+        function gsHandleSubmit(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            var form     = e.currentTarget;
+            var feedback = form.querySelector('.gs-form-feedback');
+            var btn      = form.querySelector('button[type="submit"]');
+
+            // Each form posts to its own PHP file
+            var endpoint = form.id === 'gs-form-hero' ? 'mail-hero.php' : 'mail-cta.php';
+
+            feedback.className   = 'gs-form-feedback';
+            feedback.textContent = '';
+
+            btn.disabled     = true;
+            var originalText = btn.textContent;
+            btn.textContent  = 'Sending\u2026';
+
+            fetch(endpoint, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(function(response) {
+                return response.json().then(function(json) {
+                    return { ok: response.ok, json: json };
+                });
+            })
+            .then(function(result) {
+                if (result.ok && result.json.success) {
+                    feedback.className   = 'gs-form-feedback is-success';
+                    feedback.textContent = result.json.message;
+                    form.reset();
+                } else {
+                    feedback.className   = 'gs-form-feedback is-error';
+                    feedback.textContent = result.json.message || 'Something went wrong. Please try again.';
+                }
+            })
+            .catch(function() {
+                feedback.className   = 'gs-form-feedback is-error';
+                feedback.textContent = 'Could not send your enquiry. Please email us at contact@fibodo.com.';
+            })
+            .finally(function() {
+                btn.disabled    = false;
+                btn.textContent = originalText;
+                feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+        }
+
+        // Attach in capture phase — runs before jQuery's bubble-phase handlers
+        document.querySelectorAll('.gs-enquiry-form').forEach(function(form) {
+            form.addEventListener('submit', gsHandleSubmit, true);
+        });
+    </script>
+</body>
+
+</html>

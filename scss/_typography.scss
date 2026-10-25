@@ -1,0 +1,619 @@
+
+/*****************************
+  Typography
+*****************************/
+body {
+	font-family: $font-base;
+	font-weight: 400;
+	line-height: 1.7;
+	font-size: 17px;
+	color: $body-color;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+a {
+	outline: medium none !important;
+	color: $primary;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+
+	&:focus {
+		color: $black;
+		text-decoration: none !important;
+	}
+
+	&:hover {
+		color: $black;
+		text-decoration: none !important;
+	}
+
+}
+
+a.text-dark {
+	&:focus {
+		color: $primary !important;
+	}
+	&:hover {
+		color: $primary !important;
+	}
+
+}
+
+input {
+	outline: medium none !important;
+	color: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+ {
+	font-family: $font-hedding;
+	font-weight: 600;
+	letter-spacing: 0px;
+	font-style: normal;
+	color: $secondary;
+
+	a {
+		color: inherit;
+	}
+
+}
+
+.bg-black h1,
+.bg-black h2,
+.bg-black h3,
+.bg-black h4,
+.bg-black h5,
+.bg-black h6,
+.bg-black .h1,
+.bg-black .h2,
+.bg-black .h3,
+.bg-black .h4,
+.bg-black .h5,
+.bg-black .h6{
+	color: $white;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6,
+.bg-dark .h1,
+.bg-dark .h2,
+.bg-dark .h3,
+.bg-dark .h4,
+.bg-dark .h5,
+.bg-dark .h6{
+	color: $white;
+}
+
+.bg-black p,
+.bg-dark p{
+	color:$gray-3;
+}
+
+
+iframe {width: 100%;}
+
+label {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 70px;
+	font-style: normal;
+	line-height: 80px;
+}
+
+h2 {
+	font-size: 50px;
+	line-height: 60px;
+}
+
+h3 {
+	font-size: 34px;
+	line-height: 46px;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+h5 {
+	font-size: 22px;
+	line-height: 34px;
+}
+
+h6 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+*::-moz-selection {
+	background: $primary;
+	color: $white;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: $primary;
+	color: $white;
+	text-shadow: none;
+}
+
+::selection {
+	background: $primary;
+	color: $white;
+	text-shadow: none;
+}
+
+/* container-fluid */
+.container-fluid.container-space {
+	padding: 0 40px;
+}
+
+@media (min-width: 1399px){
+	.container {
+	    max-width: 1294px;
+	}
+}
+
+
+
+/* breadcrumb */
+.breadcrumb {
+	margin-top: 20px;
+	background: transparent;
+	border-radius: 0;
+	display: inline-flex;
+	padding: 14px 40px;
+	justify-content: center;
+
+	.breadcrumb-item {
+		padding-right: 0px;
+		display: inline-block;
+		font-size: 17px;
+		line-height: 30px;
+		font-weight: 400;
+		text-transform: none;
+		font-family: $font-base;
+		color: $white;
+
+		a {
+			display: flex;
+			gap:8px;
+			align-items: center;
+			color:  $primary;
+			i{
+				font-size: 14px;
+			}
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+		&:before {
+			color: $white;
+		}
+
+	}
+
+	.breadcrumb-item.active {
+		color: $primary;
+	}
+
+}
+
+
+/* pagination */
+.pagination {
+	margin-top: 100px;
+	gap:20px;
+	.page-item {
+		.page-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 70px;
+			width: 70px;
+			flex: 0 0 70px;
+			border-radius: $radius-100;
+			color: $black;
+			border:1px solid $black;
+			font-size: 20px;
+			transition: 0.5s;
+
+			&.previous{
+				.arrow{
+					svg{ transform: rotate(-90deg); }
+				}
+			}
+			.arrow{
+					svg{
+						path{
+							stroke: $black;
+							transition: 0.5s;
+						}
+					}
+				}
+
+			&:hover {
+				background: $primary;
+				color: $white;
+				border:1px solid $primary;
+
+				.arrow{
+					svg{
+						path{
+							stroke: $white;
+						}
+					}
+				}
+			}
+
+			&:focus {
+				box-shadow: none;
+				background-color:transparent; 
+			}
+
+		}
+
+	}
+
+	.page-item.active {
+		.page-link {
+			background: $primary;
+			border-color: $primary;
+			color: $white;
+		}
+
+	}
+
+}
+
+/* blockquote */
+
+	.blockquote{
+		padding: 0px;
+		border-left: none;
+		margin-top: 25px;
+		.blockquote-content{
+			border-left: 3px solid $primary;
+			position: relative;
+		    font-size: 20px;
+		    line-height: 32px;
+		    padding-left: 0px;
+		    min-height: 100px;
+			padding-left: 150px;
+			&:before{
+				content: "\f10d";
+			    font-family: "Font Awesome 6 Free";
+			    font-weight: 900;
+			    position: absolute;
+			    left: 30px;
+			    top: 0;
+			    font-size: 100px;
+			    line-height: 90px;
+			    font-style:normal;
+			    color: transparent;
+			    -webkit-text-stroke: 2px $primary;
+			    opacity: 0.2;
+			}
+
+			.quote-icon{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			p{
+				font-size: 20px;
+				font-style:normal;
+				line-height: 32px;
+				font-weight: normal;
+				color: $secondary;
+			}
+			.blockquote-author{
+				.blockquote-name{
+					font-size: 20px;
+					font-style: italic;
+					line-height: normal;
+					font-weight: normal;
+					color: $primary;
+
+					span{
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+.blockquote {
+	font-size: 18px;
+	display: block;
+}
+
+.blockquote-quote {
+	position: relative;
+	font-size: 18px;
+	border-left: 0 solid $primary;
+	padding-left: 30px;
+	font-style: italic;
+	display: block;
+	z-index: 1;
+
+	p {
+		position: relative;
+	}
+
+	i {
+		position: absolute;
+		z-index: 0;
+		top: 20px;
+		left: 0;
+		font-size: 60px;
+		line-height: 60px;
+		color: $gray-2;
+	}
+
+}
+
+
+.typography-section{
+
+	.hr{
+		margin-top: 80px;
+		padding-top: 80px;
+		border-top: 1px solid $border-color;
+	}
+	
+}
+
+.dropcaps{
+	
+
+	.drop-cap{
+		float: left;
+    	text-align: center;
+    	line-height: 1;
+    	font-size: 50px;
+		margin-right: 20px;
+		color: $secondary;
+		.drop-cap-letter{
+			font-size: 60px;
+		    font-weight: 500;
+		    display: inline-block;
+		}
+	}
+
+	.drop-cap-yes{
+		.drop-cap{
+			float: left;
+	    	text-align: center;
+	    	line-height: 1;
+	    	font-size: 50px;
+	    	padding: 7px;
+			margin-right: 20px;
+			margin-top: 8px;
+			background-color: $primary;
+			color: $white;
+
+			.drop-cap-letter{
+				font-size: 60px;
+			    font-weight: 500;
+			    display: inline-block;
+			    height: 60px;
+				width: 60px;
+			}
+		}
+	}
+}
+
+/*figure*/
+
+figure.caption{
+	width:253px;
+	
+	
+	.caption-text{
+		margin: 14px 0px;
+		text-align: center;
+	}
+
+	&.alignleft{
+		float: left;
+		margin-right: 25px;
+		margin-bottom: 25px;
+	}
+
+	&.alignright{
+		float: right;
+		margin-left: 25px;
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.container {
+	    max-width: 100%;
+	}
+}
+
+@media (max-width: 991px) {
+	h1 {
+		font-size: 72px;
+	}
+
+	h2 {
+		font-size: 42px;
+		line-height: 52px;
+	}
+
+/* pagination */
+.pagination {
+	margin-top: 80px;
+}
+
+
+}
+
+@media (max-width: 767px) {
+
+	h1 {
+		font-size: 60px;
+		line-height: 70px;
+	}
+
+	h2 {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	h3 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	h4 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	h5 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	h6 {
+		font-size: 18px;
+		line-height:28px;
+	}
+
+
+	.breadcrumb {
+		margin-top: 10px;
+	}
+
+/* pagination */
+.pagination {
+	margin-top: 50px;
+	gap:10px;
+	.page-item {
+		.page-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+			width: 40px;
+			flex: 0 0 40px;
+			font-size: 16px;
+			.arrow{
+				svg{
+					width: 30px;
+				}
+			}
+		}
+	}
+}
+
+}
+
+@media (max-width: 575px) {
+
+	h1 {
+		font-size: 42px;
+		line-height: 52px;
+	}
+
+	h2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	h3 {
+		font-size: 24px;
+		line-height: 34px;
+	}
+
+	h4 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	h5 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	/* breadcrumb */
+	.breadcrumb {
+		
+		.breadcrumb-item {
+			font-size: 16px;
+		}
+	}
+
+/* blockquote */
+	.blockquote {
+			.blockquote-content{
+				padding-left: 30px;
+				padding-top: 80px;
+
+				&:before {
+			        font-size: 80px;
+			        line-height: 80px;
+			    }
+			}
+
+		}
+
+}
+
+
+@media (max-width: 479px) {
+
+	h1 {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	h2 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	h5 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	h6 {
+		font-size: 16px;
+		line-height:26px;
+	}
+}

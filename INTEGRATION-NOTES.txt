@@ -1,0 +1,11 @@
+MAIN SITE INTEGRATION
+
+Copy these files into the existing fibodo website root, preserving all existing css/, js/, images/ folders and paths.
+index.html is the supplied corporate homepage.
+navigation.html / navigation.js / navigation.css / fibodo-navigation-base.css provide shared CORE25-style navigation.
+products/core/ contains the full CORE25 website with its existing relative links, navigation and pages.
+products/core.html, galaxy.html, pulsar.html, enterprise.html are main product landing pages.
+The homepage existing footer loader, stylesheets and image URLs are deliberately untouched.
+The original corporate website assets and other pages were not provided; do not delete them when merging.
+The product templates are from the supplied CORE25 website; review GALAXY/PULSAR/ENTERPRISE messaging before publishing.
+Run from a web server, not file://, because navigation uses fetch().

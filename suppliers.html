@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Submit your active-net meeting preferences.">
+    <title>Supplier Meeting Preferences | Active Insight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-role="Supplier">
+    <main class="site-shell">
+        <header class="brand-header">
+            <div class="brand-logos"><a href="index.html" aria-label="Meeting preferences home"><img
+                        class="active-insight-logo" src="active-insight-logo.jpg" alt="Active Insight"></a><a
+                    href="index.html" aria-label="Meeting preferences home"><img class="fibodo-logo"
+                        src="fibodo-logo.svg" alt="fibodo"></a></div>
+        </header>
+        <section class="form-hero"><a href="index.html" class="back-link">← Back</a>
+            <div class="hero-grid">
+                <div class="hero-heading">
+                    <div class="eyebrow">active-net meeting preferences</div>
+                    <h1>Choose the Operators You’d Like to Meet</h1>
+                    <p class="hero-lead">Connect with the right operators</p>
+                    <p>One of the biggest benefits of active-net is the opportunity to have focused, pre-arranged
+                        conversations with operators who are relevant to your business.</p>
+                </div>
+                <div class="hero-details">
+                    <p>Please take a few moments to review the operators attending and select the organisations you
+                        would most like to meet.</p>
+                    <p>Your preferences will help us create a tailored meeting schedule, matching you with businesses
+                        that are most relevant to your organisation, current priorities and future plans.</p>
+                    <p class="reassurance">We’ll take care of the rest. While we can’t guarantee every choice, your
+                        selections help us plan your personalised meeting schedule. There will also be plenty of open
+                        networking opportunities.</p>
+                    <p class="thank-you">Thank you</p>
+                </div>
+            </div>
+        </section>
+        <form class="meeting-form" id="meetingForm">
+            <fieldset>
+                <legend>About you</legend>
+                <div class="details-grid">
+                    <div class="full"><label class="field-label" for="business">Your business name *</label><select
+                            id="business" required>
+                            <option value="">Select your business</option>
+                        </select><a id="ownWebsite" class="own-website" target="_blank" rel="noopener noreferrer"
+                            hidden></a></div>
+                    <div class="attendee-fields">
+                        <div><label class="field-label" for="primaryAttendee">Primary Attendee *</label><input
+                                id="primaryAttendee" name="primaryAttendee" type="text" autocomplete="name"
+                                maxlength="120" placeholder="Full name" required></div>
+                        <div><label class="field-label" for="secondAttendee">Second Attendee <span
+                                    class="optional">(optional)</span></label><input id="secondAttendee"
+                                name="secondAttendee" type="text" maxlength="120"
+                                placeholder="Full name (if attending)"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="listheading">
+                    <h2>Choose operators</h2><span id="count" aria-live="polite">0 selected</span>
+                </div>
+                <p class="selection-description">Select the organisations you would most like to meet and submit your
+                    preferences.</p><input id="search" type="search" placeholder="Search operators…"
+                    aria-label="Search operators">
+                <div id="options" class="options"></div>
+            </fieldset>
+            <div class="submit-area">
+                <p id="status" class="status" role="status" aria-live="polite"></p><button id="submit"
+                    type="submit">Submit meeting preferences →</button>
+            </div>
+        </form>
+        <footer class="site-footer">Meeting preferences powered by <strong>fibodo</strong></footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+
+/*****************************
+  Action box
+*****************************/
+
+
+.action-box{
+	display: flex;
+  .action-box-content{
+  	span{
+  		font-size: 90px;
+  		line-height: normal;
+  		font-weight: bold;
+  		color: $white;
+  		font-family: $font-hedding;
+  		margin-bottom: 10px;
+  		display: block;
+  	}
+  	p{
+  		font-size: 20px;
+  		margin-bottom: 0px;
+  	}
+  }
+}
+
+@media (max-width: 991px) {
+	.action-box{
+	  .action-box-content{
+	  	span{
+	  		font-size: 48px;
+	  	}
+	  }
+	}
+}
+
+
+@media (max-width: 767px) {
+
+	.action-box{
+		flex-direction: column;
+		.action-box-content{
+			margin-bottom: 30px;
+			span{
+	  		font-size: 30px;
+	  	}
+		}
+	}
+}

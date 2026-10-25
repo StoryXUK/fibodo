@@ -1,0 +1,63 @@
+/*****************************
+  List style
+*****************************/
+.list {
+	margin: 0;
+	padding: 0;
+	li {
+		margin-bottom: 15px;
+		color: $black;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.icon-list-items {
+	list-style-type: none;
+	padding:0px;
+	margin: 0;
+	.icon-list-item{
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+		line-height: 30px;
+		gap:16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.list-icon{
+			display: flex;
+			align-items: center;
+			i{
+				font-size: 24px;
+				color: $primary;
+			}
+		}
+
+		.list-text{
+			font-size: 17px;
+			font-weight: 600;
+			line-height: 30px;
+			color: $secondary;
+		}
+	}
+
+	&.icon-list-items-style-02 {
+		.list-text{
+			color: $secondary;
+		}
+	}
+}
+
+.bg-dark{
+	.icon-list-items {
+		.icon-list-item{
+			.list-text{
+				color: $gray-3;
+			}
+		}
+	}
+}

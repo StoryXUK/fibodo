@@ -1,0 +1,204 @@
+/*****************************
+  Counter
+*****************************/
+
+.counter{
+  .counter-number{
+    .counter-text{
+      h2 {
+        font-size: 70px;
+        line-height: 75px;
+        color: $white;
+        font-family: $font-hedding;
+        font-weight: 600;
+      }
+    }
+  }
+  .counter-info{
+    .counter-title{
+      font-size: 24px;
+      font-weight: bold;
+      font-family: $font-hedding;
+      color: $black;
+    }
+    .counter-description{
+      font-size: 20px;
+      font-weight: normal;
+      font-family: $font-base;
+      color: $body-color;
+      margin-bottom: 0px;
+    }
+  }
+
+  &.text-center{
+    .counter-number{
+      .counter-text{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  &.counter-style-02{
+    .counter-number{
+      .counter-text{
+        font-size: 100px;
+        line-height: 100px;
+        span{
+          color: $primary;
+        }
+        h2{
+          font-size: 100px;
+          line-height: 100px;
+        }
+
+      }
+    }
+    &.counter-mt{
+      margin-top: 180px;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+
+  .counter{
+    &.counter-style-02{
+      .counter-number{
+        .counter-text{
+          font-size: 80px;
+          line-height: 80px;
+          h2{
+            font-size: 80px;
+            line-height: 80px;
+          }
+
+        }
+      }
+      &.counter-mt{
+        margin-top: 100px;
+      }
+    }
+  }
+  
+
+}
+
+@media (max-width: 1199px) {
+  .counter{
+    &.counter-style-02{
+      &.counter-mt{
+        margin-top: 0px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  
+  .counter{
+    .counter-number{
+      .counter-text{
+        h2 {
+          font-size: 50px;
+          line-height: 60px;
+        }
+      }
+    }
+
+    &.counter-style-02{
+      .counter-number{
+        .counter-text{
+          font-size: 62px;
+          line-height: 62px;
+          h2{
+            font-size: 62px;
+            line-height: 62px;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .counter{
+    .counter-number{
+    .counter-text{
+      font-size: 48px;
+      line-height: 58px;
+      h2{
+        font-size: 48px;
+        line-height: 58px;
+      }
+
+    }
+  }
+  .counter-info{
+    .counter-title{
+      font-size: 20px;
+    }
+    .counter-description{
+      font-size: 18px;
+    }
+  }
+    &.counter-style-02{
+      .counter-number{
+        .counter-text{
+          font-size: 48px;
+          line-height: 58px;
+          h2{
+            font-size: 48px;
+            line-height: 58px;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .counter{
+    .counter-number{
+      .counter-text{
+        font-size: 36px;
+        line-height: 46px;
+        h2{
+          font-size: 36px;
+          line-height: 46px;
+        }
+
+      }
+    }
+    .counter-info{
+      .counter-title{
+        font-size: 18px;
+      }
+      .counter-description{
+        font-size: 16px;
+      }
+    }
+    &.counter-style-02{
+      .counter-number{
+        .counter-text{
+          font-size: 36px;
+          line-height: 46px;
+          h2{
+            font-size: 36px;
+            line-height: 46px;
+          }
+
+        }
+      }
+    }
+  }
+
+}

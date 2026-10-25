@@ -1,0 +1,107 @@
+/*
+
+Template: fibodo
+Version: 1.0
+Author: fibodo
+Design and Developed by: fibodo.com
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+
+ :: Typography
+ :: Helper Classes
+ :: Shortcodes
+  	- Accordion
+  	- Action Box
+  	- Button
+    - Client
+    - Countdown
+    - Counter
+    - Form Control
+    - list Style
+    - Marquee
+    - Newsletter
+    - Owl Carousel
+    - Portfolio
+    - Pricing
+    - Progress Bar
+    - Service
+    - Sidebar
+    - Social Icon
+    - Tabs
+    - Team
+    - Testimonial
+    - Timeline
+ :: Header
+   - Header default
+   - Header Style 02
+   - Header Sticky
+ :: Banner
+   - Banner
+   - Banner 02
+   - Inner Header
+ :: Layout
+   - Section Title
+   - Clienti Reviews
+   - Sticky column
+   - Back To Top
+   - Search
+ :: Blog
+   - Blog
+ :: Not Found
+ :: Footer
+ :: Responsive
+
+======================================
+[ End table content ]
+======================================*/
+
+
+
+// Core files
+@import "variables";
+@import "typography";
+@import "helpers";
+
+// Shortcodes
+@import "shortcodes/accordion";
+@import "shortcodes/action-box";
+@import "shortcodes/button";
+@import "shortcodes/counter";
+@import "shortcodes/countdown";
+@import "shortcodes/client";
+@import "shortcodes/content-switcher";
+@import "shortcodes/form-control";
+@import "shortcodes/history-slider";
+@import "shortcodes/info-box";
+@import "shortcodes/list";
+@import "shortcodes/marquee";
+@import "shortcodes/menu";
+@import "shortcodes/newsletter";
+@import "shortcodes/owl-carousel";
+@import "shortcodes/pricing";
+@import "shortcodes/portfolio";
+@import "shortcodes/progress-bar";
+@import "shortcodes/social-icon";
+@import "shortcodes/sidebar";
+@import "shortcodes/service";
+@import "shortcodes/tabs";
+@import "shortcodes/team";
+@import "shortcodes/testimonial";
+@import "shortcodes/timeline";
+
+// Structure
+@import "header";
+@import "banner";
+@import "layout";
+
+// Pages
+@import "blog";
+@import "footer";
+
+
