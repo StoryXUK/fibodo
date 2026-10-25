@@ -1,0 +1,260 @@
+:root {
+  --core-feature-card: rgba(255,255,255,.76);
+  --core-feature-card-strong: #ffffff;
+}
+
+.core-features-showcase {
+  position: relative;
+  overflow: hidden;
+  padding: 132px 0;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(230,255,46,.18), transparent 28rem),
+    radial-gradient(circle at 92% 10%, rgba(255,90,31,.14), transparent 30rem),
+    linear-gradient(180deg, #fff, var(--cream));
+}
+
+.core-features-showcase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(5,11,10,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5,11,10,.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, #000, transparent 86%);
+  pointer-events: none;
+}
+
+.core-features-showcase .container {
+  position: relative;
+  z-index: 1;
+}
+
+.core-features-showcase .row {
+  display: grid;
+  gap: 54px;
+}
+
+.core-features-showcase .col-lg-8,
+.core-features-showcase .col-lg-12 {
+  min-width: 0;
+}
+
+.core-features-showcase .section-title {
+  max-width: 900px;
+}
+
+.core-features-showcase .subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 950;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.core-features-showcase .subtitle::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--lime);
+  box-shadow: 0 0 0 6px rgba(230,255,46,.14);
+}
+
+.core-features-showcase .title {
+  margin: 22px 0 0;
+  max-width: 980px;
+  color: var(--ink);
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 950;
+  letter-spacing: -.075em;
+  line-height: .91;
+}
+
+.core-features-showcase .infobox-wrapper {
+  counter-reset: core-feature;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.core-features-showcase .infobox {
+  counter-increment: core-feature;
+  position: relative;
+  overflow: hidden;
+  min-height: 265px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 24px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.68)),
+    radial-gradient(circle at 100% 0%, rgba(230,255,46,.2), transparent 42%);
+  box-shadow: 0 16px 42px rgba(5,11,10,.06);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
+}
+
+.core-features-showcase .infobox::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  top: -36px;
+  width: 126px;
+  height: 126px;
+  border-radius: 999px;
+  background: rgba(230,255,46,.18);
+  pointer-events: none;
+}
+
+.core-features-showcase .infobox:nth-child(6n+1),
+.core-features-showcase .infobox:nth-child(6n+4) {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(230,255,46,.2), transparent 36%),
+    linear-gradient(135deg, #101916, #050b0a);
+  border-color: rgba(255,255,255,.13);
+  color: #fff;
+  box-shadow: var(--shadow-deep);
+}
+
+.core-features-showcase .infobox:nth-child(6n+1)::after,
+.core-features-showcase .infobox:nth-child(6n+4)::after {
+  background: rgba(255,90,31,.26);
+}
+
+.core-features-showcase .infobox:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,90,31,.32);
+  background-color: var(--core-feature-card-strong);
+  box-shadow: var(--shadow-soft);
+}
+
+.core-features-showcase .infobox-icon {
+  position: relative;
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(255,90,31,.1);
+  color: var(--orange);
+  font-size: 24px;
+  font-weight: 950;
+}
+
+.core-features-showcase .infobox:nth-child(6n+1) .infobox-icon,
+.core-features-showcase .infobox:nth-child(6n+4) .infobox-icon {
+  background: var(--lime);
+  color: var(--dark);
+}
+
+.core-features-showcase .infobox-icon i {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+}
+
+.core-features-showcase .infobox-icon i::before {
+  content: counter(core-feature, decimal-leading-zero);
+  font-size: 13px;
+  letter-spacing: .08em;
+}
+
+.core-features-showcase .infobox-icon img {
+  width: 32px !important;
+  height: 32px !important;
+  object-fit: contain;
+  filter: saturate(1.1) contrast(1.05);
+}
+
+.core-features-showcase .infobox-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.core-features-showcase .infobox-title {
+  margin: 26px 0 12px;
+  color: inherit;
+  font-size: 25px;
+  font-weight: 950;
+  letter-spacing: -.05em;
+  line-height: 1;
+}
+
+.core-features-showcase .infobox-description {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.58;
+}
+
+.core-features-showcase .infobox:nth-child(6n+1) .infobox-description,
+.core-features-showcase .infobox:nth-child(6n+4) .infobox-description {
+  color: var(--muted-dark);
+}
+
+.core-features-showcase .infobox-action {
+  margin-top: auto;
+  padding-top: 26px;
+}
+
+.core-features-showcase .infobox-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.core-features-showcase .infobox:nth-child(6n+1) .infobox-link,
+.core-features-showcase .infobox:nth-child(6n+4) .infobox-link {
+  color: var(--lime);
+}
+
+.core-features-showcase .infobox-link i::before {
+  content: "->";
+  font-style: normal;
+}
+
+@media (max-width: 1100px) {
+  .core-features-showcase .infobox-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .core-features-showcase .infobox-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .core-features-showcase {
+    padding: 86px 0;
+  }
+
+  .core-features-showcase .row {
+    gap: 34px;
+  }
+
+  .core-features-showcase .title {
+    font-size: clamp(44px, 13vw, 68px);
+  }
+
+  .core-features-showcase .infobox-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .core-features-showcase .infobox {
+    min-height: auto;
+  }
+}

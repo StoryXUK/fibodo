@@ -1,0 +1,206 @@
+.fibodo-footer {
+  box-sizing: border-box;
+  margin: 0;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+  color: #111;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.fibodo-footer *,
+.fibodo-footer *::before,
+.fibodo-footer *::after { box-sizing: border-box; }
+
+.fibodo-footer__container {
+  width: min(calc(100% - 48px), 1220px);
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.fibodo-footer__grid {
+  display: grid;
+  grid-template-columns: 240px repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  align-items: start;
+  padding: 60px 0 44px;
+}
+
+.fibodo-footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.fibodo-footer__logo {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.fibodo-footer__logo img {
+  display: block;
+  width: 107px;
+  height: 40px;
+  max-width: none;
+  object-fit: fill;
+  filter: brightness(0);
+}
+
+.fibodo-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fibodo-footer__social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 4px !important;
+}
+
+.fibodo-footer__social a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+.fibodo-footer__social a:hover,
+.fibodo-footer__social a:focus-visible {
+  background: #3f98df;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.fibodo-footer__social svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.fibodo-footer__social svg .is-filled {
+  fill: currentColor;
+  stroke: none;
+}
+
+.fibodo-footer__heading {
+  min-height: 36px;
+  margin: 0 0 16px;
+  padding: 0;
+  color: #111;
+  font: 700 13px/36px "DM Sans", Arial, sans-serif;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.fibodo-footer__links {
+  display: grid;
+  gap: 9px;
+}
+
+.fibodo-footer__links li,
+.fibodo-footer__links a { margin: 0; padding: 0; }
+
+.fibodo-footer__links a,
+.fibodo-footer__legal a {
+  color: #374151;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.fibodo-footer__links a:hover,
+.fibodo-footer__links a:focus-visible,
+.fibodo-footer__legal a:hover,
+.fibodo-footer__legal a:focus-visible { color: #3f98df; }
+
+.fibodo-footer__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding: 22px 0 28px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.fibodo-footer__legal {
+  display: flex;
+  align-items: center;
+  gap: 6px 24px;
+}
+
+.fibodo-footer__legal a,
+.fibodo-footer__copy {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.fibodo-footer__copy {
+  margin: 0;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+  .fibodo-footer__grid { gap: 3vw; padding-top: 55px; }
+}
+
+@media (max-width: 991px) {
+  .fibodo-footer__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 27px;
+    padding: 45px 0 36px;
+  }
+  .fibodo-footer__brand {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .fibodo-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 24px;
+    padding: 40px 0 32px;
+  }
+  .fibodo-footer__brand {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .fibodo-footer__bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .fibodo-footer__grid { grid-template-columns: 1fr; gap: 28px; }
+  .fibodo-footer__legal { flex-wrap: wrap; }
+  .fibodo-footer__copy { white-space: normal; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fibodo-footer a { transition: none; }
+}

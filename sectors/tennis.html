@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>CORE Tennis — Booking Software for Tennis Coaches &amp; Clubs | fibodo</title><meta content="CORE Tennis helps tennis coaches and clubs manage lessons, sessions, bookings and payments. Start with a free website and hosting." name="description"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet"/><link href="tennis/tennis.css" rel="stylesheet"/><style id="powerpoint-review-updates">
+        /* Review changes are kept in this HTML; existing shared styles remain in place. */
+        #pricing .container {
+            position: relative
+        }
+
+        #pricing .plans-heading {
+            max-width: 660px
+        }
+
+        #pricing .core-price-callout {
+            box-sizing: border-box;
+            background: #23302b;
+            color: #fff;
+            border: 1px solid #526159;
+            border-radius: 24px;
+            padding: 28px;
+            margin: 24px 0 40px;
+            max-width: 390px
+        }
+
+        #pricing .core-price-callout .plan-eyebrow {
+            color: #e1ff00
+        }
+
+        #pricing .core-callout-price {
+            font-size: clamp(36px, 4vw, 52px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 20px 0 14px
+        }
+
+        #pricing .core-callout-price span {
+            font-size: 16px;
+            font-weight: 500
+        }
+
+        #pricing .core-price-callout .btn {
+            display: inline-flex;
+            margin-top: 12px;
+            white-space: normal
+        }
+
+        #pricing .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+            align-items: stretch;
+            padding-top: 34px
+        }
+
+        #pricing .plan-card {
+            min-width: 0
+        }
+
+        #pricing .plan-card-featured {
+            position: relative;
+            overflow: visible;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 18px 44px rgba(255, 91, 25, .2)
+        }
+
+        #pricing .plan-popular-band {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            background: #ff5b19;
+            color: #101a16;
+            padding: 11px 16px 10px;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 900;
+            letter-spacing: .1em
+        }
+
+        #pricing .plan-card-featured .plan-card-top {
+            border-top: 1px solid rgba(16, 26, 22, .16)
+        }
+
+        #pricing .plan-card-coming {
+            background: #dedfdf;
+            color: #4c5350;
+            border-color: #aeb4b0
+        }
+
+        #pricing .plan-card-coming .plan-kicker {
+            padding: 0;
+            background: transparent;
+            color: #424a46;
+            border-radius: 0;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .14em
+        }
+
+        #pricing .plan-card-coming .plan-button:disabled {
+            background: #bfc5c1;
+            color: #39423d;
+            cursor: not-allowed;
+            opacity: 1;
+            border: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 700
+        }
+
+        #pricing .plans-comparison {
+            display: block;
+            margin-top: 36px;
+            border-top: 1px solid #536059
+        }
+
+        #pricing #comparison-title {
+            font-size: 18px;
+            padding: 22px 0;
+            margin: 0
+        }
+
+        #pricing .plans-table-scroll {
+            display: block;
+            overflow-x: auto;
+            max-width: 100%
+        }
+
+        #pricing .plans-comparison table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 620px
+        }
+
+        #pricing .plans-comparison th,
+        #pricing .plans-comparison td {
+            padding: 13px 12px;
+            border-bottom: 1px solid #536059
+        }
+
+        #pricing .plans-comparison td {
+            text-align: center
+        }
+
+        #pricing .plans-comparison th {
+            text-align: center
+        }
+
+        #pricing .plans-comparison th:first-child {
+            text-align: left
+        }
+
+        #pricing .plans-comparison a {
+            color: inherit;
+            text-underline-offset: 4px
+        }
+
+        #pricing .plans-comparison a:hover {
+            color: #ff6b2c
+        }
+
+        #pricing .comparison-tick {
+            color: #ff6b2c;
+            font-size: 20px;
+            font-weight: 900
+        }
+
+        .pricing-sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0
+        }
+
+        @media(min-width:1100px) {
+            #pricing .plans-heading {
+                max-width: 55%;
+                min-height: 280px
+            }
+
+            #pricing .core-price-callout {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 36%;
+                margin: 0
+            }
+        }
+
+        @media(max-width:900px) {
+            #pricing .plans-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                row-gap: 48px
+            }
+        }
+
+        @media(max-width:560px) {
+            #pricing .plans-grid {
+                grid-template-columns: 1fr
+            }
+
+            #pricing .core-price-callout {
+                max-width: none
+            }
+        }
+    </style><link href="../fibodo-navigation-base.css" rel="stylesheet"/><link href="../navigation.css" rel="stylesheet"/></head><body>
+<div data-root="../" id="core-navigation"></div>
+<main><section class="hero" id="top"><div class="container hero-layout"><div class="hero-copy"><span class="eyebrow">CORE TENNIS · MADE FOR TENNIS COACHES</span><h1>More time coaching.<br/><em>Less time organising.</em></h1><h2>Your coaching. Your court. Your business.</h2><p>Whether you offer one-to-one tennis lessons, group clinics or junior coaching programmes, CORE brings your bookings, payments and customer relationships together.</p><p>Spend less time organising and more time coaching, playing and growing your business.</p><div class="actions"><a class="btn btn-primary" href="https://web.fibodo.com/signup/information?app=c1">Get Started For Free</a><a class="btn btn-outline" href="#why-tennis">Explore CORE Tennis</a></div><p class="fine">Free website. Free hosting. Your own URL. Free forever.</p></div><div class="hero-art"><img alt="Tennis player reaching for a ball on an outdoor court" height="912" src="tennis/tennis-hero.webp" width="900"/><div class="schedule-panel"><div class="panel-top"><strong>CORE Tennis · Sessions</strong><span>This week ↗</span></div><div class="lesson"><span class="dot aqua"></span><div><b>Private lesson</b><small>09:00 · 1 player</small></div><strong>Booked</strong></div><div class="lesson"><span class="dot lime"></span><div><b>Group coaching</b><small>10:30 · 6 players</small></div><strong>Booked</strong></div><div class="lesson"><span class="dot coral"></span><div><b>Junior programme</b><small>14:00 · 8 places</small></div><strong>Open</strong></div></div><div class="float-pill">✓   New booking received</div></div></div></section>
+<section class="white-section" id="why-tennis"><div class="container"><div class="intro-grid"><div><span class="eyebrow dark">MORE OPPORTUNITIES TO PLAY</span><h2>Build a tennis business <em>that works for you.</em></h2><p>Behind every great session is a business that needs to run smoothly. CORE helps you organise your services, manage your schedule and make it easier for players to book.</p><p>From private lessons to group clinics and junior programmes, spend less time on admin and more time on court.</p><a class="btn btn-dark" href="#features">Explore the tools</a></div><div class="service-cards"><article><img alt="Tennis player practicing on an outdoor court" loading="lazy" src="tennis/private.webp"/><div><span class="card-icon">01</span><h3>Private tennis coaching</h3><p>Let players book individual tennis lessons at times that suit them.</p></div></article><article><img alt="Players taking part in a tennis group session" loading="lazy" src="tennis/group.webp"/><div><span class="card-icon">02</span><h3>Group tennis clinics</h3><p>Organise group coaching, schedules and available places.</p></div></article><article><img alt="Junior player learning tennis skills with a coach" loading="lazy" src="tennis/programme.webp"/><div><span class="card-icon">03</span><h3>Junior tennis programmes</h3><p>Promote junior coaching, courses and seasonal development programmes.</p></div></article></div></div></div></section>
+<section class="dark-section" id="features"><div class="container"><span class="eyebrow">THE BUSINESS BIT. BUILT IN.</span><h2>The tools to keep your tennis business moving.</h2><p class="section-lead">Everything you need to organise lessons, support your customers and make more time for teaching.</p><div class="feature-cards"><article><span>▦</span><div><h3>Bookings &amp; Scheduling</h3><p>Set your availability and let customers book the right session.</p></div></article><article><span>£</span><div><h3>Payments</h3><p>Take payments for lessons, programmes and packages.</p></div></article><article><span>◎</span><div><h3>Player Management</h3><p>Keep player information and communications organised.</p></div></article><article><span>♧</span><div><h3>Group Coaching</h3><p>Organise group clinics and manage available places.</p></div></article><article><span>◇</span><div><h3>Memberships &amp; Packages</h3><p>Offer packages and recurring ways for players to attend.</p></div></article><article><span>↗</span><div><h3>Marketing &amp; Vouchers</h3><p>Promote your lessons and encourage customers to return.</p></div></article></div></div></section>
+<section class="free-section" id="free-website"><div class="container free-layout"><div><span class="eyebrow dark">YOUR BUSINESS STARTS HERE</span><h2>A professional website. <em>Completely free.</em></h2><p>Give your tennis coaching business a professional home online. Showcase your sessions, share your details and promote what makes your coaching special.</p><p>With CORE Free, your website, hosting and bespoke URL are included — with no monthly website or hosting charges. You can also list your business on <strong>findbookdo.com</strong> to help people discover your services.</p><div class="free-benefits"><span>✓ Free website</span><span>✓ Free hosting</span><span>✓ Bespoke URL</span><span>✓ findbookdo.com listing</span></div><div class="actions"><a class="btn btn-dark" href="https://web.fibodo.com/signup/information?app=c1">Get Your Free Website</a><a class="btn btn-light" href="free.html">Discover CORE Free</a></div><p class="fine dark-fine">Upgrade when you need more. Or stay free forever.</p></div><div class="site-preview"><div class="browser-bar">●   ●   ● <span>acepointtennis.findbookdo.com</span></div><div class="preview-body"><span class="mini-logo">ACEPOINT <small>TENNIS COACHING</small></span><div class="preview-banner"><img alt="Tennis group playing together on an outdoor court" loading="lazy" src="tennis/group.webp"/><div><h3>Tennis coaching for every level.</h3><p>Personal coaching. Real progress.</p><span class="mini-button">Our lessons →</span></div></div><div class="preview-bottom"><span>Private lessons</span><span>Group sessions</span><span>Junior tennis programmes</span></div></div><div class="listing-tag">↗   Listed on findbookdo.com</div></div></div></section>
+<section class="statement"><div class="container statement-inner"><div><span class="eyebrow">START FREE. GROW YOUR WAY.</span><h2>You bring the coaching.<br/><em>CORE helps you build the business.</em></h2></div><p>Start with a free website, add bookings and payments when you're ready, and keep building on your own terms.</p></div></section>
+<section aria-labelledby="plans-title" class="plans-section section-panel section-break" id="pricing">
+<div class="container">
+<span aria-hidden="true" class="plans-anchor" id="packages"></span>
+<header class="plans-heading">
+<span class="plan-eyebrow">YOUR BUSINESS. YOUR NEXT MOVE.</span>
+<h2 id="plans-title">Start strong.<br/><em>Grow your way.</em></h2>
+<p>From your first booking to your own branded app. Choose the plan that fits where you are, and
+                        where you want to go.</p>
+</header>
+<aside aria-label="CORE pricing overview" class="core-price-callout">
+<span class="plan-eyebrow">CORE BY fibodo</span>
+<p class="core-callout-price">From £0<span>/month</span></p>
+<p>Start with your website, hosting and URL included.</p>
+<a class="btn btn-primary" href="features.html">See everything CORE includes</a>
+</aside>
+<div class="plans-grid">
+<article aria-labelledby="plan-core-free" class="plan-card plan-card-free">
+<div class="plan-card-top"><span class="plan-kicker">START FOR FREE</span>
+<h3 id="plan-core-free">CORE Free</h3>
+<p class="plan-description">Your professional online presence, ready to share.</p>
+<p class="plan-price"><strong>£0</strong><span>/ month</span></p>
+<p class="plan-setup">Free forever</p>
+<a aria-label="Get started with CORE Free" class="plan-button" href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer" target="_blank">Get started free <span aria-hidden="true">↗</span></a>
+</div>
+<div class="plan-card-features">
+<p class="plan-inherits">Everything you need to get online.</p>
+<ul>
+<li>Website</li>
+<li>Hosting</li>
+<li>URL</li>
+</ul>
+</div>
+</article>
+<article aria-labelledby="plan-core" class="plan-card">
+<div class="plan-card-top"><span class="plan-kicker">GET STARTED</span>
+<h3 id="plan-core">CORE</h3>
+<p class="plan-description">The essentials to run your business.</p>
+<p class="plan-price"><strong>£25</strong><span>/ month</span></p>
+<p class="plan-setup">Monthly subscription</p>
+<a aria-label="Get started with CORE" class="plan-button" href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer" target="_blank">Get started <span aria-hidden="true">↗</span></a>
+</div>
+<div class="plan-card-features">
+<p class="plan-inherits">Your everyday tools, connected.</p>
+<ul>
+<li>Bookings &amp; Payments</li>
+<li>Planner &amp; Scheduling</li>
+<li>Marketing &amp; Dynamic Pricing</li>
+<li>CRM &amp; Messages</li>
+<li>Memberships &amp; Vouchers</li>
+<li>Website &amp; Free Hosting</li>
+<li>Financial Reports &amp; Support</li>
+</ul>
+</div>
+</article>
+<article aria-labelledby="plan-plus" class="plan-card plan-card-featured">
+<div class="plan-popular-band">Most popular</div>
+<div class="plan-card-top"><span class="plan-kicker">GET CONNECTED</span>
+<h3 id="plan-plus">CORE Plus</h3>
+<p class="plan-description">More ways to connect and earn.</p>
+<p class="plan-price"><strong>£99</strong><span>/ month</span></p>
+<p class="plan-setup">Monthly subscription</p>
+<a aria-label="Get started with CORE Plus" class="plan-button" href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer" target="_blank">Get started <span aria-hidden="true">↗</span></a>
+</div>
+<div class="plan-card-features">
+<p class="plan-inherits">Everything in CORE, plus:</p>
+<ul>
+<li>Client App</li>
+<li>OnDemand Library</li>
+<li>HD Live Streaming</li>
+<li>Content Manager</li>
+<li>Analytics</li>
+</ul>
+</div>
+</article>
+<article aria-labelledby="plan-pro" class="plan-card plan-card-coming">
+<div class="plan-card-top"><span class="plan-kicker">COMING 2027</span>
+<h3 id="plan-pro">CORE Pro</h3>
+<p class="plan-description">Reach further. Build your business.</p>
+<p class="plan-price"><strong>£199</strong><span>/ month</span></p>
+<p class="plan-setup">Monthly subscription</p>
+<button aria-label="CORE Pro is coming in 2027" class="plan-button" disabled="" type="button">Coming 2027</button>
+</div>
+<div class="plan-card-features">
+<p class="plan-inherits">Everything in CORE Plus, plus:</p>
+<ul>
+<li>Lead Gen</li>
+<li>AI agent</li>
+<li>Rewards</li>
+<li>Store</li>
+</ul>
+</div>
+</article>
+</div>
+<article aria-labelledby="plan-ultimate" class="plan-ultimate">
+<div>
+<span class="plan-kicker">MAKE IT YOURS</span>
+<h3 id="plan-ultimate">CORE Ultimate</h3>
+<p class="plan-description">Your brand. Your own app. A complete digital experience built around your business.</p>
+</div>
+<div>
+<p class="plan-price"><strong>£299</strong><span>/ month</span></p>
+<p class="plan-setup">+ £999 one-off setup</p>
+</div>
+<div class="plan-ultimate-features">
+<p class="plan-inherits">Everything in CORE Pro, plus:</p>
+<ul>
+<li>Custom App</li>
+<li>Your branding</li>
+<li>App launch support</li>
+</ul>
+<a aria-label="Get started with CORE Ultimate" class="plan-button" href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer" target="_blank">Build your app <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<p class="plans-note">All prices include VAT. Prices are per month. CORE Ultimate includes a £999 one-off
+                    setup fee.</p>
+<section aria-labelledby="comparison-title" class="plans-comparison">
+<h3 id="comparison-title">Compare paid plan features</h3>
+<div aria-label="Plan feature comparison" class="plans-table-scroll" role="region" tabindex="0">
+<table>
+<caption>What's included in each plan</caption>
+<thead>
+<tr>
+<th scope="col">Features</th>
+<th scope="col">CORE</th>
+<th scope="col">CORE Plus</th>
+<th scope="col">CORE Pro</th>
+<th scope="col">CORE Ultimate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row"><a href="features.html">Bookings</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Payments</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Product Library</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Planner</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Scheduling</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">CRM</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Marketing</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Messages</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Financial Reports</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Website</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Business App</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Memberships (Subscriptions)</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Vouchers</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Dynamic Pricing</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Support</a></th>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Client App</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">OnDemand Library</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">HD Live Streaming</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Content Manager</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Analytics</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Lead Gen</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">AI Agent</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Rewards</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Store</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+<tr>
+<th scope="row"><a href="features.html">Custom App</a></th>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+<td><span aria-hidden="true" class="comparison-tick">✓</span><span class="pricing-sr-only">Included</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</section>
+<section class="final-cta"><div class="container"><span class="eyebrow">YOUR NEXT MOVE STARTS HERE</span><h2>Make more room for the moments that matter.</h2><p>Less admin. More court time. A tennis business that works your way.</p><a class="btn btn-primary" href="https://web.fibodo.com/signup/information?app=c1">Get Started For Free</a></div></section></main><footer><div class="container foot-row"><a class="logo" href="index.html">CORE <small>by fibodo</small></a><span>Built for your business today. Ready for what comes next.</span><a href="#top">Back to top ↑</a></div></footer><script>const b=document.querySelector('.nav-toggle'),n=document.querySelector('.nav-links');b.addEventListener('click',()=>{const x=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!x));n.classList.toggle('open',!x)});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));</script><script src="../navigation.js"></script></body></html>

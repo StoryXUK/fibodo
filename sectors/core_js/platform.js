@@ -1,0 +1,17 @@
+(function(){
+  const signup='https://web.fibodo.com/signup/information?app=c1';
+  const path=location.pathname;
+  const depth=(path.match(/\//g)||[]).length>1?'../':'';
+  const active=path.split('/').filter(Boolean)[0]||'home';
+  const header=document.querySelector('[data-site-header]');
+  if(header){
+    header.innerHTML=`<div class="announcement"><strong>Start free.</strong> Free website. Free hosting. Free forever.</div><div class="container nav-shell"><a class="brand" href="${depth}index.html" aria-label="CORE by fibodo home"><img src="${depth}assets/logo.svg" alt="CORE by fibodo"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button><nav class="nav-links" id="main-nav" aria-label="Main navigation"><div class="products"><button type="button">Products <span aria-hidden="true">⌄</span></button><div class="product-menu"><a href="${depth}fitness/">CORE Fitness</a><a href="${depth}swim/">CORE Swim</a><a href="${depth}paddle/">CORE Paddle</a><a href="${depth}tennis/">CORE Tennis</a><a href="${depth}golf/">CORE Golf</a></div></div><a href="${depth}index.html#features">Features</a><a href="${depth}index.html#pricing">Pricing</a><a href="${depth}free/" ${active==='free'?'aria-current="page"':''}>Free Website</a></nav><div class="nav-actions"><a class="talk-link" href="${depth}contact-us.html">Talk to Us</a><a class="btn btn-dark" href="${signup}" target="_blank" rel="noopener">Get Started For Free</a></div></div>`;
+    const toggle=header.querySelector('.nav-toggle'),nav=header.querySelector('.nav-links');
+    toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);document.body.classList.toggle('nav-open',!open)});
+  }
+  const footer=document.querySelector('[data-site-footer]');
+  if(footer)footer.innerHTML=`<div class="container"><div class="footer-grid"><div class="footer-brand"><img src="${depth}assets/logo.svg" alt="CORE by fibodo"><p>One platform, built around your business. Get online, get booked and grow your way.</p></div><div class="footer-col"><h3>Products</h3><a href="${depth}fitness/">Fitness</a><a href="${depth}swim/">Swim</a><a href="${depth}paddle/">Paddle</a><a href="${depth}tennis/">Tennis</a><a href="${depth}golf/">Golf</a></div><div class="footer-col"><h3>CORE</h3><a href="${depth}index.html#features">Features</a><a href="${depth}index.html#pricing">Pricing</a><a href="${depth}free/">Free website</a><a href="${depth}contact-us.html">Talk to us</a></div><div class="footer-col"><h3>Company</h3><a href="${depth}about-us.html">About fibodo</a><a href="${depth}privacy-policy.html">Privacy</a><a href="${depth}terms-and-conditions-core.html">Terms</a></div></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} fibodo Ltd. All rights reserved.</span><span>Ready for your business today. Built for what comes next.</span></div></div>`;
+  document.querySelectorAll('[data-signup]').forEach(a=>{a.href=signup;a.target='_blank';a.rel='noopener'});
+  const observer='IntersectionObserver'in window?new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08}):null;
+  document.querySelectorAll('.reveal').forEach(el=>observer?observer.observe(el):el.classList.add('visible'));
+})();

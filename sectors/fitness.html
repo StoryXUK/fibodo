@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>CORE by fibodo — Run your business your way</title>
+    <meta content="Start with CORE Free for a website, hosting and URL, then upgrade as your business grows."
+        name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Permanent+Marker&amp;display=swap"
+        rel="stylesheet" />
+    <link href="core_css/main.css?v=20260917-pricing-dark" rel="stylesheet" />
+    <link href="core_css/core-features-section.css" rel="stylesheet" />
+    <link href="core_css/fitness-pricing.css" rel="stylesheet" />
+    <style id="powerpoint-review-updates">
+        /* Review changes are kept in this HTML; existing shared styles remain in place. */
+        #pricing .container {
+            position: relative
+        }
+
+        #pricing .plans-heading {
+            max-width: 660px
+        }
+
+        #pricing .core-price-callout {
+            box-sizing: border-box;
+            background: #23302b;
+            color: #fff;
+            border: 1px solid #526159;
+            border-radius: 24px;
+            padding: 28px;
+            margin: 24px 0 40px;
+            max-width: 390px
+        }
+
+        #pricing .core-price-callout .plan-eyebrow {
+            color: #e1ff00
+        }
+
+        #pricing .core-callout-price {
+            font-size: clamp(36px, 4vw, 52px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 20px 0 14px
+        }
+
+        #pricing .core-callout-price span {
+            font-size: 16px;
+            font-weight: 500
+        }
+
+        #pricing .core-price-callout .btn {
+            display: inline-flex;
+            margin-top: 12px;
+            white-space: normal
+        }
+
+        #pricing .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+            align-items: stretch;
+            padding-top: 34px
+        }
+
+        #pricing .plan-card {
+            min-width: 0
+        }
+
+        #pricing .plan-card-featured {
+            position: relative;
+            overflow: visible;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 18px 44px rgba(255, 91, 25, .2)
+        }
+
+        #pricing .plan-popular-band {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            background: #ff5b19;
+            color: #101a16;
+            padding: 11px 16px 10px;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 900;
+            letter-spacing: .1em
+        }
+
+        #pricing .plan-card-featured .plan-card-top {
+            border-top: 1px solid rgba(16, 26, 22, .16)
+        }
+
+        #pricing .plan-card-coming {
+            background: #dedfdf;
+            color: #4c5350;
+            border-color: #aeb4b0
+        }
+
+        #pricing .plan-card-coming .plan-kicker {
+            padding: 0;
+            background: transparent;
+            color: #424a46;
+            border-radius: 0;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .14em
+        }
+
+        #pricing .plan-card-coming .plan-button:disabled {
+            background: #bfc5c1;
+            color: #39423d;
+            cursor: not-allowed;
+            opacity: 1;
+            border: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 700
+        }
+
+        #pricing .plans-comparison {
+            display: block;
+            margin-top: 36px;
+            border-top: 1px solid #536059
+        }
+
+        #pricing #comparison-title {
+            font-size: 18px;
+            padding: 22px 0;
+            margin: 0
+        }
+
+        #pricing .plans-table-scroll {
+            display: block;
+            overflow-x: auto;
+            max-width: 100%
+        }
+
+        #pricing .plans-comparison table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 620px
+        }
+
+        #pricing .plans-comparison th,
+        #pricing .plans-comparison td {
+            padding: 13px 12px;
+            border-bottom: 1px solid #536059
+        }
+
+        #pricing .plans-comparison td {
+            text-align: center
+        }
+
+        #pricing .plans-comparison th {
+            text-align: center
+        }
+
+        #pricing .plans-comparison th:first-child {
+            text-align: left
+        }
+
+        #pricing .plans-comparison a {
+            color: inherit;
+            text-underline-offset: 4px
+        }
+
+        #pricing .plans-comparison a:hover {
+            color: #ff6b2c
+        }
+
+        #pricing .comparison-tick {
+            color: #ff6b2c;
+            font-size: 20px;
+            font-weight: 900
+        }
+
+        .pricing-sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0
+        }
+
+        @media(min-width:1100px) {
+            #pricing .plans-heading {
+                max-width: 55%;
+                min-height: 280px
+            }
+
+            #pricing .core-price-callout {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 36%;
+                margin: 0
+            }
+        }
+
+        @media(max-width:900px) {
+            #pricing .plans-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                row-gap: 48px
+            }
+        }
+
+        @media(max-width:560px) {
+            #pricing .plans-grid {
+                grid-template-columns: 1fr
+            }
+
+            #pricing .core-price-callout {
+                max-width: none
+            }
+        }
+    </style>
+<link href="../fibodo-navigation-base.css" rel="stylesheet"/><link href="../navigation.css" rel="stylesheet"/></head>
+
+<body>
+    <div data-root="../" id="core-navigation"></div>
+    <main id="top">
+        <section class="hero section-panel">
+            <div aria-hidden="true" class="hero-bg"></div>
+            <div aria-hidden="true" class="orb orb-a"></div>
+            <div aria-hidden="true" class="orb orb-b"></div>
+            <div class="container hero-inner">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">Made for the <span data-rotating-role="">Trainer.</span></span>
+                    <h1>Run your business. <em class="brush-script">Your way.</em></h1>
+                    <p>Build your diary. Build your name. Build what is next. Bookings, payments, memberships, clients
+                        and your
+                        website — all in one place for <strong>from £25/month.</strong></p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="pricing.html">Start with CORE</a>
+                        <a class="btn btn-ghost" href="features.html">See what you can build</a>
+                    </div>
+                    <div aria-label="CORE value highlights" class="hero-stats">
+                        <article><strong>From £25</strong><span>per month</span></article>
+                        <article><strong>1</strong><span>simple platform</span></article>
+                        <article><strong>0</strong><span>unnecessary complexity</span></article>
+                    </div>
+                </div>
+                <aside aria-label="Example CORE dashboard" class="hero-dashboard reveal">
+                    <div class="dash-window">
+                        <div class="window-bar"><i></i><i></i><i></i><span>CORE Control</span></div>
+                        <div class="dash-grid">
+                            <div class="dash-card wide"><span>Today’s bookings</span><strong>14</strong><small>Live
+                                    diary</small>
+                            </div>
+                            <div class="dash-card"><span>Payments</span><strong>Ready</strong><small>Online + in
+                                    person</small></div>
+                            <div class="dash-card"><span>Clients</span><strong>CRM</strong><small>Records +
+                                    messages</small></div>
+                            <div class="dash-card session"><span>Next class</span><strong>Strength Session</strong>
+                                <p>6:30 PM · bookable now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-pill pill-one">Bookings</div>
+                    <div class="floating-pill pill-two">Payments</div>
+                    <div class="floating-pill pill-three">Website</div>
+                </aside>
+            </div>
+        </section>
+        <section class="price-stinger section-panel section-break" id="why-core">
+            <div class="container stinger-grid reveal">
+                <div class="stinger-headline">
+                    <span class="corner"></span>
+                    <span class="eyebrow">The platform behind progress.</span>
+                    <h2>CORE is your <em>competitive advantage.</em></h2>
+                </div>
+                <div class="stinger-price glass-panel">
+                    <p>CORE puts the essential parts of a professional trainer business in one powerful place — ready
+                        for the work
+                        you are building now and the opportunities you are building next.</p>
+                    <strong>From £25 <span>/ month</span></strong>
+                </div>
+                <div class="stinger-benefits">
+                    <article><span class="icon">▦</span>
+                        <h3>Get booked</h3>
+                        <p>Set your schedule, share your offer and give clients a clear route to book.</p>
+                    </article>
+                    <article><span class="icon">£</span>
+                        <h3>Get paid</h3>
+                        <p>Take payments for services, packs, memberships and repeat bookings.</p>
+                    </article>
+                    <article><span class="icon">↗</span>
+                        <h3>Keep moving</h3>
+                        <p>Manage clients, messages and your booking website from one place.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="momentum section-panel" id="trainers">
+            <div class="container momentum-grid reveal">
+                <div class="section-intro">
+                    <span class="eyebrow">Trainers build more than bodies.</span>
+                    <h2>You are building something bigger.</h2>
+                    <p>A full diary. A loyal community. A name people trust. A business that gives you more freedom,
+                        more options
+                        and more reason to keep going.</p>
+                </div>
+                <article class="image-card one">
+                    <img alt="Trainer managing one-to-one coaching in the gym" class="image-card-media" decoding="async"
+                        loading="lazy" src="assets/Focused-in-the-gym-Male-2.webp" />
+                    <h3>One-to-one coaching</h3>
+                    <p>Your clients. Your calendar. Your business.</p><a href="features.html">Start →</a>
+                </article>
+                <article class="image-card two">
+                    <img alt="Coach leading a small outdoor training group" class="image-card-media" decoding="async"
+                        loading="lazy" src="assets/Bootcamp.webp" />
+                    <h3>Small groups &amp; classes</h3>
+                    <p>Build the room. Fill the room. Run the room.</p><a href="features.html">Start →</a>
+                </article>
+                <article class="image-card three">
+                    <img alt="Trainer using digital tools for hybrid coaching" class="image-card-media" decoding="async"
+                        loading="lazy" src="assets/Fitness-app-dashboard-and-focused-trainer.webp" />
+                    <h3>Hybrid coaching</h3>
+                    <p>In person. Online. Wherever your business goes next.</p><a href="features.html">Start
+                        →</a>
+                </article>
+            </div>
+        </section>
+        <section class="statement section-panel section-break">
+            <div class="container statement-grid reveal">
+                <h2>You do not need a studio to run a serious coaching business. <em>You need CORE.</em></h2>
+                <ul>
+                    <li>Clients book themselves.</li>
+                    <li>Payments arrive properly.</li>
+                    <li>You coach — anywhere, anytime.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="included section-panel" id="included">
+            <div class="container included-grid reveal">
+                <div>
+                    <span class="eyebrow">The business bit. Built in.</span>
+                    <h2>Get booked. Get paid. Keep moving.</h2>
+                    <p class="section-copy">Everything in CORE is designed to help you take your work further: make it
+                        easy to
+                        book, easy to buy, easy to return to and easy to share.</p>
+                    <div class="hero-actions"><a class="btn btn-primary" href="features.html">See what you can build</a>
+                    </div>
+                    <div class="feature-grid" id="featureGrid"></div>
+                </div>
+                <div aria-label="CORE dashboard preview" class="device-showcase">
+                    <div class="laptop">
+                        <div class="screen-head"><b>CORE Dashboard</b><span></span></div>
+                        <div class="screen-grid">
+                            <div class="screen-tile screen-tile-wide">
+                                <span>Today</span>
+                                <strong>12 bookings</strong>
+                                <small>4 paid online</small>
+                            </div>
+                            <div class="screen-tile">
+                                <span>Payments</span>
+                                <strong>Ready</strong>
+                            </div>
+                            <div class="screen-tile">
+                                <span>Clients</span>
+                                <strong>148</strong>
+                            </div>
+                            <div class="screen-tile">
+                                <span>Website</span>
+                                <strong>Live</strong>
+                            </div>
+                            <div class="screen-tile">
+                                <span>Messages</span>
+                                <strong>3 new</strong>
+                            </div>
+                            <div class="screen-tile">
+                                <span>Vouchers</span>
+                                <strong>Active</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone"><b>Book a Session</b><span>Strength Coaching</span><button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="plans-title" class="plans-section section-panel section-break" id="pricing">
+            <div class="container">
+                <span aria-hidden="true" class="plans-anchor" id="packages"></span>
+                <header class="plans-heading">
+                    <span class="plan-eyebrow">YOUR BUSINESS. YOUR NEXT MOVE.</span>
+                    <h2 id="plans-title">Start strong.<br /><em>Grow your way.</em></h2>
+                    <p>From your first booking to your own branded app. Choose the plan that fits where you are, and
+                        where you want to go.</p>
+                </header>
+                <aside aria-label="CORE pricing overview" class="core-price-callout">
+                    <span class="plan-eyebrow">CORE BY fibodo</span>
+                    <p class="core-callout-price">From £0<span>/month</span></p>
+                    <p>Start with your website, hosting and URL included.</p>
+                    <a class="btn btn-primary" href="features.html">See everything CORE includes</a>
+                </aside>
+                <div class="plans-grid">
+                    <article aria-labelledby="plan-core-free" class="plan-card plan-card-free">
+                        <div class="plan-card-top"><span class="plan-kicker">START FOR FREE</span>
+                            <h3 id="plan-core-free">CORE Free</h3>
+                            <p class="plan-description">Your professional online presence, ready to share.</p>
+                            <p class="plan-price"><strong>£0</strong><span>/ month</span></p>
+                            <p class="plan-setup">Free forever</p>
+                            <a aria-label="Get started with CORE Free" class="plan-button"
+                                href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer"
+                                target="_blank">Get started free <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="plan-card-features">
+                            <p class="plan-inherits">Everything you need to get online.</p>
+                            <ul>
+                                <li>Website</li>
+                                <li>Hosting</li>
+                                <li>URL</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article aria-labelledby="plan-core" class="plan-card">
+                        <div class="plan-card-top"><span class="plan-kicker">GET STARTED</span>
+                            <h3 id="plan-core">CORE</h3>
+                            <p class="plan-description">The essentials to run your business.</p>
+                            <p class="plan-price"><strong>£25</strong><span>/ month</span></p>
+                            <p class="plan-setup">Monthly subscription</p>
+                            <a aria-label="Get started with CORE" class="plan-button"
+                                href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer"
+                                target="_blank">Get started <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="plan-card-features">
+                            <p class="plan-inherits">Your everyday tools, connected.</p>
+                            <ul>
+                                <li>Bookings &amp; Payments</li>
+                                <li>Planner &amp; Scheduling</li>
+                                <li>Marketing &amp; Dynamic Pricing</li>
+                                <li>CRM &amp; Messages</li>
+                                <li>Memberships &amp; Vouchers</li>
+                                <li>Website &amp; Free Hosting</li>
+                                <li>Financial Reports &amp; Support</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article aria-labelledby="plan-plus" class="plan-card plan-card-featured">
+                        <div class="plan-popular-band">Most popular</div>
+                        <div class="plan-card-top"><span class="plan-kicker">GET CONNECTED</span>
+                            <h3 id="plan-plus">CORE Plus</h3>
+                            <p class="plan-description">More ways to connect and earn.</p>
+                            <p class="plan-price"><strong>£99</strong><span>/ month</span></p>
+                            <p class="plan-setup">Monthly subscription</p>
+                            <a aria-label="Get started with CORE Plus" class="plan-button"
+                                href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer"
+                                target="_blank">Get started <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="plan-card-features">
+                            <p class="plan-inherits">Everything in CORE, plus:</p>
+                            <ul>
+                                <li>Client App</li>
+                                <li>OnDemand Library</li>
+                                <li>HD Live Streaming</li>
+                                <li>Content Manager</li>
+                                <li>Analytics</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article aria-labelledby="plan-pro" class="plan-card plan-card-coming">
+                        <div class="plan-card-top"><span class="plan-kicker">COMING 2027</span>
+                            <h3 id="plan-pro">CORE Pro</h3>
+                            <p class="plan-description">Reach further. Build your business.</p>
+                            <p class="plan-price"><strong>£199</strong><span>/ month</span></p>
+                            <p class="plan-setup">Monthly subscription</p>
+                            <button aria-label="CORE Pro is coming in 2027" class="plan-button" disabled=""
+                                type="button">Coming 2027</button>
+                        </div>
+                        <div class="plan-card-features">
+                            <p class="plan-inherits">Everything in CORE Plus, plus:</p>
+                            <ul>
+                                <li>Lead Gen</li>
+                                <li>AI agent</li>
+                                <li>Rewards</li>
+                                <li>Store</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <article aria-labelledby="plan-ultimate" class="plan-ultimate">
+                    <div>
+                        <span class="plan-kicker">MAKE IT YOURS</span>
+                        <h3 id="plan-ultimate">CORE Ultimate</h3>
+                        <p class="plan-description">Your brand. Your own app. A complete digital experience built around your business.</p>
+                    </div>
+                    <div>
+                        <p class="plan-price"><strong>£299</strong><span>/ month</span></p>
+                        <p class="plan-setup">+ £999 one-off setup</p>
+                    </div>
+                    <div class="plan-ultimate-features">
+                        <p class="plan-inherits">Everything in CORE Pro, plus:</p>
+                        <ul>
+                            <li>Custom App</li>
+                            <li>Your branding</li>
+                            <li>App launch support</li>
+                        </ul>
+                        <a aria-label="Get started with CORE Ultimate" class="plan-button"
+                            href="https://web.fibodo.com/signup/information?app=c1" rel="noopener noreferrer"
+                            target="_blank">Build your app <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <p class="plans-note">All prices include VAT. Prices are per month. CORE Ultimate includes a £999 one-off
+                    setup fee.</p>
+                <section aria-labelledby="comparison-title" class="plans-comparison">
+                    <h3 id="comparison-title">Compare paid plan features</h3>
+                    <div aria-label="Plan feature comparison" class="plans-table-scroll" role="region" tabindex="0">
+                        <table>
+                            <caption>What's included in each plan</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Features</th>
+                                    <th scope="col">CORE</th>
+                                    <th scope="col">CORE Plus</th>
+                                    <th scope="col">CORE Pro</th>
+                                    <th scope="col">CORE Ultimate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Bookings</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Payments</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Product Library</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Planner</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Scheduling</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">CRM</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Marketing</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Messages</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Financial Reports</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Website</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Business App</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Memberships (Subscriptions)</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Vouchers</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Dynamic Pricing</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Support</a></th>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Client App</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">OnDemand Library</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">HD Live Streaming</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Content Manager</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Analytics</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Lead Gen</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">AI Agent</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Rewards</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Store</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="features.html">Custom App</a></th>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not
+                                            included</span></td>
+                                    <td><span aria-hidden="true" class="comparison-tick">✓</span><span
+                                            class="pricing-sr-only">Included</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="core_js/main.js"></script>
+    <script src="core_js/fitness-pricing.js"></script>
+    <script src="core_js/footer.js"></script>
+<script src="../navigation.js"></script></body>
+
+</html>

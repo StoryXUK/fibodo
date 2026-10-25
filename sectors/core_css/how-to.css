@@ -1,0 +1,85 @@
+.guide-directory .directory-hero {
+  background:
+    linear-gradient(90deg, rgba(5, 11, 10, .96), rgba(5, 11, 10, .74)),
+    url("../assets/Built-Different.webp") center 38% / cover;
+}
+
+.guide-directory .directory-card { min-height: 285px; }
+.guide-directory .directory-card h3 { max-width: 280px; }
+
+.guide-faq {
+  position: relative;
+  overflow: hidden;
+  padding: 112px 0;
+  background:
+    radial-gradient(circle at 90% 0%, rgba(37, 215, 217, .12), transparent 28rem),
+    linear-gradient(180deg, #fffdfa, #f5f1e9);
+  border-top: 1px solid rgba(16, 25, 22, .1);
+}
+
+.guide-faq__inner {
+  width: min(calc(100% - 48px), 1220px);
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(0, 1fr);
+  gap: clamp(48px, 8vw, 110px);
+  margin-inline: auto;
+}
+
+.guide-faq__intro { align-self: start; position: sticky; top: 150px; }
+.guide-faq__intro h2 {
+  margin: 20px 0 22px;
+  color: #101916;
+  font-size: clamp(46px, 6vw, 78px);
+  font-weight: 950;
+  letter-spacing: -.07em;
+  line-height: .92;
+}
+.guide-faq__intro p { max-width: 490px; margin: 0; color: #68736f; font-size: 18px; }
+.guide-faq__list { display: grid; gap: 12px; }
+.guide-faq details {
+  overflow: hidden;
+  border: 1px solid rgba(16, 25, 22, .11);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .82);
+  box-shadow: 0 14px 38px rgba(5, 11, 10, .055);
+}
+.guide-faq summary {
+  position: relative;
+  padding: 24px 64px 24px 24px;
+  color: #101916;
+  cursor: pointer;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -.025em;
+}
+.guide-faq summary::-webkit-details-marker { display: none; }
+.guide-faq summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #e6ff2e;
+  color: #050b0a;
+  font-size: 19px;
+  transform: translateY(-50%);
+}
+.guide-faq details[open] summary::after { content: "−"; }
+.guide-faq details p { margin: 0; padding: 0 24px 24px; color: #68736f; }
+
+@media (max-width: 900px) {
+  .guide-faq__inner { grid-template-columns: 1fr; }
+  .guide-faq__intro { position: static; }
+}
+
+@media (max-width: 680px) {
+  .guide-faq { padding: 78px 0; }
+  .guide-faq__inner { width: min(calc(100% - 30px), 1220px); }
+  .guide-faq summary { padding: 21px 58px 21px 20px; }
+  .guide-faq details p { padding: 0 20px 21px; }
+}

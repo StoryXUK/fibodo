@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">FORME Academy</title>
+  <desc id="desc">Dark wordmark and green forward motion symbol for FORME Academy</desc>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(12 22)">
+      <path fill="#16834A" d="M0 68 62 6h52L52 68l62 62H62z"/>
+      <path fill="#0F2A22" d="M58 68 112 14h30L88 68l54 54h-30z" opacity=".92"/>
+    </g>
+    <text x="178" y="105" fill="#14231E" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="6">FORME</text>
+    <text x="183" y="145" fill="#16834A" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="10">ACADEMY</text>
+  </g>
+</svg>

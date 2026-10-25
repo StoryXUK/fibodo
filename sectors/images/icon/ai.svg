@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">AI sparkle</title>
+  <rect width="48" height="48" rx="12" fill="#fff1e8"/>
+  <path d="M24 8c1.3 8.6 5.4 12.7 14 14-8.6 1.3-12.7 5.4-14 14-1.3-8.6-5.4-12.7-14-14 8.6-1.3 12.7-5.4 14-14Z" fill="#ee7432"/>
+  <path d="M37 7c.4 3 2 4.6 5 5-3 .4-4.6 2-5 5-.4-3-2-4.6-5-5 3-.4 4.6-2 5-5Z" fill="#171717"/>
+</svg>

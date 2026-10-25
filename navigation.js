@@ -6,6 +6,7 @@
   const response=await fetch(root+'navigation.html');if(!response.ok)throw new Error('Navigation HTTP '+response.status);
   mount.innerHTML=await response.text();
   mount.querySelectorAll('a[href]').forEach(a=>{const href=a.getAttribute('href');if(href.startsWith('#'))a.setAttribute('href',root+'index.html'+href);else if(!/^(?:[a-z]+:|\/|\/\/)/i.test(href))a.setAttribute('href',root+href)});
+  mount.querySelectorAll('img[src]').forEach(img=>{const src=img.getAttribute('src');if(!/^(?:[a-z]+:|\/|\/\/)/i.test(src))img.setAttribute('src',root+src)});
   const menu=mount.querySelector('.menu-toggle'),nav=mount.querySelector('.nav-links'),hosts=[...mount.querySelectorAll('.mega-host')];
   const desktop=()=>window.matchMedia('(min-width:1201px)').matches;
   const closeAll=(except=null)=>hosts.forEach(h=>{if(h!==except){const p=h.querySelector('.mega-panel'),t=h.querySelector('.mega-trigger');p.hidden=true;t.setAttribute('aria-expanded','false')}});

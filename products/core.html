@@ -1855,11 +1855,12 @@
 @media(max-width:560px){.free-ad{padding:70px 0 100px}.free-ad-checks{grid-template-columns:1fr}.free-ad-listing{right:0}.free-ad-browserbody{min-height:260px}.free-ad-browserbody img{min-height:260px}.free-ad-browsercopy{padding:15px}}
 
     </style>
-<link href="./navigation.css" rel="stylesheet"/>
+<link href="../navigation.css" rel="stylesheet"/>
 <link href="footer.css" rel="stylesheet"/>
+<link href="../fibodo-navigation-base.css" rel="stylesheet"/>
 </head>
 <body>
-<div data-root="./" id="core-navigation"></div>
+<div data-root="../" id="core-navigation"></div>
 <main id="top">
 
 
@@ -2130,7 +2131,7 @@
 <footer id="shared-footer"></footer>
 <script>const steps = [{ k: 'YOUR DIGITAL SHOP WINDOW', t: 'Show people what makes you worth booking.', d: 'Create a professional business profile and customer-friendly pages that bring your brand and services together.', img: 'journey-visible.jpg', link: '#free', label: 'Discover your website ↗' }, { k: 'AVAILABLE AROUND THE CLOCK', t: 'Make it easy for customers to say yes.', d: 'Turn sessions, classes and appointments into bookable services and publish times that work for you.', img: 'journey-booked.jpg', link: '#features', label: 'Explore bookings ↗' }, { k: 'PAYMENTS CONNECTED TO BOOKINGS', t: 'Know what you sold and what you earned.', d: 'Set prices, take payments through the booking journey and keep your financial activity organised.', img: 'journey-paid.jpg', link: 'features/payments.html', label: 'Explore payments ↗' }, { k: 'BUILD RELATIONSHIPS, NOT SPREADSHEETS', t: 'Turn one booking into a business that lasts.', d: 'Keep customer information and activity together, understand your business and give people more reasons to return.', img: 'journey-grow.jpg', link: '#features', label: 'Explore CRM ↗' }]; document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => { let s = steps[Number(b.dataset.step)]; document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', String(x === b))); document.getElementById('journey-kicker').textContent = s.k; document.getElementById('journey-title').textContent = s.t; document.getElementById('journey-desc').textContent = s.d; document.getElementById('journey-img').src = 'images/' + s.img; document.getElementById('journey-link').href = s.link; document.getElementById('journey-link').textContent = s.label })); if ('IntersectionObserver' in window) { const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } }), { threshold: .1 }); document.querySelectorAll('.reveal').forEach(el => obs.observe(el)) } else document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
     </script>
-<script src="./navigation.js"></script>
+<script src="../navigation.js"></script>
 <script>const yearElement = document.getElementById('year'); if (yearElement) yearElement.textContent = new Date().getFullYear();</script>
 <script src="footer.js"></script>
 </body>

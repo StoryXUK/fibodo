@@ -1,0 +1,168 @@
+/*****************************
+  Social Icon
+*****************************/
+
+.social-profile-wrapper{
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 5px;
+
+     .social-profile-title{
+     	position: relative;
+	    font-size: 20px;
+	    font-weight: 400;
+	    color:$secondary;
+	    padding-right: 55px;
+
+	    &:before {
+		    position: absolute;
+		    content: "";
+		    height: 1px;
+		    width: 25px;
+		    background-color:$secondary;
+		    right: 15px;
+		    top: 50%;
+		    margin-top: 2px;
+		    transform: translateY(-50%);
+		}
+     }
+	.social-profile-list {
+		 display: flex;
+	    flex-wrap: wrap;
+	    margin: 0;
+	    padding: 0;
+	    gap: 13px;
+	    list-style-type: none;
+
+	    li{
+	    	padding: 0;
+    		margin: 0;
+	    	a{
+	    		 text-decoration: none;
+	    		 font-size: 20px;
+			    font-weight: 400;
+			    color: $secondary;
+			    transition:$transition-3;
+			    &::hover {
+				    color:$primary;
+				}
+	    	}
+	    }
+	}
+
+	&.vertical {
+	    writing-mode: vertical-lr;
+	    transform: rotate(180deg);
+
+	    .social-profile-title {
+		    padding-right: 0;
+		    padding-bottom: 55px;
+
+		    &:before {
+			    width: 2px;
+			    height: 25px;
+			    top: auto;
+			    bottom: 2px
+			}
+		}
+	}
+}
+
+
+.social-icon{
+	ul{
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+	 	li{
+	 		margin: 0 6px;
+		 	a{
+		 		font-size: 20px;
+		 		font-family: $font-base;
+		 		font-weight: normal;
+		 		color: $white;
+		 		transition: all 0.3s ease-in-out;
+
+		 		&:hover{
+		 			color:$primary;
+		 		}
+		 	}
+		 	&:first-child{
+		 		margin-left: 0px;
+		 	}
+
+		 	&:last-child{
+		 		margin-right: 0px;
+		 	}
+		 	&.title{
+			 	font-size: 20px;
+		 		font-family: $font-base;
+		 		font-weight: normal;
+		 		color: $white;
+		 		position: relative;
+		 		padding-right: 45px;
+		 		margin-right: 10px;
+		 		&:before{
+		 			position:absolute;
+		 			content: "";
+		 			height: 2px;
+		 			width: 25px;
+		 			background-color: $white;
+		 			right: 0;
+		 			top: 50%;
+		 			transform: translateY(-50%);
+		 		}
+			}
+	 	}
+	}
+	&.social-dark{
+		ul{
+			li{
+				a{
+			 		color: $black;
+			 		&:hover{
+			 			color:$primary;
+			 		}
+			 	}
+
+				&.title{
+			 		color: $black;
+			 		&:before{
+			 			background-color: $black;
+			 		}
+				}
+			}
+		}
+	}
+}
+
+.social-icon.social-vertical{
+    height: 315px;
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+
+
+/*************************
+       Responsive
+*************************/
+
+@media (max-width: 767px) {
+
+	.social-icon{
+		ul{
+			li {
+			  margin: 0 8px;
+			  &.title{
+			 		padding-right: 35px;
+			 		&:before{
+			 			width: 20px;
+			 		}
+				}
+			}
+		}
+	}
+}

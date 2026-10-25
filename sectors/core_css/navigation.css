@@ -1,0 +1,130 @@
+.core-site-header,
+.core-site-footer {
+  --core-cream: #f5f1e9;
+  --core-paper: #fffdfa;
+  --core-dark: #050b0a;
+  --core-ink: #101916;
+  --core-muted: #68736f;
+  --core-line: rgba(16, 25, 22, .11);
+  --core-orange: #ff5a1f;
+  --core-lime: #e6ff2e;
+  --core-max: 1220px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.core-site-header *,
+.core-site-footer * { box-sizing: border-box; }
+
+.core-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(245, 241, 233, .82);
+  border-bottom: 1px solid rgba(5, 11, 10, .08);
+  backdrop-filter: blur(22px) saturate(1.4);
+}
+
+.core-top-strip {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 4vw, 56px);
+  padding: 8px 18px;
+  background: var(--core-dark);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.core-top-strip strong { color: var(--core-lime); }
+.core-top-strip span { opacity: .66; }
+
+.core-nav-shell {
+  width: min(calc(100% - 48px), var(--core-max));
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-inline: auto;
+}
+
+.core-brand { display: inline-flex; flex: 0 0 auto; }
+.core-brand img { display: block; width: 118px; height: auto; }
+.core-main-nav { display: flex; align-items: center; gap: 28px; }
+.core-main-nav a { color: rgba(16, 25, 22, .72); font-size: 13px; font-weight: 800; text-decoration: none; }
+.core-main-nav a:hover,
+.core-main-nav a[aria-current="page"] { color: var(--core-dark); }
+.core-header-actions { display: flex; align-items: center; gap: 16px; }
+.core-login { color: var(--core-muted); font-size: 13px; font-weight: 850; text-decoration: none; }
+
+.core-button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 19px;
+  border-radius: 999px;
+  background: var(--core-dark);
+  color: #fff !important;
+  box-shadow: 0 12px 30px rgba(5, 11, 10, .18);
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform .2s ease;
+}
+
+.core-button:hover { transform: translateY(-2px); }
+.core-nav-toggle { display: none; border: 1px solid var(--core-line); border-radius: 999px; background: var(--core-paper); padding: 10px 14px; font-weight: 900; }
+
+.core-site-footer { background: var(--core-dark); color: #fff; }
+.core-footer-strip { border-bottom: 1px solid rgba(255, 255, 255, .1); }
+.core-footer-inner {
+  width: min(calc(100% - 48px), var(--core-max));
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 38px;
+  align-items: center;
+  margin-inline: auto;
+  padding: 46px 0;
+}
+.core-footer-inner .core-brand img { filter: brightness(0) invert(1); }
+.core-footer-links { display: flex; justify-content: center; gap: 28px; }
+.core-footer-links a { color: rgba(255, 255, 255, .65); font-size: 13px; font-weight: 800; text-decoration: none; }
+.core-footer-inner > p { margin: 0; color: rgba(255, 255, 255, .48); font-size: 12px; }
+
+@media (max-width: 991px) {
+  .core-main-nav {
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    right: 24px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 14px;
+    border: 1px solid var(--core-line);
+    border-radius: 22px;
+    background: var(--core-paper);
+    box-shadow: 0 24px 70px rgba(5, 11, 10, .12);
+  }
+  .core-main-nav.is-open { display: flex; }
+  .core-main-nav a { padding: 13px; }
+  .core-nav-toggle { display: inline-flex; }
+  .core-login { display: none; }
+  .core-footer-inner { grid-template-columns: 1fr; text-align: center; }
+}
+
+@media (max-width: 680px) {
+  .core-top-strip span { display: none; }
+  .core-nav-shell,
+  .core-footer-inner { width: min(calc(100% - 30px), var(--core-max)); }
+  .core-nav-shell { min-height: 68px; gap: 12px; }
+  .core-brand img { width: 102px; }
+  .core-header-actions .core-button { display: none; }
+  .core-footer-links { flex-wrap: wrap; gap: 14px 22px; }
+}

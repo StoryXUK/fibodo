@@ -1,0 +1,167 @@
+.fitness-pricing {
+  --pricing-dark: #07110e;
+  --pricing-card: #101b17;
+  --pricing-orange: #ff5a1f;
+  --pricing-lime: #e6ff2e;
+  background: var(--pricing-dark);
+  color: #fff;
+}
+
+.fitness-pricing .fitness-pricing-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 54px;
+}
+
+.fitness-pricing .fitness-pricing-eyebrow,
+.fitness-pricing .fitness-plan-label {
+  display: block;
+  color: var(--pricing-lime);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.fitness-pricing h2 {
+  margin: 18px 0 0;
+  color: #fff;
+  font-size: clamp(46px, 6vw, 78px);
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+
+.fitness-pricing-head > p {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(255,255,255,.68);
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.fitness-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.fitness-plan {
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 24px;
+  background: var(--pricing-card);
+}
+
+.fitness-plan.is-featured {
+  border-color: var(--pricing-orange);
+  box-shadow: inset 0 4px 0 var(--pricing-orange);
+}
+
+.fitness-plan h3 {
+  margin: 20px 0 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.fitness-plan > p {
+  margin: 0;
+  color: rgba(255,255,255,.62);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.fitness-plan-price {
+  margin: auto 0 8px;
+  padding-top: 38px;
+}
+
+.fitness-plan-price strong {
+  font-size: 48px;
+  letter-spacing: -.04em;
+}
+
+.fitness-plan-price span {
+  color: rgba(255,255,255,.58);
+  font-size: 13px;
+}
+
+.fitness-plan .fitness-billing {
+  margin-bottom: 26px;
+  color: rgba(255,255,255,.5);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.fitness-plan-button,
+.fitness-custom-button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.fitness-plan-button {
+  background: #fff;
+  color: var(--pricing-dark);
+}
+
+.fitness-plan.is-featured .fitness-plan-button {
+  background: var(--pricing-orange);
+  color: #fff;
+}
+
+.fitness-pricing-note {
+  margin: 18px 0 0;
+  color: rgba(255,255,255,.5);
+  font-size: 11px;
+}
+
+.fitness-custom-app {
+  display: grid;
+  grid-template-columns: 1.15fr .65fr .8fr 1.4fr;
+  gap: 30px;
+  align-items: center;
+  margin-top: 34px;
+  padding: 34px;
+  border-radius: 28px;
+  background: var(--pricing-orange);
+  color: #fff;
+}
+
+.fitness-custom-app .fitness-plan-label { color: var(--pricing-dark); }
+.fitness-custom-app h3 { margin: 12px 0 8px; color: #fff; font-size: 32px; }
+.fitness-custom-app p { margin: 0; line-height: 1.55; }
+.fitness-custom-price strong,
+.fitness-custom-price span { display: block; }
+.fitness-custom-price strong { font-size: 42px; letter-spacing: -.04em; }
+.fitness-custom-price span { margin-top: 5px; font-size: 12px; font-weight: 900; text-transform: uppercase; }
+.fitness-custom-plans { margin: 0; padding: 0; list-style: none; }
+.fitness-custom-plans li { margin: 10px 0; font-size: 13px; font-weight: 900; }
+.fitness-custom-plans li::before { content: "✓"; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; margin-right: 9px; border-radius: 50%; background: var(--pricing-dark); color: var(--pricing-lime); font-size: 11px; }
+.fitness-custom-action p { margin-bottom: 18px; font-size: 13px; }
+.fitness-custom-button { width: 100%; background: var(--pricing-dark); color: #fff; }
+.fitness-start-anytime { margin: 24px 0 0; color: var(--pricing-lime); text-align: center; font-size: 18px; font-weight: 900; }
+
+@media (max-width: 900px) {
+  .fitness-pricing .fitness-pricing-head { grid-template-columns: 1fr; gap: 22px; }
+  .fitness-custom-app { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 680px) {
+  .fitness-plan-grid,
+  .fitness-custom-app { grid-template-columns: 1fr; }
+  .fitness-plan { min-height: 350px; }
+  .fitness-custom-app { gap: 24px; padding: 26px; }
+}

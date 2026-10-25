@@ -8,6 +8,7 @@
 #core-navigation .nav{display:flex;align-items:center;justify-content:space-between;min-height:84px;gap:28px}
 #core-navigation .brand{display:flex;align-items:baseline;gap:8px;white-space:nowrap;font-weight:900;font-size:26px}
 #core-navigation .brand span{color:#f45b25}
+#core-navigation .brand img{display:block;width:auto;height:38px}
 #core-navigation .nav-links{display:flex;align-items:center;gap:20px;font-size:12px;font-weight:700}
 #core-navigation .nav-links>a:hover{color:#f45b25}
 #core-navigation .btn-orange{display:inline-flex;padding:15px 24px;border-radius:999px;background:#f45b25;color:white!important;font-size:13px;font-weight:800}

@@ -1,0 +1,242 @@
+
+/*Pricing*/
+
+.switch-tabs-header{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -55px;
+  margin-bottom: 60px;
+}
+
+.nav-tabs.radio-switch{
+  .nav-item{
+    .nav-link{
+      border:none;
+      color: $white;
+      width: 100%;
+
+      &:hover{
+        border:none;
+        color: $white;
+        isolation: inherit;
+      }
+      &:focus{
+        isolation: inherit;
+        color: $white;
+      }
+      &.active{
+        border:none;
+        background-color: inherit;
+        color: $secondary;
+        &:hover{
+          color: $secondary;
+          isolation: inherit;
+        }
+        &:focus{
+          color: $secondary;
+          isolation: inherit;
+        }
+      }
+      .radio-switch-marker{
+        transition: $transition-3;
+      }
+    }
+  }
+}
+
+.radio-switch {
+  position: relative;
+  display: inline-block;
+  display: inline-flex;
+  padding: 3px;
+  border-radius: $radius-50;
+  background-color: $secondary;
+
+  .radio-switch-item {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 90px;
+
+    .radio-switch-label {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      border-radius: $radius-50;
+      cursor: pointer;
+      font-size: 16px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      transition: $transition-3;
+    }
+  }
+  &:focus-within{
+    box-shadow: none;
+  }
+  &:active{
+    box-shadow: none;
+  }
+}
+
+
+
+.radio-switch-input:checked ~ .radio-switch-label {
+  color: $black;
+}
+.radio-switch-input:focus ~ .radio-switch-label {
+  background-color: $primary;
+}
+.radio-switch-label :not(*):focus-within, .radio-switch-input:focus ~ .radio-switch-label {
+  background-color: transparent;
+}
+
+.radio-switch-marker {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  border-radius: $radius-50;
+  background-color: $primary;
+  height: 100%;
+  width:100%;
+  box-shadow:none;
+  transition: -webkit-transform $transition-3;
+  transition: transform $transition-3;
+  transition: transform $transition-3, 
+  -webkit-transform $transition-3;
+}
+.radio-switch-input:checked ~ .radio-switch-marker {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* utility classes */
+.ri5-sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+
+.switch-content-tabs{
+  .switch-content-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .radio-switch{
+    background-color: transparent;
+    border:1px solid $secondary;
+    border-radius: 7px;
+    padding: 7px 7px 7px 7px;
+    margin: 0px 0px 0px 0px;
+
+    .radio-switch-item{
+      width: auto;
+      height: auto;
+      .nav-link{
+        padding: 10px 20px 10px 20px;
+        position: relative;
+        color: $secondary;
+        z-index: 2;
+        &:hover{
+          color: $secondary;
+        }
+
+        &:focus{
+          color:$secondary;
+        }
+
+        &:before{
+          position:absolute;
+          content:"";
+          height: 100%;
+          width: 0;
+          top: 0px;
+          left: auto;
+          right: 0;
+          background-color: $secondary;
+          border-radius: 7px;
+          transition: $transition-3;
+          z-index: -1;
+
+        }
+
+        &.active{
+          color: $white;
+           &:focus{
+            color: $white;
+          }
+          &:hover{
+            color: $white;
+          }
+          &:before{
+            width:100%;
+            right: auto;
+            left: 0;
+          }
+          
+        }
+      }
+      
+    }
+  }
+
+  .tab-content{
+    img{
+      border-radius: 25px;
+    }
+  }
+}
+
+.bg-dark {
+  .nav-tabs.radio-switch{
+    background-color: $white;
+    .nav-item {
+      .nav-link{
+        color: $black;
+      }
+    }
+  }
+
+  
+  .pricing-box.bg-dark{
+    background-color:$dark-gray !important;
+  }
+}
+
+
+@media (max-width:991px) {
+  .switch-tabs-header{
+    margin-top: 0;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width:575px) {
+
+  .switch-content-tabs{
+    .radio-switch{
+      .radio-switch-item {
+        .nav-link{
+          padding: 7px 10px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    } 
+  }
+}

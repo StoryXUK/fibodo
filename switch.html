@@ -45,19 +45,13 @@
 
     <meta name="description"
         content="Move to fibodo with free migration, setup and onboarding. No minimum term, 30 days’ notice and a switch planned around your business.">
+<link href="fibodo-navigation-base.css" rel="stylesheet"/><link href="./navigation.css" rel="stylesheet"/>
 </head>
 
 <body class="home-refined switch-page">
     <a class="switch-skip" href="#main-content">Skip to content</a>
     <div id="page" class="main">
-        <header id="navbar">
-            <div class="switch-container switch-nav"><a class="switch-logo" href="index.html"
-                    aria-label="fibodo home">fibodo<span>®</span></a>
-                <nav aria-label="Main navigation"><a href="platform.html">Platform</a><a
-                        href="products.html">Products</a><a class="switch-button switch-button--small"
-                        href="contact-us.html">Talk to us <span aria-hidden="true">↗</span></a></nav>
-            </div>
-        </header>
+        <div data-root="./" id="core-navigation"></div>
         <main id="main-content" class="site-content">
             <section class="switch-hero">
                 <div class="switch-container switch-grid">
@@ -264,6 +258,7 @@
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/loadNav.js"></script>
+<script src="./navigation.js"></script>
 </body>
 
 </html>
