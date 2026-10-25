@@ -3,7 +3,9 @@ function loadContent(elementId, file, callback) {
   const element = document.getElementById(elementId);
 
   if (!element) return;
-  fetch(file)
+  const root = element.dataset.root || "";
+
+  fetch(root + file)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Error loading ${file}: ${response.statusText}`);
@@ -12,12 +14,25 @@ function loadContent(elementId, file, callback) {
     })
     .then((html) => {
       if (element) element.innerHTML = html;
+      if (root) {
+        element.querySelectorAll("a[href]").forEach((link) => {
+          const href = link.getAttribute("href");
+          if (href.startsWith("#")) link.setAttribute("href", root + "index.html" + href);
+          else if (!/^(?:[a-z]+:|\/|\/\/)/i.test(href)) link.setAttribute("href", root + href);
+        });
+        element.querySelectorAll("img[src]").forEach((image) => {
+          const src = image.getAttribute("src");
+          if (!/^(?:[a-z]+:|\/|\/\/)/i.test(src)) image.setAttribute("src", root + src);
+        });
+      }
+      const copyright = element.querySelector("#copyright");
+      if (copyright) copyright.textContent = new Date().getFullYear();
       if (typeof callback === "function") {
         callback(); // Run the callback after content is injected
       }
     })
     .catch((error) => {
-      console.error(`Error fetching ${file}:`, error);
+      console.error(`Error fetching ${root + file}:`, error);
     });
 }
 
