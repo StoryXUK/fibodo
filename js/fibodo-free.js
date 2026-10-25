@@ -1,2 +1,20 @@
-/* The existing website loads navigation asynchronously. Add the Free CTA beside Talk to us when available. */
-(function(){function insert(){var nav=document.getElementById('navbar');if(!nav||nav.querySelector('.free-nav-cta'))return;var links=Array.from(nav.querySelectorAll('a'));var talk=links.find(function(a){return /talk to us/i.test(a.textContent.trim())});if(!talk)return;var a=document.createElement('a');a.href='fibodo-free.html';a.className='btn free-primary free-nav-cta';a.textContent='Get Started For Free';talk.insertAdjacentElement('afterend',a)}document.addEventListener('DOMContentLoaded',function(){insert();var nav=document.getElementById('navbar');if(nav){new MutationObserver(insert).observe(nav,{childList:true,subtree:true})}})})();
+/* Lightweight entrance effects for the fibodo Free landing page. */
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        var items = document.querySelectorAll('.free-section-head, .free-card, .free-step-list li, .free-journey-copy, .free-growth-card');
+        if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            items.forEach(function (item) { item.classList.add('is-visible'); });
+            return;
+        }
+        items.forEach(function (item) { item.classList.add('free-reveal'); });
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -45px' });
+        items.forEach(function (item) { observer.observe(item); });
+    });
+})();

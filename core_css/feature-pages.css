@@ -6,10 +6,10 @@
   --core-muted: rgba(247, 248, 242, 0.72);
   --core-soft: rgba(247, 248, 242, 0.1);
   --core-line: rgba(247, 248, 242, 0.16);
-  --core-lime: #d5ff46;
-  --core-green: #38d68c;
-  --core-blue: #59a8ff;
-  --core-orange: #ff9859;
+  --core-lime: #ffffff;
+  --core-green: #d7d7d7;
+  --core-blue: #a8a8a8;
+  --core-orange: #747474;
   --core-radius: 8px;
   --core-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
 }
@@ -179,7 +179,7 @@ svg {
 .feature-hero {
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(213, 255, 70, 0.12), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 34%),
     linear-gradient(180deg, #101419 0%, #090b0d 100%);
 }
 
@@ -352,7 +352,7 @@ h3 {
   padding: 12px 14px;
   border: 1px solid var(--core-line);
   border-radius: var(--core-radius);
-  background: rgba(213, 255, 70, 0.08);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--core-muted);
   font-size: 0.9rem;
   font-weight: 800;
@@ -368,7 +368,7 @@ h3 {
 }
 
 .feature-overview .eyebrow {
-  color: #315e00;
+  color: #333;
 }
 
 .content-card {
@@ -506,7 +506,7 @@ h3 {
 }
 
 .related-card:hover {
-  border-color: rgba(213, 255, 70, 0.72);
+  border-color: rgba(255, 255, 255, 0.72);
   transform: translateY(-2px);
 }
 
@@ -518,7 +518,7 @@ h3 {
 
 .final-cta {
   background:
-    linear-gradient(135deg, rgba(213, 255, 70, 0.13), transparent 38%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 38%),
     #11151a;
 }
 

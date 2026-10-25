@@ -1,0 +1,93 @@
+/* Shared monochrome treatment for the legacy feature-page template. */
+.site-content {
+  background: #fff;
+  color: #353535;
+}
+
+.site-content .inner-header {
+  position: relative;
+  isolation: isolate;
+  background-image: linear-gradient(135deg, #050505, #262626) !important;
+  background-color: #050505;
+}
+
+.site-content .inner-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.92), rgba(35, 35, 35, 0.82));
+}
+
+.site-content .inner-header .title,
+.site-content .inner-header .sub-title-white {
+  color: #fff !important;
+}
+
+.site-content .content-wrapper > .about-section {
+  background: #fff;
+}
+
+.site-content .content-wrapper > .about-section:nth-child(even) {
+  background: #f4f4f4;
+}
+
+.site-content .section-title .title,
+.site-content .about-section h1,
+.site-content .about-section h2,
+.site-content .about-section h3 {
+  color: #090909 !important;
+}
+
+.site-content .about-section p,
+.site-content .about-section li {
+  color: #4b4b4b !important;
+}
+
+.site-content .about-img img,
+#page > section .service-img img {
+  filter: grayscale(100%);
+}
+
+#page > section .bg-light,
+#page > section .rounded-section {
+  background: #f2f2f2 !important;
+}
+
+#page > section .service-item,
+#page > section .service-content {
+  background-color: #fff;
+  color: #111;
+}
+
+#page > section .service-title,
+#page > section .service-content h1,
+#page > section .service-content h2,
+#page > section .service-content h3 {
+  color: #111 !important;
+}
+
+#page > section .circle-btn {
+  border-color: #111 !important;
+  background: #fff !important;
+}
+
+#page > section .circle-btn:hover {
+  background: #111 !important;
+}
+
+#page > section .circle-btn:hover svg path {
+  stroke: #fff;
+}
+
+.site-content a:not(.btn):not(.circle-btn),
+#page > section a:not(.btn):not(.circle-btn) {
+  color: #111;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .site-content .about-img img,
+  #page > section .service-img img {
+    transition: filter 0.25s ease;
+  }
+}
