@@ -37,7 +37,8 @@ const WEBSITES = {
   "xn leisure": "https://xnleisure.com/",
   "Decathlon": "https://www.decathlon.co.uk/",
   "Swim Nation": "https://swimnation.uk/",
-  "Swim England": "https://www.swimming.org/swimengland/"
+  "Swim England": "https://www.swimming.org/swimengland/",
+  "Industry Wake": "https://www.industrywake.co.uk/"
 };
 const role = document.body.dataset.role;
 if (role) {
