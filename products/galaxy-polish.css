@@ -18,6 +18,11 @@ body {
   background: var(--galaxy-cream);
 }
 
+#core-navigation .btn {
+  min-height: 0;
+  gap: initial;
+}
+
 img {
   display: block;
 }
@@ -414,26 +419,6 @@ button:focus-visible {
 
 .price-card .btn {
   width: 100%;
-}
-
-.fibodo-footer {
-  background: var(--galaxy-deep);
-}
-
-.fibodo-footer__logo {
-  max-width: 235px;
-  padding: 12px 15px;
-  background: var(--galaxy-cream);
-  border-radius: 2px;
-}
-
-.fibodo-footer__logo img {
-  max-height: none;
-}
-
-.fibodo-footer__social a:hover {
-  background: #789b54;
-  border-color: #789b54;
 }
 
 @media (max-width: 1180px) {

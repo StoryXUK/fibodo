@@ -6,31 +6,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="GALAXY by fibodo — the connected platform for independent gyms and studios.">
   <title>GALAXY by fibodo</title>
+  <link rel="icon" href="../images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="../navigation.css">
   <link rel="stylesheet" href="galaxy.css">
   <link rel="stylesheet" href="galaxy-polish.css">
-  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="../fibodo-navigation-base.css">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../fibodo-footer.css">
 </head>
 
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
-  <div class="announcement">✶&nbsp; Built for independent gyms and studios &nbsp;&nbsp;•&nbsp;&nbsp; Plans from £75 +
-    VAT per month</div>
-  <header class="header">
-    <a class="site-logo" href="#top" aria-label="GALAXY by fibodo home">
-      <img src="images/galaxy-by-fibodo-logo.png" alt="GALAXY by fibodo">
-    </a>
-    <button class="menu-toggle" aria-expanded="false"
-      aria-controls="nav"><span></span><span></span><span></span></button>
-    <nav id="nav">
-      <a href="#why">Why GALAXY</a><a href="#venues">For Your Venue</a><a href="#platform">The Platform</a><a
-        href="#switching">Switching</a><a href="#pricing">Pricing</a><a href="#demo">Book a demo↗</a>
-    </nav>
-  </header>
+  <div data-root="../" id="core-navigation"></div>
   <main id="main">
     <section class="hero light" id="why">
       <div class="hero-copy reveal">
@@ -615,70 +607,10 @@
     </section>
 
   </main>
-  <footer class="fibodo-footer" id="site-footer" role="contentinfo">
-    <div class="fibodo-footer__container">
-      <div class="fibodo-footer__grid">
-        <div class="fibodo-footer__brand">
-          <a class="fibodo-footer__logo" href="#top" aria-label="GALAXY by fibodo home"><img
-              src="images/galaxy-by-fibodo-logo.png" alt="GALAXY by fibodo"></a>
-          <ul class="fibodo-footer__social" aria-label="Social media">
-            <li><a href="https://www.instagram.com/fibodo.uk" target="_blank" rel="noopener noreferrer"
-                aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
-                </svg></a></li>
-            <li><a href="https://www.facebook.com/61566156836381" target="_blank" rel="noopener noreferrer"
-                aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z" />
-                </svg></a></li>
-            <li><a href="https://uk.linkedin.com/company/fibodo" target="_blank" rel="noopener noreferrer"
-                aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.47-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.54V8.98H7.1v11.47ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z" />
-                </svg></a></li>
-            <li><a href="https://www.youtube.com/@fibodo" target="_blank" rel="noopener noreferrer"
-                aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.54 12 3.54 12 3.54s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.19 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z" />
-                </svg></a></li>
-          </ul>
-        </div>
-        <div class="fibodo-footer__col">
-          <h4 class="fibodo-footer__heading">Product</h4>
-          <ul class="fibodo-footer__links">
-            <li><a href="../products.html#core">CORE</a></li>
-            <li><a href="../products.html#galaxy">GALAXY</a></li>
-            <li><a href="../products.html#pulsar">PULSAR</a></li>
-            <li><a href="../products.html#enterprise">ENTERPRISE</a></li>
-          </ul>
-        </div>
-        <div class="fibodo-footer__col">
-          <h4 class="fibodo-footer__heading">Company</h4>
-          <ul class="fibodo-footer__links">
-            <li><a href="../about-us.html">About us</a></li>
-            <li><a href="../jobs.html">Careers</a></li>
-            <li><a href="../blog.html">News</a></li>
-            <li><a href="../contact-us.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="fibodo-footer__col fibodo-footer__col--legal">
-          <h4 class="fibodo-footer__heading">Legal</h4>
-          <ul class="fibodo-footer__links">
-            <li><a href="../terms-and-conditions-business.html">Terms &amp; Conditions Business</a></li>
-            <li><a href="../terms-and-conditions-users.html">Terms &amp; Conditions User</a></li>
-            <li><a href="../terms-and-conditions-website.html">Terms &amp; Conditions Website</a></li>
-            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="fibodo-footer__bar">
-        <p class="fibodo-footer__copy">&copy; <span id="copyright"></span> fibodo Ltd. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <footer data-root="../" id="footer"></footer>
+  <script src="../js/loadNav.js"></script>
+  <script src="../navigation.js"></script>
   <script src="galaxy.js"></script>
-  <script>document.getElementById('copyright').textContent = new Date().getFullYear();</script>
 </body>
 
 </html>
