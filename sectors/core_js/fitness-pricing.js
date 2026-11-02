@@ -47,12 +47,12 @@
           <h3>Custom App</h3>
           <p>Make it yours. Your App. Your Brand.</p>
         </div>
-        <div class="fitness-custom-price"><strong>£2,399</strong><span>One-off fee</span></div>
+        <div class="fitness-custom-price"><strong>£3,599</strong><span>One-off fee</span></div>
         <ul class="fitness-custom-plans" aria-label="Compatible CORE plans">
           <li>CORE</li><li>CORE Grow</li><li>CORE Ultimate</li>
         </ul>
         <div class="fitness-custom-action">
-          <p>Pay your one-off custom build fee of £2,399, with £25 / month added to your monthly subscription.</p>
+          <p>Pay your one-off custom build fee of £3,599, with £25 / month added to your monthly subscription.</p>
           <a class="fitness-custom-button" href="contact-us.html">Add Custom App</a>
         </div>
       </article>
