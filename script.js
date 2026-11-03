@@ -1,6 +1,6 @@
 // Replace with your deployed Google Apps Script Web App /exec URL.
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxsOMVMrpzH_qzuOrWfqYS5HHGENvHzWbg30fsEAJGtkW802kjqml15N8sQGRaRkAyE/exec';
-const OPERATORS = ['Alderford', 'Anglian Water', 'Aqua Park Training', 'Aztec Adventure', 'Beccles Lido', 'beendurance', 'Cotswold Country Park and Beach', 'Cotswold Lake Trust', 'Gateshead Leisure Centre', 'Lincoln Water Parks', 'Meadowbay', 'Parkwood Leisure', 'Petersfield Lido', 'ptp coaching', 'Royal Parks', 'South downs leisure', 'St Andrews Lakes', 'Stubbers Adventure Centre', 'UK Water Parks', 'Ware Priory Lido', 'West Country Waterpark', 'Peak Open Water Sports', 'Dŵr Cymru Welsh Water'];
+const OPERATORS = ['Alderford', 'Anglian Water', 'Aqua Park Training', 'Aztec Adventure', 'Beccles Lido', 'beendurance', 'Cotswold Country Park and Beach', 'Cotswold Lake Trust', 'Gateshead Leisure Centre', 'Lincoln Water Parks', 'Meadowbay', 'Parkwood Leisure', 'Petersfield Lido', 'ptp coaching', 'Royal Parks', 'South downs leisure', 'St Andrews Lakes', 'Stubbers Adventure Centre', 'UK Water Parks', 'Ware Priory Lido', 'West Country Waterpark', 'Peak Open Water Sports', 'Dŵr Cymru Welsh Water', 'Future Lidos', 'Cliff Lakes'];
 const SUPPLIERS = ['4 Leisure Recruitment Ltd', 'Active Insight', 'Airspace Solutions.com Ltd', 'Aqua parks UK', 'Blowmesup', 'fibodo', 'Nowca', 'RLSS', 'Wibit', 'xn leisure', 'Decathlon', 'Swim Nation', 'Swim England', 'Industry Wake'];
 const WEBSITES = {
   "Alderford": "https://alderford.com/",
@@ -26,6 +26,8 @@ const WEBSITES = {
   "West Country Waterpark": "https://westcountrywaterpark.co.uk/",
   "Peak Open Water Sports": "https://www.peakopenwatersports.com/",
   "Dŵr Cymru Welsh Water": "https://www.dwrcymru.com/en",
+  "Future Lidos": "https://www.futurelidos.org/",
+  "Cliff Lakes": "https://clifflakes.co.uk/",
   "4 Leisure Recruitment Ltd": "https://www.4leisurerecruitment.co.uk/",
   "Active Insight": "https://active-insight.org/",
   "Airspace Solutions.com Ltd": "https://www.airspacesolutions.com/",
