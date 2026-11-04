@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Who’s it for? | fibodo</title>
+    <meta name="description" content="From independent professionals to multi-site organisations, find the fibodo product built for your business.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/professional.css?v=20260720">
+    <link href="fibodo-navigation-base.css" rel="stylesheet">
+    <link href="navigation.css" rel="stylesheet">
+    <link href="fibodo-footer.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: #f7f7f4;
+            color: #121916;
+            font-family: "DM Sans", Arial, sans-serif;
+        }
+
+        .who-page {
+            width: min(1200px, calc(100% - 44px));
+            margin: 0 auto;
+            padding: 52px 0 76px;
+        }
+
+        .who-page-panel {
+            position: static;
+            top: auto;
+            left: auto;
+            right: auto;
+            width: auto;
+            max-width: none;
+            margin: 0;
+        }
+
+        @media (max-width: 1200px) {
+            .who-page-panel {
+                display: block;
+                max-height: none;
+                overflow: visible;
+                border: 1px solid #e8e7e1;
+                border-radius: 22px;
+                box-shadow: 0 28px 55px #17201d22;
+                padding: 24px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .who-page {
+                width: min(100% - 28px, 560px);
+                padding: 28px 0 48px;
+            }
+
+            .who-page-panel {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div data-root="./" id="core-navigation"></div>
+    <main class="who-page">
+        <section aria-label="The fibodo platform and products" class="mega-panel who-page-panel">
+            <div class="mega-col">
+                <p class="mega-col-title">THE FIBODO PLATFORM</p>
+                <h1 class="mega-heading">One platform.<br>Every ambition.</h1>
+                <p class="mega-description">From independent professionals to multi-site organisations, find the right fibodo product for your business.</p>
+                <a href="products/core/about.html">About</a>
+                <a class="mega-footer-link" href="contact-us.html">Find your fit <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="mega-col">
+                <p class="mega-col-title">EXPLORE OUR PRODUCTS</p>
+                <div class="mega-items">
+                    <a class="mega-link" href="products/core.html">
+                        <span aria-hidden="true" class="mega-icon core-icon">C</span>
+                        <span><strong>CORE <em>by fibodo</em></strong><small>For independent coaches, trainers and service professionals.</small></span>
+                        <span aria-hidden="true" class="mega-arrow">↗</span>
+                    </a>
+                    <a class="mega-link" href="products/galaxy.html">
+                        <span aria-hidden="true" class="mega-icon galaxy-icon">G</span>
+                        <span><strong>GALAXY <em>by fibodo</em></strong><small>For gyms, studios, clubs and venue operators.</small></span>
+                        <span aria-hidden="true" class="mega-arrow">↗</span>
+                    </a>
+                    <a class="mega-link" href="products/pulsar.html">
+                        <span aria-hidden="true" class="mega-icon pulsar-icon">P</span>
+                        <span><strong>PULSAR <em>by fibodo</em></strong><small>For educators, creators and digital experiences.</small></span>
+                        <span aria-hidden="true" class="mega-arrow">↗</span>
+                    </a>
+                    <a class="mega-link" href="products/enterprise.html">
+                        <span aria-hidden="true" class="mega-icon enterprise-icon">E</span>
+                        <span><strong>ENTERPRISE <em>by fibodo</em></strong><small>For larger organisations and multi-location operations.</small></span>
+                        <span aria-hidden="true" class="mega-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mega-footer">Technology built around the way you do business. <a href="contact-us.html">Talk to the fibodo team ↗</a></div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="js/loadNav.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
