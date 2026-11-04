@@ -228,7 +228,9 @@
         }
     </style>
 <link href="../fibodo-navigation-base.css" rel="stylesheet"/><link href="../navigation.css" rel="stylesheet"/><link href="../css/bootstrap/bootstrap-icons.min.css" rel="stylesheet"/><link href="../fibodo-footer.css" rel="stylesheet"/>
-</head>
+<style>
+.pt-capture{box-sizing:border-box;background:#17231e;color:#fff;padding:80px 6%;border-top:1px solid #526159;font-family:Inter,Arial,sans-serif}.pt-capture-inner{max-width:1160px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.pt-capture h2,.pt-dialog h2{font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-1px;margin:12px 0 20px;color:#fff}.pt-capture p,.pt-dialog p{line-height:1.65}.pt-eyebrow{color:#e1ff00;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}.pt-form{display:grid;gap:18px}.pt-form label{display:grid;gap:9px;font-size:14px;color:#fff}.pt-form input{box-sizing:border-box;width:100%;padding:15px;border:1px solid #738779;border-radius:8px;background:#101914;color:#fff;font:inherit;font-size:16px}.pt-form input:focus-visible,.pt-close:focus-visible,.pt-submit:focus-visible{outline:3px solid #e1ff00;outline-offset:3px}.pt-submit{border:0;border-radius:8px;background:#e1ff00;color:#111;padding:17px;font:inherit;font-weight:700;cursor:pointer}.pt-form[aria-busy="true"] .pt-submit{cursor:wait;opacity:.7}.pt-form[data-submitted="true"] .pt-submit{cursor:default;opacity:1}.pt-notice{font-size:12px;color:#c1cdc5;margin:0}.pt-status{margin:0;color:#e7f5eb}.pt-status.pt-success{padding:18px;background:#254a34;border:1px solid #6d9a76;border-radius:8px}.pt-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.pt-dialog{box-sizing:border-box;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 40px);overflow:auto;background:#17231e;color:#fff;border:1px solid #64796a;border-radius:20px;padding:38px;font-family:Inter,Arial,sans-serif}.pt-dialog::backdrop{background:#000b;backdrop-filter:blur(6px)}.pt-close{position:absolute;top:10px;right:13px;border:0;background:none;color:#fff;font-size:29px;cursor:pointer;padding:8px}.pt-dialog h2{padding-right:15px}.pt-dialog .pt-form{margin-top:24px}@media(max-width:700px){.pt-capture-inner{grid-template-columns:1fr;gap:30px}.pt-capture{padding:55px 6%}.pt-dialog{padding:30px 22px}}
+</style></head>
 
 <body>
     <div data-root="../" id="core-navigation"></div>
@@ -814,9 +816,30 @@
             </div>
         </section>
     </main>
-    <footer data-root="../" id="footer"></footer>
+    <section class="pt-capture" id="personal-training-enquiry" aria-label="Talk to us about CORE"><div class="pt-capture-inner"><div><p class="pt-eyebrow">Your business. Your next move.</p><h2>Get booked. Get paid. Keep moving.</h2><p>Ready for the work you are building now and the opportunities you are building next. Leave your details and our team will be in touch on WhatsApp.</p></div><form class="pt-form" data-source="footer" aria-busy="false"><label for="pt-footer-name">Name<input id="pt-footer-name" name="name" autocomplete="name" maxlength="250" required></label><label for="pt-footer-whatsapp">WhatsApp number<input id="pt-footer-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="Include your country code, e.g. +44" maxlength="40" pattern="(?:[^0-9]*[0-9]){7,15}[^0-9]*" title="Enter a WhatsApp number with 7 to 15 digits" required></label><div class="pt-trap" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></div><p class="pt-notice">We’ll use your name and WhatsApp number to contact you about CORE for your personal training business.</p><button class="pt-submit" type="submit">Let’s talk about your next move ↗</button><p class="pt-status" role="status" aria-live="polite"></p></form></div></section><footer data-root="../" id="footer"></footer>
     <script src="core_js/main.js"></script>
     <script src="core_js/fitness-pricing.js"></script>
-<script src="../js/loadNav.js"></script><script src="../navigation.js"></script></body>
+<script src="../js/loadNav.js"></script><script src="../navigation.js"></script><dialog class="pt-dialog" id="pt-dialog" aria-label="Talk to us about CORE"><button type="button" class="pt-close" aria-label="Close enquiry form">×</button><p class="pt-eyebrow">Your business. Your next move.</p><h2>Get booked. Get paid. Keep moving.</h2><p>Ready for the work you are building now and the opportunities you are building next. Leave your details and our team will be in touch on WhatsApp.</p><form class="pt-form" data-source="popup" aria-busy="false"><label for="pt-popup-name">Name<input id="pt-popup-name" name="name" autocomplete="name" maxlength="250" required></label><label for="pt-popup-whatsapp">WhatsApp number<input id="pt-popup-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="Include your country code, e.g. +44" maxlength="40" pattern="(?:[^0-9]*[0-9]){7,15}[^0-9]*" title="Enter a WhatsApp number with 7 to 15 digits" required></label><div class="pt-trap" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></div><p class="pt-notice">We’ll use your name and WhatsApp number to contact you about CORE for your personal training business.</p><button class="pt-submit" type="submit">Let’s talk about your next move ↗</button><p class="pt-status" role="status" aria-live="polite"></p></form></dialog><script>
+(()=>{
+// Paste the NEW personal-training Apps Script /exec URL here.
+const PT_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbw1UEd6p7vApa1ynPiWOB67CipiHvPiI1G4d-Tyrq5J0k574aY1sUXZOoGZk-YDKt0u/exec';
+const dialog=document.getElementById('pt-dialog');let previousFocus;let submitted=false;
+dialog.querySelector('.pt-close').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('close',()=>{document.body.style.overflow='';if(previousFocus&&previousFocus.isConnected)previousFocus.focus();});
+const show=()=>setTimeout(()=>{if(submitted||document.querySelector('.pt-form :focus'))return;previousFocus=document.activeElement;dialog.showModal();document.body.style.overflow='hidden';},1000);
+if(document.readyState==='complete')show();else window.addEventListener('load',show,{once:true});
+document.querySelectorAll('.pt-form').forEach(form=>form.addEventListener('submit',async event=>{
+event.preventDefault();if(form.dataset.busy==='true'||form.dataset.submitted==='true'||!form.reportValidity())return;
+const status=form.querySelector('.pt-status'),button=form.querySelector('.pt-submit');
+if(!PT_FORM_ENDPOINT){status.textContent='The enquiry form is not connected yet. Please try again once setup is complete.';return;}
+const payload=new URLSearchParams(new FormData(form));payload.set('source',form.dataset.source);
+form.dataset.busy='true';form.setAttribute('aria-busy','true');button.disabled=true;status.textContent='Sending your enquiry…';
+const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),30000);
+try{const response=await fetch(PT_FORM_ENDPOINT,{method:'POST',body:payload,credentials:'omit',signal:controller.signal});if(!response.ok)throw Error('Request failed');const result=await response.json();if(result.success!==true)throw Error(result.message||'Request failed');submitted=true;form.reset();form.dataset.submitted='true';button.textContent='Thank you — enquiry received ✓';status.classList.add('pt-success');status.textContent='Thank you! Your enquiry has been received. Our team will be in touch on WhatsApp to discuss your next move.';}
+catch(error){status.textContent='We couldn’t confirm your enquiry. It may already have been received; please contact fibodo before resubmitting.';button.disabled=false;}
+finally{clearTimeout(timeout);form.dataset.busy='false';form.setAttribute('aria-busy','false');}
+}));
+})();
+</script></body>
 
 </html>
