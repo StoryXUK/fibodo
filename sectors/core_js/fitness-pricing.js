@@ -53,7 +53,7 @@
         </ul>
         <div class="fitness-custom-action">
           <p>Pay your one-off custom build fee of £3,599, with £25 / month added to your monthly subscription.</p>
-          <a class="fitness-custom-button" href="contact-us.html">Add Custom App</a>
+          <a class="fitness-custom-button" href="../contact-us.html">Add Custom App</a>
         </div>
       </article>
       <p class="fitness-start-anytime">Start anytime!</p>
