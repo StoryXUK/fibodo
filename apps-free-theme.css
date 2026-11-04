@@ -1,0 +1,262 @@
+:root {
+  --apps-ink: #111512;
+  --apps-dark: #061b46;
+  --apps-dark-2: #12315e;
+  --apps-orange: #4b9ad6;
+  --apps-lime: #b9ddff;
+  --apps-cream: #f5f4ed;
+  --apps-paper: #fbfbf8;
+  --apps-line: #d9ddd5;
+  --apps-muted: #5e6862;
+}
+
+body {
+  background: var(--apps-paper);
+  font-family: "DM Sans", sans-serif;
+}
+
+.hero:before {
+  background-size: 58px 58px;
+}
+
+.hero:after {
+  border-color: #ffffff24;
+  box-shadow: 0 0 0 70px #ffffff08, 0 0 0 140px #ffffff05;
+}
+
+.hero-grid {
+  min-height: 740px;
+}
+
+.eyebrow {
+  color: #c7d8ed;
+}
+
+.hero h1,
+.intro-head h2,
+.features-head h2,
+.brand-grid h2,
+.cta-grid h2,
+.app-card-body h3 {
+  font-family: "Sora", "DM Sans", sans-serif;
+}
+
+.hero h1 {
+  letter-spacing: -0.07em;
+}
+
+.hero h1 em,
+.hero-proof b,
+.section-label,
+.label-lime,
+.brand-grid h2 em {
+  color: var(--apps-orange);
+}
+
+.live-dot {
+  background: var(--apps-orange);
+  box-shadow: 0 0 0 6px #4b9ad61c;
+}
+
+.lead {
+  color: #d1dff0;
+}
+
+.button-orange {
+  border-color: var(--apps-orange);
+  background: var(--apps-orange);
+  color: var(--apps-ink);
+}
+
+.button-orange:hover {
+  background: #b9ddff;
+}
+
+.hero-art .halo-one {
+  background: radial-gradient(circle at 45% 45%, #244f83, #12315e 55%, #061b46 72%);
+}
+
+.hero-art .halo-two {
+  border-color: #4b9ad640;
+  box-shadow: 0 0 0 40px #4b9ad60a;
+}
+
+.screen {
+  background: #f4f6fa;
+}
+
+.graph div {
+  background: linear-gradient(var(--apps-lime), var(--apps-orange));
+}
+
+.session-icon {
+  background: #e5f1fc;
+  color: #315d9b;
+}
+
+.client-hero {
+  background: linear-gradient(145deg, #12315e, #061b46);
+}
+
+.client-greeting,
+.hero-bottom-inner i {
+  color: var(--apps-orange);
+}
+
+.client-pill,
+.booking-choice > span {
+  background: var(--apps-lime);
+  color: var(--apps-ink);
+}
+
+.class-icon {
+  background: #e5f1fc;
+  color: #315d9b;
+}
+
+.mini-tiles > div {
+  background: #eef3f8;
+}
+
+.mini-tiles span {
+  color: #315d9b;
+}
+
+.note-symbol {
+  background: #e5f1fc;
+  color: #315d9b;
+}
+
+.note-lime {
+  background: #e5f1fc;
+  color: #315d9b;
+}
+
+.hero-bottom {
+  background: #041436;
+}
+
+.hero-bottom-inner {
+  color: #b3c9e8;
+}
+
+.section-label {
+  color: #315d9b;
+}
+
+.intro,
+.features-section {
+  background: var(--apps-paper);
+}
+
+.intro-head h2 span,
+.features-head h2 span {
+  color: #64748b;
+}
+
+.app-card {
+  border-radius: 10px;
+}
+
+.app-card-dark {
+  background: var(--apps-dark);
+}
+
+.app-card-cream {
+  background: var(--apps-cream);
+}
+
+.pill {
+  color: var(--apps-orange);
+}
+
+.app-card-body h3 em,
+.app-card-body li:before,
+.feature-icon {
+  color: #4b9ad6;
+}
+
+.app-card-cream h3 em {
+  color: #315d9b;
+}
+
+.app-card-cream .app-card-body li:before {
+  color: #315d9b;
+}
+
+.card-art-business {
+  background: linear-gradient(145deg, #12315e, #315d9b);
+}
+
+.dash-header span {
+  color: #315d9b;
+}
+
+.dash-line i {
+  color: #315d9b;
+}
+
+.card-art-client {
+  background: linear-gradient(145deg, #dce8f4, #f5f4ed);
+}
+
+.booking-choice {
+  background: #eef3f8;
+}
+
+.brand-section {
+  background: var(--apps-dark);
+}
+
+.brand-section:after {
+  background: radial-gradient(circle at 72% 50%, #12315e 0, transparent 40%);
+}
+
+.brand-grid > div:first-child > p:not(.fineprint) {
+  color: #bdcfe8;
+}
+
+.brand-visual .orbit-b {
+  border-color: #4b9ad640;
+}
+
+.brand-chip {
+  border-color: #ffffff30;
+  background: #ffffff0d;
+}
+
+.brand-chip.chip-three {
+  color: var(--apps-orange);
+}
+
+.feature-grid article:hover {
+  box-shadow: 0 22px 55px #1a2e4a12;
+}
+
+.feature-icon {
+  border-color: #b8cce1;
+}
+
+.cta-section {
+  background: var(--apps-orange);
+}
+
+.cta-grid h2 em,
+.cta-grid > div:first-child > p {
+  color: #17365e;
+}
+
+.button-dark-outline {
+  border-color: #061b4666;
+}
+
+.button-dark-outline:hover {
+  background: #061b46;
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .hero-grid {
+    padding-top: 70px;
+  }
+}
