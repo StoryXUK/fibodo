@@ -35,6 +35,43 @@
             width: auto;
             max-width: none;
             margin: 0;
+            grid-template-columns: minmax(270px, .75fr) minmax(0, 1.8fr);
+            gap: 42px;
+            padding: 48px;
+        }
+
+        .who-page-panel .mega-items {
+            gap: 16px;
+        }
+
+        .who-page-panel .mega-link {
+            min-height: 150px;
+            gap: 18px;
+            padding: 24px;
+            border-width: 2px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px #17201d0d;
+        }
+
+        .who-page-panel .mega-link:hover,
+        .who-page-panel .mega-link:focus-visible {
+            box-shadow: 0 14px 28px #17201d18;
+        }
+
+        .who-page-panel .mega-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 16px;
+            font-size: 23px;
+        }
+
+        .who-page-panel .mega-link strong {
+            font-size: 17px;
+        }
+
+        .who-page-panel .mega-link small {
+            font-size: 13px;
+            line-height: 1.6;
         }
 
         @media (max-width: 1200px) {
@@ -47,6 +84,11 @@
                 box-shadow: 0 28px 55px #17201d22;
                 padding: 24px;
             }
+
+            .who-page-panel .mega-link {
+                min-height: 136px;
+                padding: 20px;
+            }
         }
 
         @media (max-width: 600px) {
@@ -57,6 +99,27 @@
 
             .who-page-panel {
                 padding: 18px;
+            }
+
+            .who-page-panel .mega-link {
+                min-height: 116px;
+                gap: 12px;
+                padding: 16px;
+            }
+
+            .who-page-panel .mega-icon {
+                width: 44px;
+                height: 44px;
+                border-radius: 13px;
+                font-size: 19px;
+            }
+
+            .who-page-panel .mega-link strong {
+                font-size: 15px;
+            }
+
+            .who-page-panel .mega-link small {
+                font-size: 12px;
             }
         }
     </style>
@@ -69,7 +132,6 @@
                 <p class="mega-col-title">THE FIBODO PLATFORM</p>
                 <h1 class="mega-heading">One platform.<br>Every ambition.</h1>
                 <p class="mega-description">From independent professionals to multi-site organisations, find the right fibodo product for your business.</p>
-                <a href="products/core/about.html">About</a>
                 <a class="mega-footer-link" href="contact-us.html">Find your fit <span aria-hidden="true">↗</span></a>
             </div>
             <div class="mega-col">

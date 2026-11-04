@@ -1,39 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta content="width=device-width,initial-scale=1" name="viewport" />
-  <meta content="Explore flexible GALAXY pricing for gyms, studios, clubs and venue operators." name="description" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>GALAXY Pricing | fibodo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+  <meta content="Explore GALAXY plans for gyms, studios, clubs and venue operators."
+    name="description" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="../navigation.css" rel="stylesheet" />
   <link href="pricing.css" rel="stylesheet" />
   <link href="../fibodo-navigation-base.css" rel="stylesheet" />
-  <link href="../navigation.css" rel="stylesheet" />
   <link href="../css/bootstrap/bootstrap-icons.min.css" rel="stylesheet" />
   <link href="../fibodo-footer.css" rel="stylesheet" />
 </head>
+
 <body class="product-pricing-page galaxy-pricing">
   <div data-root="../" id="core-navigation"></div>
-  <main>
+  <main id="top">
     <section class="product-pricing-hero">
       <div class="container">
         <span class="product-mark">GALAXY BY FIBODO</span>
         <h1>Pricing shaped around your operation.</h1>
-        <p class="lead">GALAXY connects memberships, classes, bookings, teams and customer relationships. Tell us how your venue works and we’ll build the right package around it.</p>
+        <p class="lead">Choose the GALAXY plan that fits your venue, then add coach profiles and facilities as your
+          operation grows.</p>
       </div>
     </section>
-    <section class="section section-dark">
+    <section class="section section-dark" id="pricing-summary">
       <div class="container">
         <div class="pricing-head">
-          <div><span class="eyebrow">FLEXIBLE GALAXY PRICING</span><h2>Start with the operation you have.<br />Scale into the one you want.</h2></div>
-          <p class="lead">Pricing reflects your locations, services, memberships and operational requirements. Speak to us for a clear proposal.</p>
+          <div>
+            <span class="eyebrow">GALAXY PLANS</span>
+            <h2>One connected platform.<br />Room to grow.</h2>
+          </div>
+          <p class="lead">From a single venue to a growing operation, choose the plan that works for your team.</p>
         </div>
         <div class="price-grid">
-          <article class="price-card"><span class="label">One location</span><h3>Single Venue</h3><p>For independent gyms, studios, clubs and specialist venues.</p><ul><li>Bookings and schedules</li><li>Memberships and payments</li><li>Customer management</li></ul><div class="price-word">Let’s talk</div><a class="btn btn-light" href="../contact-us.html">Request pricing ↗</a></article>
-          <article class="price-card popular"><span class="label">More capacity</span><h3>Growing Operator</h3><p>For established businesses adding services, staff or locations.</p><ul><li>Connected operations</li><li>Team and facility management</li><li>Growth and reporting tools</li></ul><div class="price-word">Built to fit</div><a class="btn btn-primary" href="../contact-us.html">Build your package ↗</a></article>
-          <article class="price-card"><span class="label">Multiple locations</span><h3>Venue Group</h3><p>For operators that need oversight across a group of sites.</p><ul><li>Multi-location control</li><li>Consistent customer journeys</li><li>Consolidated insight</li></ul><div class="price-word">Tailored</div><a class="btn btn-light" href="../contact-us.html">Discuss your operation ↗</a></article>
+          <article class="price-card reveal">
+            <span class="label">For your venue</span>
+            <h3>GALAXY</h3>
+            <p>Connected tools for your gym, studio or club.</p>
+            <div class="price"><strong>£79</strong><span>/ month</span></div>
+            <p class="billing-cycle">Billed monthly</p>
+            <a class="btn btn-light" href="../contact-us.html">Choose GALAXY</a>
+          </article>
+          <article class="price-card popular reveal">
+            <span class="label">Grow your team</span>
+            <h3>GALAXY Grow</h3>
+            <p>Add 5 coach profiles to support your growing team.</p>
+            <div class="price"><strong>£129</strong><span>/ month</span></div>
+            <p class="billing-cycle">Billed monthly</p>
+            <a class="btn btn-primary" href="../contact-us.html">Choose GALAXY Grow</a>
+          </article>
+          <article class="price-card reveal">
+            <span class="label">Expand your operation</span>
+            <h3>Galaxy Ultimate</h3>
+            <p>Add 10 coach profiles and manage multiple facilities.</p>
+            <div class="price"><strong>£249</strong><span>/ month</span></div>
+            <p class="billing-cycle">Billed monthly</p>
+            <a class="btn btn-light" href="../contact-us.html">Choose Galaxy Ultimate</a>
+          </article>
         </div>
-        <p class="price-note">Every GALAXY proposal is scoped clearly around your operation and requirements.</p>
+        <p class="price-note">All subscription prices include VAT and are billed monthly.</p>
+        <article class="custom-app-card reveal">
+          <div class="custom-app-intro">
+            <span class="label">Compatible with all GALAXY plans</span>
+            <h3>Custom App</h3>
+            <p>Your venue. Your brand. Your app.</p>
+          </div>
+          <div class="custom-app-price">
+            <strong>£3,599</strong>
+            <span>One-off fee</span>
+          </div>
+          <ul aria-label="Compatible GALAXY plans" class="custom-app-plans">
+            <li>GALAXY</li>
+            <li>GALAXY Grow</li>
+            <li>Galaxy Ultimate</li>
+          </ul>
+          <div class="custom-app-action">
+            <p>Give your customers a custom-branded app for your venue.</p>
+            <a class="btn btn-dark" href="../contact-us.html">Add Custom App</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="plans-title" class="plans-section section-panel section-break" id="pricing">
+      <div class="container">
+        <h2 id="plans-title">Compare plan features</h2>
+        <details class="plans-comparison" open>
+          <summary>Plan comparison <span aria-hidden="true">+</span></summary>
+          <div aria-label="GALAXY plan feature comparison" class="plans-table-scroll" role="region" tabindex="0">
+            <table>
+              <caption>What's included with each GALAXY plan</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Features</th>
+                  <th scope="col">GALAXY</th>
+                  <th scope="col">GALAXY Grow</th>
+                  <th scope="col">Galaxy Ultimate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Additional coach profiles</th>
+                  <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not included</span></td>
+                  <td>5</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <th scope="row">Multiple facilities</th>
+                  <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not included</span></td>
+                  <td><span aria-hidden="true">—</span><span class="pricing-sr-only">Not included</span></td>
+                  <td><span aria-hidden="true">✓</span><span class="pricing-sr-only">Included</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
       </div>
     </section>
   </main>
@@ -41,4 +128,5 @@
   <script src="../js/loadNav.js"></script>
   <script src="../navigation.js"></script>
 </body>
+
 </html>
