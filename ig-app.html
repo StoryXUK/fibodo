@@ -8,6 +8,14 @@
 <body>
   <main>
     <h1>IG App</h1>
+    <p>This is the QR code for IG.</p>
   </main>
+  <script>
+    const isAppleDevice = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+
+    if (isAppleDevice) {
+      window.location.href = "https://apps.apple.com/app/id6831568810";
+    }
+  </script>
 </body>
 </html>
