@@ -12,9 +12,12 @@
   </main>
   <script>
     const isAppleDevice = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+    const isAndroidDevice = /Android/i.test(navigator.userAgent);
 
     if (isAppleDevice) {
       window.location.href = "https://apps.apple.com/app/id6831568810";
+    } else if (isAndroidDevice) {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.fibodo.independentgym&pcampaignid=web_share";
     }
   </script>
 </body>
