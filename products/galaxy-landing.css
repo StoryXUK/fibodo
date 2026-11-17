@@ -1,0 +1,25 @@
+.ticket-layout{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.ticket-copy h2{font-size:clamp(44px,4.4vw,70px)}
+.ticket-copy h2 span{color:#9bb966}
+.ticket-copy p,.ticket-panel>p{line-height:1.65;max-width:520px}
+.ticket-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ticket-form label{font-size:13px;display:grid;gap:9px;color:var(--white)}
+.ticket-form input{width:100%;min-width:0;background:rgba(0,0,0,.28);color:#fff;border:1px solid rgba(210,220,206,.45);border-radius:0;padding:14px;font:inherit;font-size:16px}
+.ticket-form input:focus-visible{outline:2px solid #9bb966;outline-offset:2px}
+.ticket-form .ticket-wide{grid-column:1/-1}
+.ticket-form .btn{width:100%;justify-content:center;cursor:pointer;border:0;font-family:inherit}
+.ticket-form .btn:disabled{opacity:.65;cursor:wait}
+.ticket-notice{font-size:12px;line-height:1.6;margin:0;opacity:.8}
+.ticket-status{margin:0;font-size:14px;line-height:1.6}
+.ticket-trap{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden}
+.ticket-dialog{color:var(--white);background:var(--green);border:1px solid rgba(210,220,206,.35);padding:40px;width:min(620px,calc(100% - 32px));max-height:calc(100dvh - 40px);overflow:auto;box-shadow:0 30px 130px #0009}
+.ticket-dialog::backdrop{background:#000b;backdrop-filter:blur(7px)}
+.ticket-panel{position:relative}
+.ticket-panel h2{font-family:var(--serif);font-weight:400;font-size:36px;letter-spacing:-.025em;line-height:1.05;margin:0 0 16px;padding-right:28px}
+.ticket-close{position:absolute;right:-15px;top:-23px;background:transparent;color:#fff;border:0;font-size:29px;padding:10px;cursor:pointer}
+.ticket-close:focus-visible{outline:2px solid #fff}
+.ticket-panel .eyebrow{margin:0 0 17px}
+.ticket-dialog .ticket-form{margin-top:25px}
+.ticket-form .ticket-status.ticket-success{color:#b9d98a}
+@media(max-width:1050px){.ticket-layout{grid-template-columns:1fr;gap:30px}}
+@media(max-width:700px){.ticket-dialog{padding:30px 22px}.ticket-panel h2{font-size:30px}.ticket-form{grid-template-columns:1fr}.ticket-close{right:-9px;top:-18px}}
