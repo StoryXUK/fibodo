@@ -67,11 +67,16 @@
       main { min-height: 320px; display: flex; flex-direction: column; justify-content: center; }
       main::after { width: 150px; height: 150px; right: -55px; bottom: -78px; border-width: 22px; }
     }
+
+    .disclaimer { position: relative; z-index: 1; margin: 28px 0 0; font-size: .875rem; line-height: 1.65; color: #42516a; }
+    a { color: #075ea8; text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid #0876d9; outline-offset: 4px; }
   </style>
 </head>
 <body>
   <main>
     <h1>Please enter at each stand, the most entries are entered into the prize draw</h1>
+    <p class="disclaimer">By entering this competition, you agree to the <a href="terms-and-conditions.html">T&amp;Cs</a>.</p>
   </main>
 </body>
 </html>
