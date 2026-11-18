@@ -21,7 +21,7 @@
                         if (!response.ok) throw new Error('Request failed');
                         const result = await response.json();
                         if (result.success !== true) throw new Error(result.message || 'Unable to save your request.');
-                        status.textContent = 'Thank you. Your ticket request has been received. Our team will be in touch.';
+                        status.textContent = 'Thank you. Your request has been received. Our team will be in touch to help you claim your free app.';
                         form.reset(); form.dataset.submitted = 'true'; button.textContent = 'Thank you — request received ✓'; status.classList.add('ticket-success');
                     } catch (error) {
                         status.textContent = 'We couldn’t confirm your request. Please contact sales@fibodo.com before retrying, as it may already have been received.';
