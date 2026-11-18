@@ -1,0 +1,45 @@
+GOOGLE SHEETS SETUP — ALL PRIZE DRAW PAGES
+
+1. Create a blank Google Sheet. Open Extensions > Apps Script.
+2. Paste Code.gs into the Apps Script editor and save.
+3. Select setup in the function dropdown and click Run. Approve permissions.
+4. Deploy > New deployment > Web app. Execute as: Me. Who has access: Anyone.
+5. The supplied deployed Web app URL is already set in prize-draw-config.js.
+6. Confirm you ran setup() in the deployed script and deployed the latest Code.gs.
+7. Upload the HTML pages, prize-draw-config.js and prize-draw-form.js into the
+   existing /prizedraw/ directory on fibodo.com. Keep all filenames unchanged.
+   Code.gs and SETUP.txt are setup files; do not upload them to your website.
+8. Test from the live website in a private browser. Submit one company entry and
+   an ig-prize-draw.html entry with an exercise answer. Confirm the thank-you
+   message AND corresponding rows in the Entries tab before announcing the draw.
+
+All 73 supplied entry forms use one endpoint and one Entries tab. The 71 company
+cards and their QR codes in index.html are preserved byte-for-byte.
+
+The existing form fields, wording and designs are preserved. ig-prize-draw.html
+contains the question What is your favourite exercise? Its answer is saved in
+Answer, with the question in Question. The other 72 forms have no answer field,
+so their Question and Answer cells are blank. No questions have been invented.
+Business name is required only on pages that already contain that field.
+
+The script records the company from its configured page, submission time in
+Europe/London, contact details, any answer, displayed consent statement, source
+page and submission ID. The current pages have no consent checkbox: the column
+records displayed wording, not a separate affirmative checkbox selection.
+
+Retrying the same submission in the same open page uses the same ID to avoid an
+extra row if the first response was lost. The script validates required details,
+rejects unknown pages and escapes input that could be read as a spreadsheet formula.
+No CAPTCHA is included. Keep the Google Sheet private to authorised organisers.
+
+If you already deployed the earlier Code.gs, replace it with this updated version.
+Run setup, then Deploy > Manage deployments > Edit > New version > Deploy.
+This preserves your deployment URL and existing Entries rows. Keep column headers
+unchanged. When changing questions or consent text, update the matching entry in
+DRAW_CONFIG in Code.gs and deploy a new version as well.
+
+Local checks passed for every page, company mapping, existing fields and QR index,
+plus server validation, optional business names, exercise answers and retry IDs.
+A live Google deployment and end-to-end browser submission remain to be checked.
+
+Deployment instructions: https://developers.google.com/apps-script/guides/web
