@@ -1,0 +1,1775 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+    <link rel="icon" href="../images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galaxy Black Friday Offer | Galaxy Grow + Free App | fibodo</title>
+    <meta name="description"
+        content="Get Galaxy Grow for £1,290 a year with a free branded app worth £3,599 and a four-week Switch Guarantee.">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #080808;
+            --ink: #f5f4f2;
+            --muted: #aaa6a3;
+            --orange: #00a870;
+            --line: #ffffff22
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        button {
+            font: inherit
+        }
+
+        .wrap {
+            width: min(1280px, 88%);
+            margin: auto
+        }
+
+        header {
+            height: 100px;
+            border-bottom: 1px solid var(--line);
+            position: relative;
+            z-index: 2
+        }
+
+        .nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .logo strong {
+            font-size: 36px;
+            letter-spacing: -2px
+        }
+
+        .brand {
+            font-size: 25px;
+            line-height: .85;
+            position: relative;
+            padding-right: 3px
+        }
+
+        .brand small {
+            display: block;
+            font-size: 10px;
+            line-height: 1.3
+        }
+
+        .brand:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -5px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 11px solid #00a870
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            font-size: 13px
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            background: var(--orange);
+            color: #080808;
+            padding: 19px 24px;
+            font-size: 15px;
+            font-weight: 750;
+            border: 1px solid var(--orange);
+            border-radius: 6px;
+            transition: background .2s, transform .2s
+        }
+
+        .button:hover {
+            background: #43c796;
+            transform: translateY(-2px)
+        }
+
+        .button:focus-visible,
+        a:focus-visible,
+        summary:focus-visible {
+            outline: 3px solid #fff;
+            outline-offset: 5px
+        }
+
+        .button.small {
+            padding: 12px 18px;
+            font-size: 12px
+        }
+
+        .hero {
+            position: relative;
+            isolation: isolate;
+            min-height: 760px;
+            display: flex;
+            align-items: center;
+            overflow: hidden
+        }
+
+        .hero-art {
+            position: absolute;
+            z-index: -2;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center
+        }
+
+        .hero:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: linear-gradient(90deg, #080808 0%, #080808e8 26%, #08080850 55%, transparent 75%), linear-gradient(0deg, #080808, transparent 22%)
+        }
+
+        .hero-copy {
+            padding: 65px 0 90px;
+            max-width: 720px
+        }
+
+        .eyebrow {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--orange);
+            margin: 0 0 22px
+        }
+
+        .pill {
+            border: 1px solid #00a87070;
+            border-radius: 30px;
+            padding: 9px 13px;
+            display: inline-block;
+            background: #00a8700c
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 6.7vw, 102px);
+            letter-spacing: -6px;
+            line-height: .95;
+            margin: 0 0 27px;
+            max-width: 730px
+        }
+
+        .hero h1 span {
+            color: var(--orange)
+        }
+
+        .lead {
+            font-size: 21px;
+            line-height: 1.5;
+            color: #c7c2bf;
+            max-width: 530px
+        }
+
+        .offer-inline {
+            margin: 32px 0 22px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap
+        }
+
+        .offer-inline b {
+            font-size: 17px
+        }
+
+        .offer-inline s {
+            color: #898583;
+            font-size: 18px
+        }
+
+        .price {
+            font-size: 38px;
+            font-weight: 750;
+            letter-spacing: -1.5px
+        }
+
+        .price small {
+            font-size: 14px;
+            color: var(--muted);
+            font-weight: 400;
+            letter-spacing: 0
+        }
+
+        .note {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.7
+        }
+
+        .hero .note {
+            margin-top: 14px
+        }
+
+        .ticker {
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            padding: 25px 0
+        }
+
+        .ticker .wrap {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            color: #bbb6b2;
+            font-size: 12px
+        }
+
+        .ticker b {
+            font-size: 15px;
+            color: white
+        }
+
+        .dot {
+            color: var(--orange);
+            margin-right: 9px
+        }
+
+        section {
+            padding: 110px 0
+        }
+
+        .section-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 50px;
+            margin-bottom: 54px
+        }
+
+        h2 {
+            font-size: clamp(35px, 4vw, 59px);
+            line-height: 1.03;
+            letter-spacing: -2.7px;
+            margin: 0
+        }
+
+        h2 span {
+            color: #8f8985
+        }
+
+        .intro {
+            max-width: 390px;
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 0
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px
+        }
+
+        .feature {
+            border-top: 1px solid var(--line);
+            padding: 30px 0
+        }
+
+        .feature .number {
+            font-size: 12px;
+            color: var(--orange);
+            display: block;
+            margin-bottom: 32px
+        }
+
+        .feature h3 {
+            font-size: 23px;
+            letter-spacing: -.6px;
+            margin: 0 0 14px
+        }
+
+        .feature p {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0
+        }
+
+        .feature svg {
+            height: 36px;
+            width: 36px;
+            color: var(--orange);
+            margin-bottom: 25px;
+            stroke-width: 1.4
+        }
+
+        .beyond {
+            position: relative;
+            border-block: 1px solid var(--line);
+            background: radial-gradient(ellipse at 80% 30%, #00a87014, transparent 55%)
+        }
+
+        .beyond-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px
+        }
+
+        .plus-list {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        .tag {
+            border: 1px solid var(--line);
+            border-radius: 30px;
+            padding: 10px 14px;
+            font-size: 12px;
+            color: #c8c3bf
+        }
+
+        .steps {
+            display: grid;
+            gap: 0
+        }
+
+        .step {
+            padding: 25px 0;
+            border-bottom: 1px solid var(--line);
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            gap: 15px
+        }
+
+        .step:first-child {
+            padding-top: 0
+        }
+
+        .step b {
+            color: var(--orange);
+            font-size: 12px
+        }
+
+        .step h3 {
+            font-size: 21px;
+            margin: 0 0 10px
+        }
+
+        .step p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 90px;
+            align-items: center
+        }
+
+        .pricing-copy p {
+            color: var(--muted);
+            line-height: 1.7;
+            max-width: 420px
+        }
+
+        .saving {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+            margin-top: 34px
+        }
+
+        .saving b {
+            font-size: 65px;
+            letter-spacing: -3px;
+            color: var(--orange)
+        }
+
+        .saving span {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .price-card {
+            background: linear-gradient(145deg, #0b2119, #101010 55%);
+            border: 1px solid #00a87070;
+            border-radius: 12px;
+            padding: 42px;
+            box-shadow: 0 0 70px #00a8700d
+        }
+
+        .card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px
+        }
+
+        .card-top h3 {
+            font-size: 27px;
+            letter-spacing: -1px;
+            margin: 0
+        }
+
+        .offer-label {
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: var(--orange);
+            text-transform: uppercase
+        }
+
+        .old-price {
+            margin: 30px 0 7px;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .big-price {
+            font-size: 80px;
+            letter-spacing: -5px;
+            font-weight: 750;
+            line-height: 1.1
+        }
+
+        .big-price small {
+            font-size: 16px;
+            letter-spacing: 0;
+            color: var(--muted);
+            font-weight: 400
+        }
+
+        .price-card .caption {
+            font-size: 13px;
+            color: var(--muted);
+            margin: 10px 0 25px
+        }
+
+        .checks {
+            list-style: none;
+            padding: 22px 0;
+            margin: 0;
+            border-top: 1px solid var(--line)
+        }
+
+        .checks li {
+            padding: 9px 0;
+            font-size: 14px
+        }
+
+        .checks li:before {
+            content: '✓';
+            color: var(--orange);
+            margin-right: 12px
+        }
+
+        .price-card .button {
+            width: 100%
+        }
+
+        .price-card .note {
+            margin-bottom: 0
+        }
+
+        .faq {
+            border-top: 1px solid var(--line)
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: .85fr 1.15fr;
+            gap: 100px
+        }
+
+        details {
+            border-bottom: 1px solid var(--line)
+        }
+
+        summary {
+            cursor: pointer;
+            list-style: none;
+            font-size: 17px;
+            padding: 25px 30px 25px 0;
+            position: relative;
+            line-height: 1.4
+        }
+
+        summary::-webkit-details-marker {
+            display: none
+        }
+
+        summary:after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            color: var(--orange);
+            font-size: 23px;
+            top: 20px
+        }
+
+        details[open] summary:after {
+            content: '−'
+        }
+
+        details p {
+            color: var(--muted);
+            line-height: 1.75;
+            font-size: 14px;
+            margin: 0 30px 25px 0
+        }
+
+        .final {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 100px 0;
+            background: radial-gradient(ellipse at 50% 115%, #07583daa, transparent 65%);
+            border-top: 1px solid var(--line)
+        }
+
+        .final h2 {
+            max-width: 850px;
+            margin: auto
+        }
+
+        .final p {
+            color: var(--muted);
+            line-height: 1.6;
+            margin: 25px auto 32px
+        }
+
+        .final .button {
+            min-width: 270px
+        }
+
+        footer {
+            padding: 35px 0;
+            border-top: 1px solid var(--line)
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px
+        }
+
+        footer .logo strong {
+            font-size: 25px
+        }
+
+        footer .brand {
+            font-size: 18px
+        }
+
+        footer p,
+        footer a.footlink {
+            font-size: 11px;
+            color: var(--muted)
+        }
+
+        .mobile-cta {
+            display: none
+        }
+
+        @media(min-width:1600px) {
+            .hero {
+                min-height: 850px
+            }
+        }
+
+        @media(max-width:900px) {
+            .navlinks>a:not(.button) {
+                display: none
+            }
+
+            .hero h1 {
+                letter-spacing: -3.5px
+            }
+
+            .hero-copy {
+                max-width: 580px
+            }
+
+            .hero-art {
+                object-position: 60% center
+            }
+
+            .hero:after {
+                background: linear-gradient(90deg, #080808fa, #080808ad 60%, #08080850), linear-gradient(0deg, #080808, transparent 30%)
+            }
+
+            .section-head {
+                display: block
+            }
+
+            .intro {
+                margin-top: 25px
+            }
+
+            .beyond-grid,
+            .pricing-grid,
+            .faq-grid {
+                gap: 45px
+            }
+
+            .ticker .wrap {
+                flex-wrap: wrap
+            }
+
+            .features {
+                gap: 22px
+            }
+
+            .price-card {
+                padding: 30px
+            }
+
+            section {
+                padding: 80px 0
+            }
+        }
+
+        @media(max-width:620px) {
+            header {
+                height: 80px
+            }
+
+            .wrap {
+                width: 88%
+            }
+
+            .logo strong {
+                font-size: 28px
+            }
+
+            .brand {
+                font-size: 20px
+            }
+
+            .navlinks .button {
+                font-size: 10px;
+                padding: 11px;
+                gap: 10px
+            }
+
+            .hero {
+                min-height: auto;
+                padding-bottom: 220px
+            }
+
+            .hero-copy {
+                padding: 55px 0 20px
+            }
+
+            .hero h1 {
+                font-size: 59px;
+                letter-spacing: -3.8px
+            }
+
+            .hero .lead {
+                font-size: 18px
+            }
+
+            .hero-art {
+                height: 420px;
+                top: auto;
+                bottom: -25px;
+                object-position: 80% center;
+                width: 150%;
+                left: -50%
+            }
+
+            .hero:after {
+                background: linear-gradient(0deg, #080808 0%, transparent 15%, #08080830 30%, #080808 60%)
+            }
+
+            .hero .eyebrow {
+                font-size: 9px;
+                letter-spacing: 1px
+            }
+
+            .offer-inline {
+                gap: 12px;
+                margin-top: 25px
+            }
+
+            .offer-inline b {
+                font-size: 14px
+            }
+
+            .price {
+                font-size: 32px
+            }
+
+            .hero .button {
+                width: 100%
+            }
+
+            .ticker .wrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                font-size: 10px;
+                gap: 20px
+            }
+
+            .ticker b {
+                grid-column: 1/-1;
+                font-size: 14px
+            }
+
+            .features,
+            .beyond-grid,
+            .pricing-grid,
+            .faq-grid {
+                grid-template-columns: 1fr
+            }
+
+            .features {
+                gap: 0
+            }
+
+            .feature {
+                padding: 28px 0
+            }
+
+            .feature .number {
+                margin-bottom: 18px
+            }
+
+            .section-head {
+                margin-bottom: 35px
+            }
+
+            h2 {
+                letter-spacing: -1.8px
+            }
+
+            .beyond-grid,
+            .pricing-grid,
+            .faq-grid {
+                gap: 40px
+            }
+
+            .price-card {
+                padding: 27px
+            }
+
+            .card-top h3 {
+                font-size: 25px
+            }
+
+            .big-price {
+                font-size: 76px
+            }
+
+            .footer-inner {
+                align-items: start;
+                flex-wrap: wrap
+            }
+
+            footer p {
+                width: 100%;
+                order: 3;
+                line-height: 1.6
+            }
+
+            .final {
+                padding: 75px 0
+            }
+
+            .final p {
+                font-size: 14px
+            }
+
+            .hero .lead br {
+                display: none
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+
+            * {
+                transition: none !important
+            }
+        }
+
+        .logo-free {
+            display: flex;
+            align-items: center;
+            gap: 18px
+        }
+
+        .fibodo {
+            font-size: 35px;
+            font-weight: 500;
+            letter-spacing: -1.5px;
+            position: relative;
+            padding-right: 2px
+        }
+
+        .fibodo:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 1px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 10px solid #00a870
+        }
+
+        .free-word {
+            font-size: 10px;
+            letter-spacing: 2px;
+            border: 1px solid #00a87060;
+            color: #71d3b0;
+            border-radius: 30px;
+            padding: 7px 10px
+        }
+
+        .hero h1 {
+            font-size: clamp(58px, 6.6vw, 100px);
+            max-width: 780px
+        }
+
+        .hero-copy {
+            max-width: 780px
+        }
+
+        .hero .lead {
+            max-width: 490px;
+            font-size: 19px
+        }
+
+        .hero {
+            min-height: 790px
+        }
+
+        .hero .button {
+            margin-top: 14px
+        }
+
+        .assurances {
+            display: flex;
+            gap: 23px;
+            flex-wrap: wrap;
+            font-size: 11px;
+            color: #bbb;
+            margin-top: 24px
+        }
+
+        .assurances span:before {
+            content: '✓';
+            color: var(--orange);
+            margin-right: 7px
+        }
+
+        .features {
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .feature .number {
+            margin-bottom: 25px
+        }
+
+        .website-demo {
+            background: #f1f0eb;
+            color: #18231f;
+            border-radius: 12px;
+            overflow: hidden;
+            transform: rotate(-2deg);
+            box-shadow: 0 25px 100px #00a87018;
+            border: 1px solid #ffffff33
+        }
+
+        .browser-bar {
+            background: #1a1e22;
+            color: #b8c0c5;
+            font-size: 11px;
+            padding: 14px 18px;
+            display: flex;
+            gap: 18px;
+            align-items: center
+        }
+
+        .dots {
+            letter-spacing: 3px;
+            color: #777
+        }
+
+        .demo-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 22px 25px;
+            font-size: 10px;
+            border-bottom: 1px solid #0001
+        }
+
+        .demo-nav b {
+            font-size: 14px
+        }
+
+        .demo-content {
+            padding: 45px 30px 30px;
+            background: radial-gradient(ellipse at 100% 100%, #83adb0, transparent 60%)
+        }
+
+        .demo-content small {
+            font-size: 9px;
+            letter-spacing: 1px
+        }
+
+        .demo-content h3 {
+            font-size: 44px;
+            letter-spacing: -2px;
+            line-height: 1.05;
+            margin: 22px 0 16px
+        }
+
+        .demo-content p {
+            font-size: 12px;
+            line-height: 1.6;
+            max-width: 240px
+        }
+
+        .demo-cta {
+            display: inline-block;
+            background: #1b3933;
+            color: white;
+            padding: 12px 18px;
+            font-size: 10px;
+            margin: 10px 0 26px
+        }
+
+        .demo-tags {
+            font-size: 9px;
+            border-top: 1px solid #0002;
+            padding-top: 16px
+        }
+
+        .demo-label {
+            font-size: 10px;
+            color: var(--muted);
+            text-align: center;
+            margin-top: 22px
+        }
+
+        .included-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 90px;
+            align-items: center
+        }
+
+        .free-price {
+            font-size: 100px;
+            font-weight: 700;
+            letter-spacing: -7px;
+            line-height: 1.1
+        }
+
+        .free-price small {
+            font-size: 16px;
+            letter-spacing: 0;
+            font-weight: 400;
+            color: var(--muted)
+        }
+
+        .pathways {
+            margin-top: 35px
+        }
+
+        .pathway {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 25px 0;
+            border-top: 1px solid var(--line)
+        }
+
+        .pathway h3 {
+            margin: 5px 0 12px;
+            font-size: 22px
+        }
+
+        .pathway p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .pathway strong {
+            color: var(--orange);
+            font-size: 25px;
+            white-space: nowrap
+        }
+
+        .pathway .eyebrow {
+            font-size: 10px;
+            margin: 0
+        }
+
+        .text-link {
+            display: inline-block;
+            color: var(--orange);
+            font-size: 13px;
+            margin-top: 25px
+        }
+
+        .price-card {
+            box-shadow: 0 0 90px #00a87012
+        }
+
+        .ticker .wrap {
+            gap: 15px
+        }
+
+        .features-section {
+            padding-bottom: 80px
+        }
+
+        @media(max-width:900px) {
+            .included-grid {
+                gap: 45px
+            }
+
+            .hero {
+                min-height: 740px
+            }
+        }
+
+        @media(max-width:620px) {
+            .fibodo {
+                font-size: 29px
+            }
+
+            .logo-free {
+                gap: 12px
+            }
+
+            .free-word {
+                font-size: 8px;
+                padding: 6px 8px
+            }
+
+            .hero h1 {
+                font-size: 58px;
+                letter-spacing: -3.5px
+            }
+
+            .hero {
+                min-height: 0;
+                padding-bottom: 240px
+            }
+
+            .hero .lead {
+                font-size: 17px
+            }
+
+            .assurances {
+                gap: 12px;
+                font-size: 10px
+            }
+
+            .features,
+            .included-grid {
+                grid-template-columns: 1fr
+            }
+
+            .website-demo {
+                margin-top: 15px
+            }
+
+            .ticker .wrap {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .hero-art {
+                height: 420px
+            }
+
+            .free-price {
+                font-size: 90px
+            }
+
+            .hero-copy {
+                padding-top: 45px
+            }
+
+            .demo-content h3 {
+                font-size: 45px
+            }
+
+            .pathway {
+                gap: 15px
+            }
+
+            .navlinks .button {
+                font-size: 10px
+            }
+
+            .footer-inner .fibodo {
+                font-size: 29px
+            }
+        }
+
+        .galaxy-logo {
+            display: inline-flex;
+            flex-direction: column;
+            position: relative;
+            padding-right: 16px
+        }
+
+        .galaxy-logo strong {
+            font-size: 30px;
+            letter-spacing: 4px;
+            line-height: 1.1;
+            font-weight: 650
+        }
+
+        .galaxy-logo small {
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-top: 4px
+        }
+
+        .galaxy-logo:after {
+            display: none;
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -4px;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 13px solid #00a870
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 6.4vw, 96px);
+            letter-spacing: -5px;
+            max-width: 760px
+        }
+
+        .hero {
+            min-height: 800px
+        }
+
+        .hero .lead {
+            font-size: 19px;
+            max-width: 490px
+        }
+
+        .hero .eyebrow {
+            font-size: 10px
+        }
+
+        .value-line {
+            display: flex;
+            gap: 16px;
+            align-items: baseline;
+            margin: 28px 0 12px
+        }
+
+        .value-line s {
+            font-size: 24px;
+            color: #a5aaa7
+        }
+
+        .value-line b {
+            font-size: 42px;
+            letter-spacing: -2px
+        }
+
+        .value-line span {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .hero .note {
+            max-width: 450px
+        }
+
+        .button {
+            background: #00a870;
+            color: #030d08;
+            border-color: #00a870
+        }
+
+        .button:hover {
+            background: #40c795
+        }
+
+        .app-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center
+        }
+
+        .phone-wrap {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            background: radial-gradient(ellipse, #005d3c55, transparent 65%);
+            padding: 10px
+        }
+
+        .phone {
+            width: 270px;
+            background: #111915;
+            border: 2px solid #54685c;
+            border-radius: 38px;
+            box-shadow: 20px 30px 70px #000, 0 0 80px #00a87015;
+            padding: 17px 14px 24px;
+            transform: rotate(-7deg);
+            position: relative
+        }
+
+        .phone:before {
+            content: '';
+            display: block;
+            width: 75px;
+            height: 15px;
+            background: #050806;
+            border-radius: 20px;
+            margin: 0 auto 27px
+        }
+
+        .phone-top {
+            padding: 5px 8px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 8px;
+            letter-spacing: 1px;
+            color: #a1b7ab
+        }
+
+        .phone h3 {
+            font-size: 27px;
+            letter-spacing: -1px;
+            margin: 18px 8px 6px
+        }
+
+        .phone p {
+            font-size: 10px;
+            color: #9cad9f;
+            margin: 0 8px 22px
+        }
+
+        .member-pass {
+            background: linear-gradient(130deg, #0e7550, #043321);
+            border: 1px solid #539779;
+            border-radius: 10px;
+            padding: 20px 14px;
+            margin: 0 6px 22px
+        }
+
+        .member-pass small {
+            font-size: 8px;
+            letter-spacing: 1px
+        }
+
+        .member-pass b {
+            display: block;
+            font-size: 18px;
+            margin-top: 20px
+        }
+
+        .phone-heading {
+            font-size: 11px;
+            margin: 0 8px 9px
+        }
+
+        .session {
+            margin: 0 6px;
+            padding: 13px 0;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #ffffff15;
+            font-size: 10px
+        }
+
+        .session span {
+            color: #6fcba7;
+            font-size: 9px
+        }
+
+        .phone-bottom {
+            border-top: 1px solid #ffffff15;
+            margin: 22px 6px 0;
+            padding: 17px 0 0;
+            font-size: 9px;
+            display: flex;
+            justify-content: space-between;
+            color: #99aca2
+        }
+
+        .demo-label {
+            max-width: 270px;
+            text-align: center;
+            margin: 30px auto 0
+        }
+
+        .app-points {
+            padding: 0;
+            list-style: none;
+            margin-top: 30px
+        }
+
+        .app-points li {
+            padding: 15px 0;
+            border-top: 1px solid var(--line);
+            font-size: 15px;
+            color: #c4ccc7
+        }
+
+        .app-points li:before {
+            content: '↗';
+            color: var(--orange);
+            margin-right: 14px
+        }
+
+        .terms {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.7;
+            margin-top: 20px
+        }
+
+        .value-tag {
+            display: inline-block;
+            border: 1px solid #00a87070;
+            color: #7dd5b3;
+            border-radius: 30px;
+            padding: 8px 12px;
+            font-size: 10px;
+            margin-top: 25px
+        }
+
+        .offer-value {
+            font-size: 76px;
+            font-weight: 750;
+            letter-spacing: -4px;
+            line-height: 1.1;
+            margin-top: 14px
+        }
+
+        .offer-value small {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: var(--muted)
+        }
+
+        .eligibility {
+            padding: 18px;
+            border: 1px solid #ffffff15;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #c0c7c2;
+            line-height: 1.6;
+            margin-bottom: 22px
+        }
+
+        .features {
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .offer-card .caption {
+            line-height: 1.6
+        }
+
+        .hero-art {
+            object-position: center
+        }
+
+        .price-card {
+            background: linear-gradient(145deg, #0b261a, #101010 55%)
+        }
+
+        .skip {
+            position: absolute;
+            left: 10px;
+            top: -100px;
+            z-index: 10;
+            background: #fff;
+            color: #000;
+            padding: 10px
+        }
+
+        .skip:focus {
+            top: 10px
+        }
+
+        @media(max-width:900px) {
+            .app-layout {
+                gap: 50px
+            }
+
+            .hero h1 {
+                letter-spacing: -3.5px
+            }
+        }
+
+        @media(max-width:620px) {
+            .galaxy-logo strong {
+                font-size: 23px;
+                letter-spacing: 2px
+            }
+
+            .galaxy-logo small {
+                font-size: 10px
+            }
+
+            .hero h1 {
+                font-size: 56px;
+                letter-spacing: -3px
+            }
+
+            .hero {
+                min-height: 0;
+                padding-bottom: 245px
+            }
+
+            .hero-copy {
+                padding-bottom: 15px
+            }
+
+            .hero .eyebrow {
+                font-size: 8px;
+                letter-spacing: 1px
+            }
+
+            .hero .lead {
+                font-size: 17px
+            }
+
+            .app-layout {
+                grid-template-columns: 1fr
+            }
+
+            .phone {
+                transform: rotate(-4deg)
+            }
+
+            .features {
+                grid-template-columns: 1fr
+            }
+
+            .value-line b {
+                font-size: 36px
+            }
+
+            .value-line {
+                gap: 10px
+            }
+
+            .value-line span {
+                font-size: 10px
+            }
+
+            .offer-value {
+                font-size: 67px
+            }
+
+            .hero-art {
+                object-position: 80% center
+            }
+
+            .hero .note {
+                font-size: 10px
+            }
+
+            .navlinks .button {
+                padding: 11px 12px
+            }
+
+            .phone-wrap {
+                margin-top: 10px
+            }
+        }
+    </style>
+    <style>
+        .campaign-header { height: 76px; }
+        .campaign-header .galaxy-logo { gap: 9px; }
+        .campaign-header .navlinks { display: flex; gap: clamp(12px, 3vw, 30px); }
+        .campaign-header .navlinks a:hover, .campaign-footer a:hover { text-decoration: underline; }
+        a:focus-visible { outline: 2px solid #7dd5b3; outline-offset: 5px; }
+        .hero .value-line { flex-wrap: wrap; align-items: baseline; margin-bottom: 24px; }
+        .hero .value-line span { color: #efefef; font-size: 15px; }
+        .offer-value { font-size: clamp(44px, 6vw, 76px); }
+        .standard-plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+        .standard-pricing .caption { margin-bottom: 0; }
+        .campaign-footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: 14px; }
+        .campaign-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+        @media (max-width: 620px) {
+            .campaign-header .nav { gap: 12px; width: 92%; }
+            .campaign-header .galaxy-logo { display: block; }
+            .campaign-header .galaxy-logo small { display: block; }
+            .campaign-header .navlinks { font-size: 11px; }
+            .hero h1 { font-size: clamp(40px, 10vw, 56px); }
+            .standard-plans { grid-template-columns: 1fr; }
+        }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip">Skip to content</a>
+    <header class="campaign-header">
+        <div class="wrap nav">
+            <a class="logo galaxy-logo" href="https://galaxy.fibodo.com/" aria-label="Galaxy by fibodo"><img src="../images/galaxy-logo.svg" alt="GALAXY by fibodo" style="height:44px;width:auto;display:block"></a>
+            <nav class="navlinks" aria-label="Page navigation">
+                <a href="#offer">Black Friday offer</a>
+                <a href="#pricing">Standard pricing</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="hero"><img class="hero-art"
+                src="assets/galaxy-black-friday-hero.jpg"
+                alt="" fetchpriority="high">
+            <div class="wrap">
+                <div class="hero-copy">
+                    <p class="eyebrow pill">Galaxy Black Friday offer</p>
+                    <h1>Your gym.<br>Your app.<br><span>Included free.</span></h1>
+                    <p class="lead">Get a free branded app worth £3,599 when you sign up for Galaxy Grow.</p>
+                    <div class="value-line"><b>£1,290</b><span>for the year · Usually £129/month</span></div>
+                    <a href="#offer" class="button">See the Black Friday offer <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </div>
+        <section class="beyond" id="offer" aria-labelledby="offer-title">
+            <div class="wrap pricing-grid">
+                <div class="pricing-copy">
+                    <p class="eyebrow">Black Friday</p>
+                    <h2 id="offer-title">Lock in your<br><span>Galaxy Grow price.</span></h2>
+                    <p>Our prices will increase. Secure this offer and your Galaxy Grow subscription will stay at £1,290 a year.</p>
+                    <div class="saving"><b>£3,599</b><span>value of your branded app<br>included free</span></div>
+                </div>
+                <div class="price-card offer-card">
+                    <div class="card-top"><h3>Galaxy Grow</h3></div>
+                    <div class="offer-value">£1,290 <small>per year</small></div>
+                    <p class="caption">Usually £129 per month. Save £258 on 12 months at the standard monthly rate.</p>
+                    <ul class="checks">
+                        <li>Free branded app worth £3,599</li>
+                        <li>App Management included in year one, then £25 from year two</li>
+                        <li>Your Galaxy Grow subscription price is locked in</li>
+                        <li>Switch Guarantee: 4 weeks to switch</li>
+                    </ul>
+                    <a class="button" href="mailto:sales@fibodo.com?subject=Galaxy%20Grow%20Black%20Friday%20offer">Email us to claim the offer <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+        <div class="ticker">
+            <div class="wrap"><b>One operating system. Built around your gym.</b><span><span
+                        class="dot">●</span>Memberships</span><span><span class="dot">●</span>Bookings &
+                    payments</span><span><span class="dot">●</span>Staff & timetables</span><span><span
+                        class="dot">●</span>Your app</span></div>
+        </div>
+        <section id="platform">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">One connected platform</p>
+                        <h2>You built the place.<br><span>GALAXY keeps it in orbit.</span></h2>
+                    </div>
+                    <p class="intro">Memberships, bookings, payments, staff, timetables and growth. Everything in one
+                        place. Everything working beautifully together.</p>
+                </div>
+                <div class="features">
+                    <article class="feature"><span class="number">01 / MEMBERSHIPS & PAYMENTS</span>
+                        <h3>Keep your business<br>moving.</h3>
+                        <p>Build recurring revenue with less friction. Bring memberships and payments together, with the
+                            clarity to see what’s happening across your venue.</p>
+                    </article>
+                    <article class="feature"><span class="number">02 / BOOKINGS & TIMETABLES</span>
+                        <h3>Make every session<br>work harder.</h3>
+                        <p>Connect classes, personal training and timetables. Keep your schedule organised and make it
+                            easier for members to book.</p>
+                    </article>
+                    <article class="feature"><span class="number">03 / STAFF & INSIGHT</span>
+                        <h3>Your team in sync.<br>Your next move in focus.</h3>
+                        <p>Give your team clear schedules and shared information, while you stay close to the activity
+                            that helps shape better decisions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="beyond">
+            <div class="wrap app-layout">
+                <div>
+                    <div class="phone-wrap">
+                        <div class="phone" aria-label="Illustrative gym app concept">
+                            <div class="phone-top"><span>YOUR GYM</span><span>●</span></div>
+                            <h3>Ready to move?</h3>
+                            <p>Your next session starts here.</p>
+                            <div class="member-pass"><small>YOUR MEMBERSHIP</small><b>One gym.<br>Your community.</b>
+                            </div>
+                            <div class="phone-heading">Your next sessions</div>
+                            <div class="session"><b>Strength & conditioning</b><span>09:30</span></div>
+                            <div class="session"><b>Small group training</b><span>12:00</span></div>
+                            <div class="session"><b>Evening mobility</b><span>18:30</span></div>
+                            <div class="phone-bottom"><span>Home</span><span>Sessions</span><span>Membership</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="demo-label">Illustrative app concept. Final design and functionality confirmed with your
+                        plan.</p>
+                </div>
+                <div>
+                    <p class="eyebrow">Your business in every pocket</p>
+                    <h2>Keep your<br>members close.<br><span>Keep them coming back.</span></h2>
+                    <p class="lead" style="font-size:17px">Make your app part of the way members connect with your gym.
+                        A familiar place for your community, connected to the platform running your business.</p>
+                    <ul class="app-points">
+                        <li>Make repeat booking feel effortless.</li>
+                        <li>Bring your member experience together.</li>
+                        <li>Keep your gym at the heart of your community.</li>
+                    </ul><span class="value-tag">App worth £3,599 · Free with the Black Friday offer</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap beyond-grid">
+                <div>
+                    <p class="eyebrow">Everyone moving together</p>
+                    <h2>For members.<br>For teams.<br><span>For you.</span></h2>
+                    <p class="lead" style="font-size:17px">Independent gyms do more than build stronger bodies. They
+                        build relationships, belonging and healthier communities. GALAXY brings the business behind that
+                        experience together.</p>
+                </div>
+                <div class="steps">
+                    <article class="step"><b>01</b>
+                        <div>
+                            <h3>A better member experience.</h3>
+                            <p>Easy booking, simple payments and a stronger connection to your gym.</p>
+                        </div>
+                    </article>
+                    <article class="step"><b>02</b>
+                        <div>
+                            <h3>A team that’s in sync.</h3>
+                            <p>Clear schedules, shared information and more time to deliver great service.</p>
+                        </div>
+                    </article>
+                    <article class="step"><b>03</b>
+                        <div>
+                            <h3>More clarity for owners.</h3>
+                            <p>Visibility across your venue, with memberships, customers, timetables and insight
+                                connected.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap beyond-grid">
+                <div>
+                    <p class="eyebrow">Switch Guarantee</p>
+                    <h2>4 weeks<br><span>to switch.</span></h2>
+                    <p class="lead" style="font-size:17px">A personal approach to moving your business forward. From
+                        understanding your venue to helping your team get started.</p><a
+                        href="mailto:sales@fibodo.com?subject=Galaxy%20Grow%20Black%20Friday%20offer"
+                        class="text-link">Talk to the GALAXY team ↗</a>
+                </div>
+                <div class="steps">
+                    <article class="step"><b>01</b>
+                        <div>
+                            <h3>We listen.</h3>
+                            <p>We learn how your venue works and what matters most.</p>
+                        </div>
+                    </article>
+                    <article class="step"><b>02</b>
+                        <div>
+                            <h3>We configure.</h3>
+                            <p>We shape GALAXY around your services, team and goals.</p>
+                        </div>
+                    </article>
+                    <article class="step"><b>03</b>
+                        <div>
+                            <h3>We connect.</h3>
+                            <p>We move and prepare your data and get everything ready.</p>
+                        </div>
+                    </article>
+                    <article class="step"><b>04</b>
+                        <div>
+                            <h3>We launch.</h3>
+                            <p>We support your team as you go live and grow.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="beyond standard-pricing" id="pricing" aria-labelledby="pricing-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <div><h2 id="pricing-title">Standard Galaxy pricing</h2></div>
+                    <a class="text-link" href="../products/galaxy-pricing.html">Compare Galaxy plans ↗</a>
+                </div>
+                <div class="standard-plans">
+                    <article class="price-card">
+                        <h3>Galaxy plans</h3>
+                        <p class="offer-value">£79 <small>per month, from</small></p>
+                        <p class="caption">Starting price includes VAT.</p>
+                    </article>
+                    <article class="price-card">
+                        <h3>Galaxy Grow</h3>
+                        <p class="offer-value">£129 <small>per month</small></p>
+                        <p class="caption">Standard monthly price before the Black Friday offer.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="campaign-footer">
+        <div class="wrap">
+            <span>Galaxy by fibodo</span>
+            <a href="mailto:sales@fibodo.com">sales@fibodo.com</a>
+        </div>
+    </footer>
+</body>
+</html>
