@@ -1567,6 +1567,13 @@
     </style>
     <style>
         .hero-logo { display: inline-block; margin-bottom: 28px; }
+        .hero { background: #080808; }
+        .hero-art { object-fit: contain; object-position: right center; }
+        @media (max-width: 900px) {
+            .hero { flex-direction: column; align-items: stretch; padding-bottom: 0; }
+            .hero-art { position: relative; inset: auto; order: 2; z-index: auto; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; object-position: center; }
+            .hero:after { background: linear-gradient(0deg, #080808, transparent 12%); }
+        }
         .campaign-footer a:hover { text-decoration: underline; }
         a:focus-visible { outline: 2px solid #7dd5b3; outline-offset: 5px; }
         .hero .value-line { flex-wrap: wrap; align-items: baseline; margin-bottom: 24px; }
