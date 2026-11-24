@@ -1574,8 +1574,11 @@
         .hero .value-line { flex-wrap: wrap; align-items: baseline; margin-bottom: 24px; }
         .hero .value-line span { color: #efefef; font-size: 15px; }
         .offer-value { font-size: clamp(44px, 6vw, 76px); }
-        .standard-plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-        .standard-pricing .caption { margin-bottom: 0; }
+        .section-cta { margin-top: 36px; grid-column: 1 / -1; }
+        .promo-banner { background: var(--orange); color: #04130d; text-align: center; font-weight: 700; font-size: clamp(14px, 3.6vw, 17px); line-height: 1.35; padding: 12px 5%; }
+        .promo-banner a { color: inherit; text-decoration: none; display: block; }
+        .promo-banner a:hover { text-decoration: underline; }
+        .promo-banner a:focus-visible { outline: 2px solid #04130d; outline-offset: 3px; }
         .campaign-footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: 14px; }
         .campaign-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
         @media (max-width: 620px) {
@@ -1584,19 +1587,18 @@
             .campaign-header .galaxy-logo small { display: block; }
             .campaign-header .navlinks { font-size: 11px; }
             .hero h1 { font-size: clamp(40px, 10vw, 56px); }
-            .standard-plans { grid-template-columns: 1fr; }
         }
         @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     </style>
 </head>
 <body>
     <a href="#main" class="skip">Skip to content</a>
+    <div class="promo-banner" role="region" aria-label="Black Friday announcement"><a href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Save over £3850 on GALAXY Grow this Black Friday</a></div>
     <header class="campaign-header">
         <div class="wrap nav">
             <a class="logo galaxy-logo" href="https://galaxy.fibodo.com/" aria-label="Galaxy by fibodo"><img src="../images/galaxy-logo.svg" alt="GALAXY by fibodo" style="height:44px;width:auto;display:block"></a>
             <nav class="navlinks" aria-label="Page navigation">
                 <a href="#offer">Black Friday offer</a>
-                <a href="#pricing">Standard pricing</a>
             </nav>
         </div>
     </header>
@@ -1615,7 +1617,7 @@
                         <span class="free-app-note">Free branded app when you sign up to a GALAXY plan</span>
                     </div>
                     <div class="value-line"><b>£1,290</b><span>for the year · Usually £129/month</span></div>
-                    <a href="#offer" class="button">See the Black Friday offer <span aria-hidden="true">↗</span></a>
+                    <a href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo" class="button">Get offer <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </div>
@@ -1637,7 +1639,7 @@
                         <li>Your Galaxy Grow subscription price is locked in</li>
                         <li>Switch Guarantee: 4 weeks to switch</li>
                     </ul>
-                    <a class="button" href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Sign up to claim the offer <span aria-hidden="true">↗</span></a>
+                    <a class="button" href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Subscribe today <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </section>
@@ -1674,6 +1676,7 @@
                             that helps shape better decisions.</p>
                     </article>
                 </div>
+                <div class="section-cta"><a class="button" href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Get offer <span aria-hidden="true">↗</span></a></div>
             </div>
         </section>
         <section class="beyond">
@@ -1707,6 +1710,8 @@
                         <li>Bring your member experience together.</li>
                         <li>Keep your gym at the heart of your community.</li>
                     </ul><span class="value-tag">App worth £3,599 · Free with the Black Friday offer</span>
+                    <div class="section-cta"><a class="button" href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Get offer <span aria-hidden="true">↗</span></a></div>
+
                 </div>
             </div>
         </section>
@@ -1740,6 +1745,7 @@
                         </div>
                     </article>
                 </div>
+                <div class="section-cta"><a class="button" href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Subscribe today <span aria-hidden="true">↗</span></a></div>
             </div>
         </section>
         <section>
@@ -1778,26 +1784,7 @@
                         </div>
                     </article>
                 </div>
-            </div>
-        </section>
-        <section class="beyond standard-pricing" id="pricing" aria-labelledby="pricing-title">
-            <div class="wrap">
-                <div class="section-head">
-                    <div><h2 id="pricing-title">Standard Galaxy pricing</h2></div>
-                    <a class="text-link" href="../products/galaxy-pricing.html">Compare Galaxy plans ↗</a>
-                </div>
-                <div class="standard-plans">
-                    <article class="price-card">
-                        <h3>Galaxy plans</h3>
-                        <p class="offer-value">£79 <small>per month, from</small></p>
-                        <p class="caption">Starting price includes VAT.</p>
-                    </article>
-                    <article class="price-card">
-                        <h3>Galaxy Grow</h3>
-                        <p class="offer-value">£129 <small>per month</small></p>
-                        <p class="caption">Standard monthly price before the Black Friday offer.</p>
-                    </article>
-                </div>
+                <div class="section-cta"><a class="button" href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Subscribe today <span aria-hidden="true">↗</span></a></div>
             </div>
         </section>
     </main>
