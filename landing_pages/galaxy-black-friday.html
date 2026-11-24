@@ -1566,10 +1566,8 @@
         }
     </style>
     <style>
-        .campaign-header { height: 76px; }
-        .campaign-header .galaxy-logo { gap: 9px; }
-        .campaign-header .navlinks { display: flex; gap: clamp(12px, 3vw, 30px); }
-        .campaign-header .navlinks a:hover, .campaign-footer a:hover { text-decoration: underline; }
+        .hero-logo { display: inline-block; margin-bottom: 28px; }
+        .campaign-footer a:hover { text-decoration: underline; }
         a:focus-visible { outline: 2px solid #7dd5b3; outline-offset: 5px; }
         .hero .value-line { flex-wrap: wrap; align-items: baseline; margin-bottom: 24px; }
         .hero .value-line span { color: #efefef; font-size: 15px; }
@@ -1582,10 +1580,6 @@
         .campaign-footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: 14px; }
         .campaign-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
         @media (max-width: 620px) {
-            .campaign-header .nav { gap: 12px; width: 92%; }
-            .campaign-header .galaxy-logo { display: block; }
-            .campaign-header .galaxy-logo small { display: block; }
-            .campaign-header .navlinks { font-size: 11px; }
             .hero h1 { font-size: clamp(40px, 10vw, 56px); }
         }
         @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -1594,20 +1588,13 @@
 <body>
     <a href="#main" class="skip">Skip to content</a>
     <div class="promo-banner" role="region" aria-label="Black Friday announcement"><a href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Save over £3850 on GALAXY Grow this Black Friday</a></div>
-    <header class="campaign-header">
-        <div class="wrap nav">
-            <a class="logo galaxy-logo" href="https://galaxy.fibodo.com/" aria-label="Galaxy by fibodo"><img src="../images/galaxy-logo.svg" alt="GALAXY by fibodo" style="height:44px;width:auto;display:block"></a>
-            <nav class="navlinks" aria-label="Page navigation">
-                <a href="#offer">Black Friday offer</a>
-            </nav>
-        </div>
-    </header>
     <main id="main">
         <div class="hero"><img class="hero-art"
                 src="assets/galaxy-black-friday-hero.jpg"
                 alt="" fetchpriority="high">
             <div class="wrap">
                 <div class="hero-copy">
+                    <a class="hero-logo" href="https://galaxy.fibodo.com/" aria-label="Galaxy by fibodo"><img src="../images/galaxy-logo.svg" alt="GALAXY by fibodo" style="height:44px;width:auto;display:block"></a>
                     <p class="eyebrow pill">Galaxy Black Friday offer</p>
                     <h1>Your gym.<br>Your app.<br><span>Included free.</span></h1>
                     <p class="lead">Get a free branded app worth £3,599 when you sign up for Galaxy Grow.</p>
