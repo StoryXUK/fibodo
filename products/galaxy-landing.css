@@ -23,3 +23,6 @@
 .ticket-form .ticket-status.ticket-success{color:#b9d98a}
 @media(max-width:1050px){.ticket-layout{grid-template-columns:1fr;gap:30px}}
 @media(max-width:700px){.ticket-dialog{padding:30px 22px}.ticket-panel h2{font-size:30px}.ticket-form{grid-template-columns:1fr}.ticket-close{right:-9px;top:-18px}}
+
+.free-app-banner{display:inline-block;margin:0 0 22px;padding:10px 16px;border:2px solid #00a870;border-radius:10px;background:#e8f6ef;color:#10241b;font-size:15px}
+.free-app-banner b{color:#007a52}

@@ -1208,6 +1208,37 @@
             font-size: 10px
         }
 
+        .free-app {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 4px 20px;
+            align-items: center;
+            max-width: 520px;
+            margin-top: 26px;
+            padding: 16px 20px;
+            border: 1px solid #00a870;
+            border-radius: 14px;
+            background: #00a8701a
+        }
+
+        .free-app-label {
+            grid-column: 1 / -1;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #3ddc9f
+        }
+
+        .free-app-value { display: flex; align-items: baseline; gap: 12px }
+        .free-app-value s { font-size: 24px; color: #c4c8c6 }
+        .free-app-value b { font-size: 48px; letter-spacing: -2px; line-height: 1; color: #fff }
+        .free-app-note { font-size: 14px; color: var(--ink) }
+
+        @media (max-width: 560px) {
+            .free-app { grid-template-columns: 1fr }
+        }
+
         .value-line {
             display: flex;
             gap: 16px;
@@ -1578,6 +1609,11 @@
                     <p class="eyebrow pill">Galaxy Black Friday offer</p>
                     <h1>Your gym.<br>Your app.<br><span>Included free.</span></h1>
                     <p class="lead">Get a free branded app worth £3,599 when you sign up for Galaxy Grow.</p>
+                    <div class="free-app" role="group" aria-label="Free app offer">
+                        <span class="free-app-label">Worth £3,599 — yours free</span>
+                        <span class="free-app-value"><s aria-label="Was £3,599">£3,599</s><b>£0</b></span>
+                        <span class="free-app-note">Free branded app when you sign up to a GALAXY plan</span>
+                    </div>
                     <div class="value-line"><b>£1,290</b><span>for the year · Usually £129/month</span></div>
                     <a href="#offer" class="button">See the Black Friday offer <span aria-hidden="true">↗</span></a>
                 </div>
@@ -1589,7 +1625,7 @@
                     <p class="eyebrow">Black Friday</p>
                     <h2 id="offer-title">Lock in your<br><span>Galaxy Grow price.</span></h2>
                     <p>Our prices will increase. Secure this offer and your Galaxy Grow subscription will stay at £1,290 a year.</p>
-                    <div class="saving"><b>£3,599</b><span>value of your branded app<br>included free</span></div>
+                    <div class="saving"><b><s>£3,599</s> £0</b><span>branded app worth £3,599<br>yours free when you sign up</span></div>
                 </div>
                 <div class="price-card offer-card">
                     <div class="card-top"><h3>Galaxy Grow</h3></div>

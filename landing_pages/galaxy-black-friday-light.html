@@ -39,6 +39,12 @@
         .eyebrow { color: var(--accent); font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 18px; }
         .hero h1 em { color: var(--accent); font-weight: 400; }
         .intro { color: var(--muted); margin-top: 22px; max-width: 41ch; font-size: 1.12rem; }
+        .free-app { margin-top: 24px; max-width: 30rem; padding: 16px 20px; border: 2px solid var(--accent); border-radius: 8px; background: #e8f1ea; display: grid; gap: 4px; }
+        .free-app-label { font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+        .free-app-value { display: flex; align-items: baseline; gap: .7rem; }
+        .free-app-value s { font-size: 1.5rem; color: var(--muted); }
+        .free-app-value b { font-size: 3rem; line-height: 1; letter-spacing: -.05em; color: var(--accent); }
+        .free-app-note { font-size: .95rem; }
         .price { margin-top: 24px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 .6rem; }
         .price strong { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.06em; line-height: 1.1; }
         .price span, .usual { color: var(--muted); }
@@ -78,6 +84,11 @@
                 <p class="eyebrow">Galaxy Black Friday</p>
                 <h1 id="hero-title">Your gym.<br>Your app. <em>Free.</em></h1>
                 <p class="intro">Get a branded app worth £3,599 when you sign up for Galaxy Grow.</p>
+                <div class="free-app" role="group" aria-label="Free app offer">
+                    <span class="free-app-label">Worth £3,599 — yours free</span>
+                    <span class="free-app-value"><s aria-label="Was £3,599">£3,599</s><b>£0</b></span>
+                    <span class="free-app-note">Free branded app when you sign up to a GALAXY plan</span>
+                </div>
                 <p class="price"><strong>£1,290</strong> <span>per year</span></p>
                 <p class="usual">Usually £129 a month. Save £258 over 12 months.</p>
                 <a class="button" href="https://web.fibodo.com/signup/information?app=g1&amp;p=galaxy-promo">Sign up to claim the offer <span aria-hidden="true">↗</span></a>
