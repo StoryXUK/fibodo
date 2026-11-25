@@ -45,6 +45,6 @@
     window.addEventListener('resize',()=>{closeAll();closeMobile()});
   }catch(err){
     console.error('Navigation unavailable',err);
-    mount.innerHTML='<div class="wrap" style="padding:24px 0"><a class="brand" href="'+root+'index.html"><span class="brand-word">fibodo</span></a></div>';
+    mount.innerHTML='<div class="wrap" style="padding:24px 0"><a class="fb-logo" href="'+root+'index.html"><span class="brand-word">fibodo</span></a></div>';
   }
 })();
