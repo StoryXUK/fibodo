@@ -1,0 +1,16 @@
+/* Brings the bespoke CORE sector microsites onto the brand: orange accent, ink darks, shared chrome. Load after the page's own CSS. */
+:root{--lime:#ff8a3d;--dark:#191b19;--deep:#151615;--ink:#151615;--muted:#63706a}
+h1,h2,h3,h4{color:inherit}
+.statement{background:#ff8a3d}
+.statement h2 em,.statement .eyebrow{color:#151615}
+.hero{background:radial-gradient(circle at 78% 28%,#3a2a1f 0,transparent 38%),#151615}
+.btn-primary{background:#ff8a3d;color:#151615!important}
+.final-cta,.dark-section{background:#191b19}
+#footer,footer.site-footer{background:#151615}
+.hero{display:block;padding:0;gap:0;grid-template-columns:none}
+.hero h1 em,h1 em{color:#ff8a3d}
+.hero-art{background:none;border-radius:0;overflow:visible;isolation:auto;min-width:0}
+.hero-art::after{display:none}
+.hero-art>img{position:static;filter:none;z-index:auto}
+
+.eyebrow{color:var(--lime,#ff8a3d)!important;background:none!important}

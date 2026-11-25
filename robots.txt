@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /offer/
+Disallow: /landing_pages/
+Disallow: /prizedraw/
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /switch.html
+
+Sitemap: https://www.fibodo.com/sitemap.xml
