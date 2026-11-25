@@ -7,8 +7,8 @@
 .site-content .inner-header {
   position: relative;
   isolation: isolate;
-  background-image: linear-gradient(135deg, #050505, #262626) !important;
-  background-color: #050505;
+  background-image: linear-gradient(135deg, #061b46, #12315e) !important;
+  background-color: #061b46;
 }
 
 .site-content .inner-header::before {
@@ -16,7 +16,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(120deg, rgba(0, 0, 0, 0.92), rgba(35, 35, 35, 0.82));
+  background: linear-gradient(120deg, rgba(6, 27, 70, 0.92), rgba(18, 49, 94, 0.82));
 }
 
 .site-content .inner-header .title,
@@ -68,12 +68,12 @@
 }
 
 #page > section .circle-btn {
-  border-color: #111 !important;
+  border-color: #4b9ad6 !important;
   background: #fff !important;
 }
 
 #page > section .circle-btn:hover {
-  background: #111 !important;
+  background: #4b9ad6 !important;
 }
 
 #page > section .circle-btn:hover svg path {
@@ -82,7 +82,7 @@
 
 .site-content a:not(.btn):not(.circle-btn),
 #page > section a:not(.btn):not(.circle-btn) {
-  color: #111;
+  color: #4b9ad6;
 }
 
 @media (prefers-reduced-motion: no-preference) {

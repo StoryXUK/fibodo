@@ -6,10 +6,10 @@
   --core-muted: rgba(247, 248, 242, 0.72);
   --core-soft: rgba(247, 248, 242, 0.1);
   --core-line: rgba(247, 248, 242, 0.16);
-  --core-lime: #ffffff;
-  --core-green: #d7d7d7;
-  --core-blue: #a8a8a8;
-  --core-orange: #747474;
+  --core-lime: #4b9ad6;
+  --core-green: #4b9ad6;
+  --core-blue: #4b9ad6;
+  --core-orange: #4b9ad6;
   --core-radius: 8px;
   --core-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
 }
