@@ -1,0 +1,67 @@
+/* fibodo shared navigation. Fully scoped to #core-navigation so it renders identically on every page,
+   whatever page CSS is loaded. Loaded by navigation.js. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+#core-navigation{display:contents;--ink:#151615;--muted:#50534f;--line:#e1e4df;--paper:#f4f5f2;--round:14px;--btn-round:8px;--wrap:1240px;--accent:#151615;--on-accent:#fff;--accent-hover:#383a37;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.55;color:var(--ink);-webkit-font-smoothing:antialiased}
+#core-navigation *,#core-navigation *::before,#core-navigation *::after{box-sizing:border-box}
+#core-navigation ul,#core-navigation li{margin:0;padding:0;list-style:none}
+#core-navigation li::before,#core-navigation li::after{content:none}
+#core-navigation h3,#core-navigation p{margin-top:0;font-family:inherit;color:inherit;text-transform:none}
+#core-navigation a{color:inherit;font-family:inherit}
+#core-navigation button{font-family:inherit;text-transform:none;letter-spacing:normal}
+#core-navigation .wrap{width:min(var(--wrap),calc(100% - 104px));margin-inline:auto}
+#core-navigation .fb-logo{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0}
+#core-navigation .fb-logo img{display:block;height:56px;width:auto;max-width:none}
+#core-navigation .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 21px;min-height:48px;border:1px solid transparent;border-radius:var(--btn-round);background:var(--accent);color:var(--on-accent);font:750 .94rem/1.2 Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:background .15s}
+#core-navigation .btn:hover{background:var(--accent-hover);color:var(--on-accent)}
+#core-navigation .btn.small{min-height:40px;padding:8px 16px;font-size:.88rem}
+#core-navigation .mega-intro h3{margin:0 0 10px}
+#core-navigation #site-nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+#core-navigation #site-nav .mast{height:89px;display:flex;align-items:center;gap:28px}
+#core-navigation .nav-panel{display:flex;align-items:center;flex:1;gap:20px;min-width:0}
+#core-navigation .nav-links{display:flex;align-items:center;gap:4px;margin:0 auto;padding:0;list-style:none}
+#core-navigation .nav-links>li{position:static}
+#core-navigation .nav-links>li>a,#core-navigation .nav-links>li>button{font:650 .92rem/1 Inter,system-ui,sans-serif;color:var(--ink);text-decoration:none;background:none;border:0;padding:12px 13px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+#core-navigation .nav-links>li>a:hover,#core-navigation .nav-links>li>button:hover,#core-navigation .nav-links>li>button[aria-expanded="true"]{background:var(--paper)}
+#core-navigation .nav-links a[aria-current="page"]{box-shadow:inset 0 -3px 0 var(--accent)}
+#core-navigation .chev{width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .15s}
+#core-navigation button[aria-expanded="true"] .chev{transform:rotate(225deg)}
+#core-navigation .nav-cta{display:flex;align-items:center;gap:10px;flex-shrink:0}
+#core-navigation .nav-cta .login{font-weight:650;font-size:.92rem;text-decoration:none;padding:10px 6px}
+#core-navigation .nav-cta .login:hover{text-decoration:underline}
+#core-navigation .mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 24px 40px #15161514;padding:30px 0 34px}
+#core-navigation .mega[hidden]{display:none}
+#core-navigation .mega-inner{width:min(var(--wrap),calc(100% - 104px));margin-inline:auto;display:grid;grid-template-columns:minmax(220px,.8fr) 3fr;gap:40px}
+#core-navigation .mega-intro h3{font-size:1.6rem;letter-spacing:-.05em}
+#core-navigation .mega-intro p{color:var(--muted);font-size:.95rem}
+#core-navigation .mega-intro a{font-weight:700;font-size:.92rem}
+#core-navigation .mega-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+#core-navigation .mega-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+#core-navigation .mega-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+#core-navigation .mega-link{display:block;text-decoration:none;border:1px solid var(--line);background:var(--paper);border-radius:var(--round);padding:18px;transition:border-color .15s,background .15s}
+#core-navigation .mega-link:hover{background:#fff;border-color:var(--ink)}
+#core-navigation .mega-link strong{display:flex;align-items:center;gap:9px;font-size:1.05rem;letter-spacing:-.03em;margin-bottom:4px}
+#core-navigation .mega-link strong::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 1px #15161522}
+#core-navigation .mega-link span{display:block;color:var(--muted);font-size:.86rem;line-height:1.4}
+#core-navigation .mega-link.plain strong::before{display:none}
+#core-navigation .mega-link.plain{padding:13px 16px;background:#fff}
+#core-navigation .menu-toggle{display:none;margin-left:auto;background:#fff;border:1px solid #d6dbd3;border-radius:8px;width:48px;height:48px;cursor:pointer;padding:0;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+#core-navigation .menu-toggle i{display:block;width:20px;height:2px;background:var(--ink);transition:transform .2s,opacity .2s}
+#core-navigation .menu-toggle[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+#core-navigation .menu-toggle[aria-expanded="true"] i:nth-child(2){opacity:0}
+#core-navigation .menu-toggle[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1080px){
+  #core-navigation #site-nav .mast{height:69px;gap:12px}
+  #core-navigation .menu-toggle{display:flex}
+  #core-navigation .nav-panel{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);max-height:calc(100dvh - 69px);overflow-y:auto;padding:12px 18px 26px}
+  #core-navigation .nav-panel.open{display:block}
+  #core-navigation .nav-links{flex-direction:column;align-items:stretch;gap:0;margin:0}
+  #core-navigation .nav-links>li>a,#core-navigation .nav-links>li>button{width:100%;justify-content:space-between;padding:16px 4px;border-radius:0;border-bottom:1px solid var(--line);font-size:1.05rem}
+  #core-navigation .mega{position:static;box-shadow:none;border:0;padding:6px 0 14px}
+  #core-navigation .mega-inner{width:100%;grid-template-columns:1fr;gap:10px}
+  #core-navigation .mega-intro{display:none}
+  #core-navigation .mega-grid,#core-navigation .mega-grid.cols-3,#core-navigation .mega-grid.cols-2{grid-template-columns:1fr;gap:8px}
+  #core-navigation .nav-cta{flex-direction:column;align-items:stretch;margin-top:18px}
+  #core-navigation .nav-cta .btn{width:100%}
+  #core-navigation .nav-cta .login{text-align:center}
+}
+@media(max-width:1080px){#core-navigation .wrap{width:calc(100% - 60px)}#core-navigation .mega-inner{width:100%}#core-navigation .fb-logo img{height:46px}}

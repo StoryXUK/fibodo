@@ -13,6 +13,7 @@
     fetchHtml('footer.html').then(h=>{footer.classList.add('site-footer');footer.innerHTML=h;fix(footer);footer.querySelectorAll('[data-footer-year]').forEach(e=>e.textContent=new Date().getFullYear())}).catch(e=>console.warn('Footer unavailable',e));
   }
   if(!mount)return;
+  if(!document.getElementById('fibodo-nav-css')){const l=document.createElement('link');l.id='fibodo-nav-css';l.rel='stylesheet';l.href=root+'fibodo-nav.css';document.head.appendChild(l)}
   try{
     mount.innerHTML=await fetchHtml('navigation.html');
     fix(mount);
@@ -20,14 +21,10 @@
     const triggers=[...mount.querySelectorAll('.nav-links button[aria-controls]')];
     const desktop=()=>window.matchMedia('(min-width:1081px)').matches;
 
-    const product=document.body.dataset.product;
-    const tag=mount.querySelector('[data-brand-tag]');
-    if(tag&&product)tag.textContent=product.toUpperCase();
-
     const here=new URL(location.href);const norm=p=>p.replace(/index\.html$/,'').replace(/\/$/,'');
     const isHere=a=>{const u=new URL(a.href,location.href);return u.origin===here.origin&&norm(u.pathname)===norm(here.pathname)};
     mount.querySelectorAll('.nav-links a').forEach(a=>{if(isHere(a))a.setAttribute('aria-current','page')});
-    mount.querySelectorAll('.nav-links>li[data-group]').forEach(li=>{if(li.querySelector('.mega a[aria-current]')||(product&&li.dataset.group==='products'))li.querySelector('button').style.boxShadow='inset 0 -3px 0 var(--accent)'});
+    mount.querySelectorAll('.nav-links>li[data-group]').forEach(li=>{if(li.querySelector('.mega a[aria-current]'))li.querySelector('button').style.boxShadow='inset 0 -3px 0 var(--accent)'});
 
     const set=(t,open)=>{document.getElementById(t.getAttribute('aria-controls')).hidden=!open;t.setAttribute('aria-expanded',String(open))};
     const closeAll=except=>triggers.forEach(t=>{if(t!==except)set(t,false)});
@@ -45,6 +42,6 @@
     window.addEventListener('resize',()=>{closeAll();closeMobile()});
   }catch(err){
     console.error('Navigation unavailable',err);
-    mount.innerHTML='<div class="wrap" style="padding:24px 0"><a class="fb-logo" href="'+root+'index.html"><span class="brand-word">fibodo</span></a></div>';
+    mount.innerHTML='<div class="wrap" style="padding:24px 0"><a class="fb-logo" href="'+root+'index.html"><img src="'+root+'fibodo-logo.svg" alt="fibodo Business Software" height="56"></a></div>';
   }
 })();
