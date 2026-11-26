@@ -65,3 +65,14 @@
   #core-navigation .nav-cta .login{text-align:center}
 }
 @media(max-width:1080px){#core-navigation .wrap{width:calc(100% - 60px)}#core-navigation .mega-inner{width:100%}#core-navigation .fb-logo img{height:46px}}
+#core-navigation .mega-groups{display:grid;gap:24px}
+#core-navigation .mega-groups.cols-4{grid-template-columns:repeat(4,1fr)}
+#core-navigation .mega-groups.cols-3{grid-template-columns:repeat(3,1fr)}
+#core-navigation .mega-group{display:flex;flex-direction:column;gap:2px}
+#core-navigation .mega-title{margin:0 0 8px;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+#core-navigation .mega-group a{text-decoration:none;font-weight:600;font-size:.94rem;padding:7px 10px;margin:0 -10px;border-radius:8px;color:var(--ink)}
+#core-navigation .mega-group a:hover{background:var(--paper)}
+@media(min-width:1081px){#core-navigation .nav-links>li>a,#core-navigation .nav-links>li>button{padding:12px 10px}}
+@media(min-width:1081px) and (max-width:1320px){#core-navigation .nav-links{gap:0}#core-navigation .nav-links>li>a,#core-navigation .nav-links>li>button{padding:12px 7px;font-size:.86rem}#core-navigation #site-nav .mast{gap:14px}}
+@media(max-width:1080px){#core-navigation .mega-groups,#core-navigation .mega-groups.cols-3,#core-navigation .mega-groups.cols-4{grid-template-columns:1fr 1fr;gap:16px}}
+@media(max-width:420px){#core-navigation .mega-groups,#core-navigation .mega-groups.cols-3,#core-navigation .mega-groups.cols-4{grid-template-columns:1fr}}
